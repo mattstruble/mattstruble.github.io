@@ -16,7 +16,7 @@ markdown: kramdown
 # Author Info
 author:
   name     : Matt Struble
-  image    : https://i2.cdn.turner.com/cnnnext/dam/assets/140926165711-john-sutter-profile-image-large-169.jpg
+  image    : assets/img/profile-image.jpg
   #email    : username@xyz.com
   github   : mattstruble
   twitter  : mestruble
