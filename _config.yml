@@ -16,7 +16,7 @@ markdown: kramdown
 # Author Info
 author:
   name     : Matt Struble
-  image    : assets/img/profile-image.jpg
+  image    : /assets/img/profile-image.jpg
   #email    : username@xyz.com
   github   : mattstruble
   twitter  : mestruble
