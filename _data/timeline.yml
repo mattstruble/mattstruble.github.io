@@ -1,17 +1,14 @@
-- title: Student, Harvard CS
-  from: 2014
-  to: 2018
-  description: Lorem ipsum dolor sit amet, consectetur adipiscing elit,
-               sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-               Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris
-               nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in
-               reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+- title: Mission Critical Software Engineer, Draper, MA
+  from: Mar. 2019
+  to: Present
+  description: 
+    * Developed simulator of GNC flight computer, intended to provide a surrogate for integration into larger vehicle simulation and to support mission simulations at the system level.
+    * Developed simulator of remote terminals in the vehicle, intended to provide a test environment for the development and verification of the flight computer for the vehicle.
 
-- title: Software Engineer, Google, UK
-  from: 2018
-  to: present
-  description: Lorem ipsum dolor sit amet, consectetur adipiscing elit,
-               sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-               Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris
-               nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in
-               reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+- title: Senior Software Engineer, Raytheon, MA
+  from: Oct. 2018
+  to: Mar. 2019
+  description: 
+    * Responsible for designing, implementing, debugging, and fixing problems with the Radar software applications.
+    * Implemented signal processing algorithms and time critical control functions, involved in direct control of sensor systems. 
+    * Worked with Software Architects and Principal Systems, Hardware, and Software engineers to interpret and implement requirements. 
