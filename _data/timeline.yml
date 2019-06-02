@@ -2,50 +2,50 @@
   from: Mar. 2019
   to: Present
   description: 
-    * Developed simulator of GNC flight computer, intended to provide a surrogate for integration into larger vehicle simulation and to support mission simulations at the system level.
-    * Developed simulator of remote terminals in the vehicle, intended to provide a test environment for the development and verification of the flight computer for the vehicle.
+    - Developed simulator of GNC flight computer, intended to provide a surrogate for integration into larger vehicle simulation and to support mission simulations at the system level.
+    - Developed simulator of remote terminals in the vehicle, intended to provide a test environment for the development and verification of the flight computer for the vehicle.
 
 - title: Senior Software Engineer, Raytheon, MA
   from: Oct. 2018
   to: Mar. 2019
   description: 
-    * Responsible for designing, implementing, debugging, and fixing problems with the Radar software applications.
-    * Implemented signal processing algorithms and time critical control functions, involved in direct control of sensor systems. 
-    * Worked with Software Architects and Principal Systems, Hardware, and Software engineers to interpret and implement requirements. 
+    - Responsible for designing, implementing, debugging, and fixing problems with the Radar software applications.
+    - Implemented signal processing algorithms and time critical control functions, involved in direct control of sensor systems. 
+    - Worked with Software Architects and Principal Systems, Hardware, and Software engineers to interpret and implement requirements. 
     
 - title: Software Engineer, Netnumber, MA
   from: Jan. 2017
   to: Oct. 2018
   description: 
-    * Implemented and maintained SS7 signaling protocols within product. 
-    * Improved performance and capabilities of signaling routing to fit the needs of customers in emerging markets. 
-    * Autonomously resolved customer support tickets in a timely manner. 
+    - Implemented and maintained SS7 signaling protocols within product. 
+    - Improved performance and capabilities of signaling routing to fit the needs of customers in emerging markets. 
+    - Autonomously resolved customer support tickets in a timely manner. 
     
 - title: Lead Software Engineer, General Dynamics, MA
   from: Aug. 2016
   to: Dec. 2017
   description: 
-    * Performed scope and cost analysis for software deliverables. 
-    * Updated low-level C drivers for the electric drive motor on the LSV2 upgrade. 
-    * Created and maintained software development plan, software design, and software requirement documents.
+    - Performed scope and cost analysis for software deliverables. 
+    - Updated low-level C drivers for the electric drive motor on the LSV2 upgrade. 
+    - Created and maintained software development plan, software design, and software requirement documents.
     
 - title: Aerospace Software Engineer, General Dynamics, MA
   from: May 2016
   to: Aug. 2016
   description: 
-    * Architected a software suite tasked with hardware tests in LabWindows (C). 
-    * Processed data in real time for GN\&C Algorithms and post-test analysis. 
+    - Architected a software suite tasked with hardware tests in LabWindows (C). 
+    - Processed data in real time for GN\&C Algorithms and post-test analysis. 
     
 - title: Software Engineer, General Dynamics, MA
   from: Jun. 2015
   to: May 2016
   description: 
-    * Designed training software for naval physical security systems. 
+    - Designed training software for naval physical security systems. 
     
 - title: Continuous Improvement Student Worker, Pfizer, CT
   from: May 2014
   to: Dec. 2014
   description: 
-    * Created an internal, professional, social media platform to improve company-wide communication.
-    * Developed applications for both the Raspberry Pi and Google Glass to improve workflow and efficiency within Pfizer.  
-    * Updated SharePoint sites to improve inter-department communication.
+    - Created an internal, professional, social media platform to improve company-wide communication.
+    - Developed applications for both the Raspberry Pi and Google Glass to improve workflow and efficiency within Pfizer.  
+    - Updated SharePoint sites to improve inter-department communication.
