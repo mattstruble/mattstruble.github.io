@@ -11,8 +11,8 @@ With 22% of US adults indicating they use Twitter, the platform has become a key
 ### Method 
 
 The approach was two-pronged: 
-1) Develop a multi-layered predictive model trained with labeled data.
-2) Create interactive visualizations housed on a dedicated webpage that facilitates comprehension and boosts engagement. 
+1. Develop a multi-layered predictive model trained with labeled data.
+2. Create interactive visualizations housed on a dedicated webpage that facilitates comprehension and boosts engagement. 
 
 An important distinguishing characteristic of this project is that it aimed to look past the accuracy of an analytical product and relate the sentiment data to demographic characteristics. It also casts a wider net when collecting raw data, incorporating both critical keywords (i.e., “climate change” and “global warming”) and popular hashtags (e.g., #parisagreement, “#climatehoax”) that represent both sides of the conversation. 
 
@@ -47,7 +47,7 @@ The BERT model leveraged a pretrained model and trained over it, tweaking hyperp
 
 ###### Model Comparison - Accuracy
 | Classifier  |  Training Set | Test Set  |
-|:---|:---:|:---:|
+|---|---|---|
 | Logistic Regression  | 73.1%  | 56.8%  |
 | Linear SVC  |  81.0% | 56.4%  |
 | Multinomial Naïve Bayes  | 70.0%  | 55.3%  |
