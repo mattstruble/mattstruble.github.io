@@ -1,10 +1,10 @@
 - name: Unity
   percentage: 80
-  color: success
+  color:
 
 - name: MATLAB
   percentage: 70
-  color:
+  color: dark
   
 - name: Adobe Photoshop
   percentage: 60
