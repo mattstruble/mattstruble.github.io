@@ -46,13 +46,13 @@ The BERT model leveraged a pretrained model and trained over it, tweaking hyperp
 ##### Bag of Words Model
 
 ###### Model Comparison - Accuracy
-| Classifier  |  Training Set | Test Set  |
-|---|---|---|
-| Logistic Regression  | 73.1%  | 56.8%  |
-| Linear SVC  |  81.0% | 56.4%  |
-| Multinomial Naïve Bayes  | 70.0%  | 55.3%  |
-| Multi-layered Perception  | 88.5%  | 57.3%  |
-| Ensemble  | 81.4%  | 59.1%  |
+| Classifier                |  Training Set | Test Set  |
+| ------------------------- | ------------- | --------- |
+| Logistic Regression       | 73.1%         | 56.8%     |
+| Linear SVC                |  81.0%        | 56.4%     |
+| Multinomial Naïve Bayes   | 70.0%         | 55.3%     |
+| Multi-layered Perception  | 88.5%         | 57.3%     |
+| Ensemble                  | 81.4%         | 59.1%     |
 
 ###### F1 Score - Test Set
 | Classifier  |  Negative | Neutral  | Positive |
