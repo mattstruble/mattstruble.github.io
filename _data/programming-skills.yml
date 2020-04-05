@@ -1,6 +1,6 @@
 - name: Java
   percentage: 90
-  color: danger
+  color: success
 
 - name: Python
   percentage: 80
@@ -11,5 +11,5 @@
   color: dark
   
 - name: SQL
-  percentage: 50
-  color: success
+  percentage: 70
+  color: dark
