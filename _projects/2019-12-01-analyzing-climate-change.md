@@ -71,11 +71,12 @@ This had to be contended with when working with a limited training sample size, 
 ##### BERT Model  
 
 ###### BERT Accuracy
-| Iterations | Training | Test |
-| :--- | :---: | :---: |
-| 1 | 72.5% | 66.9% | 
-| 2 | 92.2% | 65.6% | 
-| 3 | 95.1% | 67.5% | 
+|---
+| Iterations | Training | Test 
+| :- | :-: | :-: 
+| 1 | 72.5% | 66.9% 
+| 2 | 92.2% | 65.6% 
+| 3 | 95.1% | 67.5% 
 
 ###### BERT F1 Scoring
 | Class | Precision | Recall | F1 | Support |
