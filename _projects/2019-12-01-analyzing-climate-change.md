@@ -47,7 +47,6 @@ The BERT model leveraged a pretrained model and trained over it, tweaking hyperp
 
 ###### Model Comparison - Accuracy
 
-
 | Classifier                |  Training Set | Test Set  |
 | ------------------------- | ------------- | --------- |
 | Logistic Regression       | 73.1%         | 56.8%     |
@@ -58,7 +57,6 @@ The BERT model leveraged a pretrained model and trained over it, tweaking hyperp
 
 
 ###### F1 Score - Test Set
-
 
 | Classifier  |  Negative | Neutral  | Positive |
 |:---|:---:|:---:| :---: |
@@ -79,7 +77,6 @@ This had to be contended with when working with a limited training sample size, 
 
 ###### BERT Accuracy
 
-
 |---
 | Iterations | Training | Test 
 | :- | :-: | :-: 
@@ -88,9 +85,7 @@ This had to be contended with when working with a limited training sample size, 
 | 3 | 95.1% | 67.5% 
 
 
-
 ###### BERT F1 Scoring
-
 
 | Class | Precision | Recall | F1 | Support |
 | :--- | :---: | :---: | :---: | :---: |
@@ -98,7 +93,6 @@ This had to be contended with when working with a limited training sample size, 
 | Believer | .69 | .72 | .71 | 1274 |
 | Skeptic | .68 | .73 | .70 | 1224 |
 | Accuracy |  | | .68 | 3749 |
-
 
 
 The model consists of two parts, the first of which is a text encoder that transforms tweets into vectors. These are then used in the second part as features. This second part is a deep recurrent neural network that comes "out-of-the-box" with pre-trained weights, which are adjusted as new data is applied in the training step. As can be seen, the validation accuracy during training remained roughly constant throughout the training process, which is a sign of severe overfitting to the training data.    
