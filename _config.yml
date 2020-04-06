@@ -5,12 +5,18 @@ description: >- # this means to ignore newlines until "baseurl:"
 baseurl: ""  # the subpath of your site, e.g. /blog
 url: "https://mattstruble.github.io/" # the base hostname & protocol for your site, e.g. http://example.com
 # repository: YoussefRaafatNasry/portfolYOU
-# remote_theme: YoussefRaafatNasry/portfolYOU
+remote_theme: YoussefRaafatNasry/portfolYOU
 
 # Build settings
-markdown: kramdown
-# plugins:
-# - jekyll-feed
+#markdown: kramdown
+plugins:
+  - jemoji
+
+### Navbar Settings ###
+nav_exclude:                                            # The following paths are excluded from navbar
+  - pages/tags.html
+  - pages/404.html
+  - pages/index.html
 
 
 # Author Info
@@ -48,5 +54,4 @@ exclude:
 - README.md
 - CONTRIBUTING.md
 - LICENSE
-- Gemfile
 - Gemfile.lock
