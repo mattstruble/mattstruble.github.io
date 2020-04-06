@@ -46,7 +46,6 @@ The BERT model leveraged a pretrained model and trained over it, tweaking hyperp
 ##### Bag of Words Model
 
 ###### Model Comparison - Accuracy
-<center>
 
 
 | Classifier                |  Training Set | Test Set  |
@@ -58,10 +57,7 @@ The BERT model leveraged a pretrained model and trained over it, tweaking hyperp
 | Ensemble                  | 81.4%         | 59.1%     |
 
 
-</center>
-
 ###### F1 Score - Test Set
-<center>
 
 
 | Classifier  |  Negative | Neutral  | Positive |
@@ -73,7 +69,6 @@ The BERT model leveraged a pretrained model and trained over it, tweaking hyperp
 | Ensemble  | 0.59  | 0.51  | 0.61 |
 
 
-</center>
 
 The ensemble model performed best when using the bag of words approach. However, the large gap between in-sample performance and out-of-sample performance indicates that overfitting may have occurred. 
 This had to be contended with when working with a limited training sample size, particularly when it came to obtaining enough "negative" tweets. Even still, the confusion matrix shows a strong performance while maintaining an evenly divided error rate.
