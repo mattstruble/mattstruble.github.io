@@ -46,6 +46,8 @@ The BERT model leveraged a pretrained model and trained over it, tweaking hyperp
 ##### Bag of Words Model
 
 ###### Model Comparison - Accuracy
+
+
 | Classifier                |  Training Set | Test Set  |
 | ------------------------- | ------------- | --------- |
 | Logistic Regression       | 73.1%         | 56.8%     |
@@ -54,7 +56,11 @@ The BERT model leveraged a pretrained model and trained over it, tweaking hyperp
 | Multi-layered Perception  | 88.5%         | 57.3%     |
 | Ensemble                  | 81.4%         | 59.1%     |
 
+
+
 ###### F1 Score - Test Set
+
+
 | Classifier  |  Negative | Neutral  | Positive |
 |:---|:---:|:---:| :---: |
 | Logistic Regression  | 0.61 | 0.49  | 0.59 |
@@ -62,6 +68,8 @@ The BERT model leveraged a pretrained model and trained over it, tweaking hyperp
 | Multinomial Naïve Bayes  | 0.60  | 0.46  | 0.59 |
 | Multi-layered Perception  | 0.61  | 0.54  | 0.57 |
 | Ensemble  | 0.59  | 0.51  | 0.61 |
+
+
 
 The ensemble model performed best when using the bag of words approach. However, the large gap between in-sample performance and out-of-sample performance indicates that overfitting may have occurred. 
 This had to be contended with when working with a limited training sample size, particularly when it came to obtaining enough "negative" tweets. Even still, the confusion matrix shows a strong performance while maintaining an evenly divided error rate.
@@ -71,6 +79,8 @@ This had to be contended with when working with a limited training sample size, 
 ##### BERT Model  
 
 ###### BERT Accuracy
+
+
 |---
 | Iterations | Training | Test 
 | :- | :-: | :-: 
@@ -78,13 +88,19 @@ This had to be contended with when working with a limited training sample size, 
 | 2 | 92.2% | 65.6% 
 | 3 | 95.1% | 67.5% 
 
+
+
 ###### BERT F1 Scoring
+
+
 | Class | Precision | Recall | F1 | Support |
 | :--- | :---: | :---: | :---: | :---: |
 | Neutral | .68 | .60 | .64 | 1251 |
 | Believer | .69 | .72 | .71 | 1274 |
 | Skeptic | .68 | .73 | .70 | 1224 |
 | Accuracy |  | | .68 | 3749 |
+
+
 
 The model consists of two parts, the first of which is a text encoder that transforms tweets into vectors. These are then used in the second part as features. This second part is a deep recurrent neural network that comes "out-of-the-box" with pre-trained weights, which are adjusted as new data is applied in the training step. As can be seen, the validation accuracy during training remained roughly constant throughout the training process, which is a sign of severe overfitting to the training data.    
 
