@@ -48,6 +48,7 @@ The BERT model leveraged a pretrained model and trained over it, tweaking hyperp
 ###### Model Comparison - Accuracy
 <center>
 
+
 | Classifier                |  Training Set | Test Set  |
 | ------------------------- | ------------- | --------- |
 | Logistic Regression       | 73.1%         | 56.8%     |
@@ -56,10 +57,12 @@ The BERT model leveraged a pretrained model and trained over it, tweaking hyperp
 | Multi-layered Perception  | 88.5%         | 57.3%     |
 | Ensemble                  | 81.4%         | 59.1%     |
 
+
 </center>
 
 ###### F1 Score - Test Set
 <center>
+
 
 | Classifier  |  Negative | Neutral  | Positive |
 |:---|:---:|:---:| :---: |
@@ -68,6 +71,7 @@ The BERT model leveraged a pretrained model and trained over it, tweaking hyperp
 | Multinomial Naïve Bayes  | 0.60  | 0.46  | 0.59 |
 | Multi-layered Perception  | 0.61  | 0.54  | 0.57 |
 | Ensemble  | 0.59  | 0.51  | 0.61 |
+
 
 </center>
 
