@@ -122,9 +122,12 @@ That means on average the algorithm, albeit with its small sample size, has an a
 
 ## Full Template Matching Source
 
-The full template matching source is below, it's full integration with the discord app can be seen in the [GamerBot repo](https://github.com/mattstruble/gamer-bot){:target="_blank"}.
+Full integration with the discord app can be seen in the [GamerBot](https://github.com/mattstruble/gamer-bot){:target="_blank"} repository.
 
 ```python
+import numpy as np 
+import math 
+
 def template_match_hashes(template_hashes, source_hashes, match_percent=0.6):
     """
     Takes in array of template fingerprint hashes, and an array of hashes to search through. Looks through the search
