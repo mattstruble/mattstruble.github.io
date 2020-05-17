@@ -6,7 +6,7 @@ color: primary
 description: Using plagiarism detection algorithms to track the phrases my friends use in group chats. 
 ---
 
-A question was posted in a group chat: how many times does my one friend say the phrase “gamers in chat”? At the time I was beginning to dabble with the Discord API, so I took it upon myself to figure out the actual count. The algorithm can be seen in action within my [Discord GamerBot](https://github.com/mattstruble/gamer-bot).
+A question was posted in a group chat: how many times does my one friend say the phrase “gamers in chat”? At the time I was beginning to dabble with the Discord API, so I took it upon myself to figure out the actual count. The algorithm can be seen in action within my [Discord GamerBot](https://github.com/mattstruble/gamer-bot){:target="_blank"}.
 
 ## The Problem
 User submitted text, especially in a group chat, is variable, prone to spelling mistakes, and all-around unreliable data. A simple string compare will only catch an exact match, missing any of the following potential variations: “gamer in the chat”, “gamers int he chat” , “gamers in this chat?”, “gamers get in chat”. 
@@ -16,9 +16,9 @@ A couple of naïve approaches would be try to keep a list of the most common sim
 ## Research
 The time I was researching a solution to the problem just so happened to coincide with final assignments being due in many colleges, so my social media was overwhelmed with jokes about the automatic plagiarism detectors. Automatic plagiarism detectors can isolate substrings from an entire document and match it back to the source material, even if the match is not a one-to-one match.
 
-Plagiarism detectors each use a form of document fingerprinting, the specific algorithm I used is a variation of [Winnowing: Local Algorithms for Document Fingerprinting](https://theory.stanford.edu/~aiken/publications/papers/sigmod03.pdf), my implementation can be seen in [sigmod-fingerprinting](https://github.com/mattstruble/sigmod-fingerprinting). First the input string is sanitized to remove URLs and any remaining non-alphanumeric characters, next contiguous substrings of length k are generated. These k-grams are then hashed and processed by a moving window of size n, guaranteeing at least every n hash is chosen, creating a set of “fingerprints” for the provided string. 
+Plagiarism detectors each use a form of document fingerprinting, the specific algorithm I used is a variation of [Winnowing: Local Algorithms for Document Fingerprinting](https://theory.stanford.edu/~aiken/publications/papers/sigmod03.pdf){:target="_blank"}, my implementation can be seen in [sigmod-fingerprinting](https://github.com/mattstruble/sigmod-fingerprinting){:target="_blank"}. First the input string is sanitized to remove URLs and any remaining non-alphanumeric characters, next contiguous substrings of length k are generated. These k-grams are then hashed and processed by a moving window of size n, guaranteeing at least every n hash is chosen, creating a set of “fingerprints” for the provided string. 
 
-Given the nature of the k-grams having overlap with each other, the Karp-Rabin algorithm was used for quick hashing by allowing each subsequent k-gram to use the previous hash when generating its own. Similarly, the windows have overlap, allowing subsequent windows to only look at their last index, so long as the previously selected index is in range of the current window.  
+Given the nature of the k-grams having overlap with each other, the [Rabin-Karp algorithm](https://courses.csail.mit.edu/6.006/spring11/rec/rec06.pdf){:target="_blank"} was used for quick hashing by allowing each subsequent k-gram to use the previous hash when generating its own. Similarly, the windows have overlap, allowing subsequent windows to only look at their last index, so long as the previously selected index is in range of the current window.  
 
 Below outlines some examples using the target phrase “gamers in chat”: 
 
@@ -54,7 +54,7 @@ Now that I have found a way to determine fingerprints of similar strings, it is 
  
 In order to resolve this I developed a form of template matching which required the fingerprints to go in order, but also has lenience in terms of which phrase fingerprint can start, or stop, the template as well as how many non-matching fingerprints can exist in between and the percentage matched fingerprints required.
 
-I start out by utilizing numpy to search through the user's source hashes to find the indexes that match the hashes in the phrase's template.
+I start out by utilizing [numpy](https://numpy.org/){:target="_blank"} to search through the user's source hashes to find the indexes that match the hashes in the phrase's template.
 This way I know exactly where each part of the hash is located within the user's string, via a dictionary lookup to an array of indices.   
 
 ```python 
@@ -122,7 +122,7 @@ That means on average the algorithm, albeit with its small sample size, has an a
 
 ## Full Template Matching Source
 
-The full template matching source is below, it's full integration with the discord app can be seen in the [GamerBot repo](https://github.com/mattstruble/gamer-bot).
+The full template matching source is below, it's full integration with the discord app can be seen in the [GamerBot repo](https://github.com/mattstruble/gamer-bot){:target="_blank"}.
 
 ```python
 def template_match_hashes(template_hashes, source_hashes, match_percent=0.6):
