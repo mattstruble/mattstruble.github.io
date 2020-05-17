@@ -6,7 +6,7 @@ color: primary
 description: Using plagiarism detection algorithms to track the phrases my friends use in group chats. 
 ---
 
-A question was posited in a group chat: how many times does my one friend say the phrase “gamers in chat”? At the time I was beginning to dabble with the Discord API, so I took it upon myself to figure out the actual count. The algorithm can be seen in action within my [Discord GamerBot](https://github.com/mattstruble/gamer-bot).
+A question was posted in a group chat: how many times does my one friend say the phrase “gamers in chat”? At the time I was beginning to dabble with the Discord API, so I took it upon myself to figure out the actual count. The algorithm can be seen in action within my [Discord GamerBot](https://github.com/mattstruble/gamer-bot).
 
 ## The Problem
 User submitted text, especially in a group chat, is variable, prone to spelling mistakes, and all-around unreliable data. A simple string compare will only catch an exact match, missing any of the following potential variations: “gamer in the chat”, “gamers int he chat” , “gamers in this chat?”, “gamers get in chat”. 
@@ -48,9 +48,9 @@ Both the k-gram, and window length, determine how frequently in the string you w
 In the end I found that using the average word length in the target string provided a fair middle ground for both the k-gram length and window length. This way a decent chunk of each word is preserved in hashing, allowing for more reliable matching, and a decent chunk of k-gram are skipped during windowing. In the above examples this is shown when both k-gram and window length are 4.
 
 ## My Solution
-Given the nature of the k-grams, and windows, having significant overlap with each other
 
-Now that I have found a way to determine fingerprints of similar strings, it is time to move on to searching “gamers in chat” within any user provided string. At first, I naively assumed that by checking if the user string fingerprints contained the phrase fingerprints then that guaranteed a match. Unfortunately, this ignored the order of the phrase’s fingerprints, allowing any string that happened to have coinciding fingerprints to match. 
+Now that I have found a way to determine fingerprints of similar strings, it is time to move on to searching “gamers in chat” within any user provided string. At first, I naively assumed that by checking if the user string fingerprints contained the phrase fingerprints then that guaranteed a match. Unfortunately, this ignored the order of the phrase’s fingerprints, allowing any string that happened to have coinciding fingerprints to match, e.g.
+"In a few minutes I'm going to join voice chat, does anyone want to play a game?" 
  
 In order to resolve this I developed a form of template matching which required the fingerprints to go in order, but also has lenience in terms of which phrase fingerprint can start, or stop, the template as well as how many non-matching fingerprints can exist in between and the percentage matched fingerprints required.
 
@@ -69,7 +69,7 @@ I define the hashes that can "start" the template to the first fourth of the tem
 checked_idxs = []
 matched_ranges = []
 template_len = len(template_hashes)
-template_start_size = math.ceil(template_len/4))
+template_start_size = math.ceil(template_len/4)
 ```
 
 Lastly, for each starting hash we iterate over each source indices associated with it, making sure not to consider any index that may have been already been marked. 
@@ -109,7 +109,7 @@ for i in range(template_start_size): # only first fourth of template can "start"
 return matched_ranges
 ```
 The algorithm avoids false positives by requiring the matched count to be at least the size of the template, so that the matched percent calculation isn't thrown off by substrings. Similarly
-false negatives are by extending the search by 80% of the template length, allowing for a small amount of fluff to exist between matched hashes.
+false negatives are avoided by extending the search by 80% of the template length, allowing for a small amount of fluff to exist between matched hashes.
 
 
 ## Results 
@@ -121,6 +121,9 @@ Out of 42,000 messages, the algorithm found 32 matching "gamers in chat", includ
 That means on average the algorithm, albeit with its small sample size, has an accuracy 87.5%, which seems pretty decent for a simple language processor. 
 
 ## Full Template Matching Source
+
+The full template matching source is below, it's full integration with the discord app can be seen in the [GamerBot repo](https://github.com/mattstruble/gamer-bot).
+
 ```python
 def template_match_hashes(template_hashes, source_hashes, match_percent=0.6):
     """
@@ -155,7 +158,8 @@ def template_match_hashes(template_hashes, source_hashes, match_percent=0.6):
     checked_idxs = []
     matched_ranges = []
     template_len = len(template_hashes)
-    for i in range(int(math.ceil(template_len/4))): # only first fourth of template can "start" the template
+    template_start_size = math.ceil(template_len/4)
+    for i in range(template_start_size): # only first fourth of template can "start" the template
         start_idxs = template_locs[template_hashes[i]]
         for start_idx in start_idxs: # Try to find a template match for each starting index
             if start_idx in checked_idxs:
