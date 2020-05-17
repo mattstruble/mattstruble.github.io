@@ -117,8 +117,8 @@ false negatives are by extending the search by 80% of the template length, allow
 After putting the above code into production, I can confidently say that my friend has said a variation of "gamers in chat" 26 times. 
 
 However, it isn't perfect. Even with all my attempts to limit false positives, a few still slipped through. 
-Out of 32 total matched "gamers in chat" within the channel, 4 messages were not close to the searched phrase.
-That means on average the algorithm , albeit with its small sample size, has an accuracy 87.5%, which seems pretty decent for a simple language processor. 
+Out of 42,000 messages, the algorithm found 32 matching "gamers in chat", including the variations listed in the problem statement, however 4 of the matches were not close to the searched phrase and primarily contained the word "streamers".
+That means on average the algorithm, albeit with its small sample size, has an accuracy 87.5%, which seems pretty decent for a simple language processor. 
 
 ## Full Template Matching Source
 ```python
