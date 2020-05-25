@@ -1,5 +1,5 @@
 ---
-title: Incorporating Synology NAS into a Machine Learning Pipeline
+title: Automating Deep Learning Pipeline With NAS
 tags: [Automation, Bash, NAS]
 style: border
 color: info
