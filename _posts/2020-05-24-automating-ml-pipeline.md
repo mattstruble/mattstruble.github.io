@@ -1,6 +1,6 @@
 ---
 title: Incorporating Synology NAS into a Machine Learning Pipeline
-tags: [Machine Learning, Automation, Synology, NAS, Bash]
+tags: [Automation, Bash, NAS]
 style: border
 color: info
 description: How I leveraged Synology NAS to automate the execution, and backup, of my machine learning model training environments. 
@@ -28,7 +28,7 @@ This allowed me to write a series of scripts, each of which satisfied one of the
 
 #### 1. Dynamically Configuring Settings
  
-The first of the goals I tackled above was finding a way to easily change run settings on the fly, allowing my scripts dynamically change run settings on a per-project basis. 
+The first of the goals I tackled above was finding a way to easily change run settings on the fly, allowing my scripts dynamically change on a per-project basis. 
 I determined early on that this would require a both a global config, as well as project-specific configs. The end result involved creating a volume on my NAS and setting up the following file structure:
 
 ```
@@ -73,7 +73,7 @@ output_dir=output
 
 By structuring it this way any script can source `auto_runner.config` and automatically get all the information it needs for the current run that's being executed. 
 
-I'm sure you noticed that `auto_runner.config` takes in a command line argument to set the working_dir of the project. This came up due to the differences of trying to run the autmated scripts from
+I'm sure you noticed that `auto_runner.config` takes in a command line argument to set the `working_dir` of the project. This came up due to the differences of trying to run the autmated scripts from
 a network mounted drive on my computer, versus trying to run them from within the NAS itself. Synology provides a way for a user to define custom scripts, but they require the full working path in order to target each script,
 where running the scripts locally has the benefit of starting from the deeplearning directory. By passing in the working dir it allows supporting scripts to be written for each use case:
 
@@ -93,9 +93,9 @@ working_dir=$(pwd)
 ${working_dir}/auto_runner.sh ${working_dir}
 ```
 
-This inheritance structure allows the reuse of the main auto_runner.sh for any starting system environment. 
+This inheritance structure allows for easy  reuse of `auto_runner.sh` for any system environment. 
 
-#### 2. Starting/Storing A Run From Anywhere 
+#### 2. Starting and Storing A Run From Anywhere 
 
 The config files naturally cascade into the next goal I conquered of starting the runs from anywhere, and was teased in the previous section when talking about the argument passed
 into `auto_runner.config`. 
@@ -114,7 +114,7 @@ bin_dir=${working_dir}/${target_proj}/bin
 mkdir -p ${results_dir}
 ```
 
-The first thing the auto_runner does is source the configuration file talked about in the previous section, using the information within to set up the results directory and to isolate the bin directory. 
+The first thing `auto_runner.sh` does is source the configuration file talked about in the previous section, using the information within to set up the results directory and to isolate the bin directory. 
 
 ```bash 
 # Check if server is available before continuing with anything. 
@@ -135,8 +135,8 @@ echo "Connected to ${dl_host}..."
 ssh ${dl_user}@${dl_host} "sudo /sbin/shutdown -c"
 ```
 
-The next important step is to make sure that the server is available, by iterating over a simple loop/sleep cycle. My personal deeplearning machine sometimes takes a few minutes to connect
-to the network when it's first turned on, so I wanted the script to be be sure the machine is actually offline prior to continuing. 
+The next important step is to make sure that the server is available, by iterating over a simple loop/sleep cycle. This is due to my personal deeplearning machine sometimes taking a few minutes to connect
+to the network when it's first turned on, so I needed to wait in case the script was started while the server was still standing itself up. 
 
 ```bash 
 # Generate results directory, and populate with the current run_X folder
@@ -162,7 +162,7 @@ scp -rq ${bin_dir}/* ${dl_user}@${dl_host}:${run_name}
 
 The next step is to create a folder within results to store all the run information. I simply chose to number it based on the previous runs within the folder, creating a simple structure of numbered runs. 
 It is within this folder that the current project bin is zipped up and stored, prior to being exported to the deeplearning server. By backing up the bin contents prior to starting the run it ensures that all
-the requirements for the run can easily be extracted down to road and replicated. 
+the requirements for the run can easily be replicated. 
 
 ```bash 
 echo "Executing ${dl_user}@${dl_host}:${run_name}/${run_script} and starting automatic backups.."
@@ -177,14 +177,14 @@ ssh ${dl_user}@${dl_host} "sudo /sbin/shutdown -P +60"
 ```
 
 Lastly an external script is called which handles all of the logic of backing up the run information, and waiting for the actual training to complete or timeout. Once the supporting run script
-has finished executing the auto_runner cleans up the files on the server and initiates a shutdown with a delay of 1hr. The 1hr delay allows for any immediate subsequent runs, while also allowing any
-long overnight runs to properly clean up and conserve power/money. 
+has finished executing `auto_runner.sh` cleans up the files on the server and initiates a shutdown with a delay of 1hr. The 1hr delay allows for any immediate subsequent runs, while also allowing any
+long overnight runs to properly shutdown the server and conserve power/money. 
 
 #### 3. Backing Run Output 
  
  Finally, now that all the supporting framework is in place comes the most important part: storing output and information regarding the run. I wanted to be able to reference the
  Tensorflow console output, maintain periodic backups of checkpoints to fallback on for faster retraining, as well as maintain meta data about the run for client billing. All of this is handled
- within `runner.sh`, which was called from our `auto_runner.sh`. 
+ within `runner.sh`, which is called from `auto_runner.sh`. 
  
  ```bash 
 #!bin/bash
@@ -249,7 +249,7 @@ While `backup.sh` is running in the background, `runner.sh` passes a long comman
 3. Activates the conda environment.
 4. Starts the run script. 
 
-Since the run script continues to run until the training is over, the output can be piped back across into the runs log.log file on the NAS machine. The call to `timeout ${timeout}` ensures that the training
+Since the run script continues to run until the training is over, the output can be piped back across into the runs log.log file on the NAS machine. The call to `timeout ${timeout} ssh ...` ensures that the training
 session doesn't exceed the user-defined timeout period, killing the ssh session which also kills the run on the server. 
 
 When the training finishes, or timesout, the backup script is killed and the final output file is copied over to storage and the end time is stored in the info file. 
@@ -281,7 +281,6 @@ deeplearning/
 ``` 
 
 This meets all the requirements going into this project. The training can be started from anywhere, all of the output is stored, and settings can be dynamically changed per run. 
-Best of all the NAS handles all the scripting logic, which means that any thin client that connects to kick things off can safely disconnect in the middle of a run without worry of losing
-any logs or output. 
+Best of all the NAS handles all the scripting logic, which means that any thin client that connects to kick things off can safely disconnect in the middle of a run without stopping the run. 
 
 Now when I start a new project I can easily reference past runs and results from anywhere in the world, allowing for rapid model iteration and quicker turnaround times.  
