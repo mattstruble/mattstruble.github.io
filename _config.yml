@@ -33,7 +33,7 @@ author:
 collections:
   projects:
     output: true
-    permalink: /projects/:name
+    permalink: /projects/:title
 
 
 # Default values for collections
@@ -42,7 +42,12 @@ defaults:
       path: ""
       type: "projects"
     values:
-      layout: "page"
+      layout: "post"
+  - scope:
+      path: ""
+      type: "posts"
+    values:
+      comments: false
 
 
 # Posts default Permalink
