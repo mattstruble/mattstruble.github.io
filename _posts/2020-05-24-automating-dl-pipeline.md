@@ -6,7 +6,7 @@ color: info
 description: How I leveraged Synology NAS to automate the execution, and backup, of my machine learning model training environments. 
 ---
 
-The past few days I've been working on improving my machine learning pipeline in preparation of some projects I have coming up. I wanted to create a system that would allow me to easily train a model 
+The past few days I've been working on improving my machine learning pipeline in preparation of some upcoming projects. I wanted to create a system that would allow me to easily train a model 
 from any thin client, while also preserving a history of work done on a per-project basis. 
 
 ## The Goal 
@@ -60,7 +60,7 @@ working_dir=$1
 source ${working_dir}/${target_proj}/${target_proj}.config
 ```
 
-While each project config contained specific environmental and runtime information:
+While each project config contains specific environmental and runtime information:
 
 ```bash 
 #!/bin/bash 
@@ -75,7 +75,7 @@ By structuring it this way any script can source `auto_runner.config` and automa
 
 I'm sure you noticed that `auto_runner.config` takes in a command line argument to set the `working_dir` of the project. This came up due to the differences of trying to run the autmated scripts from
 a network mounted drive on my computer, versus trying to run them from within the NAS itself. Synology provides a way for a user to define custom scripts, but they require the full working path in order to target each script,
-where running the scripts locally has the benefit of starting from the deeplearning directory. By passing in the working dir it allows supporting scripts to be written for each use case:
+where running the scripts locally has the benefit of starting from the deep learning directory. By passing in the working dir it allows supporting scripts to be written for each use case:
 
 ```bash 
 #!/bin/bash
@@ -122,7 +122,7 @@ count=0
 while ! ping -c 1 -W 1 ${dl_host}; do
 	count=$((${count}+1))
 	if [ $count -gt 4 ]; then 
-		echo "Failed to connect to ${server} more than 4 times. Terminating."
+		echo "Failed to connect to ${dl_host} more than 4 times. Terminating."
 		exit 1
 	fi
 	
@@ -135,7 +135,7 @@ echo "Connected to ${dl_host}..."
 ssh ${dl_user}@${dl_host} "sudo /sbin/shutdown -c"
 ```
 
-The next important step is to make sure that the server is available, by iterating over a simple loop/sleep cycle. This is due to my personal deeplearning machine sometimes taking a few minutes to connect
+The next important step is to make sure that the server is available, by iterating over a simple loop/sleep cycle. This is due to my personal deep learning machine sometimes taking a few minutes to connect
 to the network when it's first turned on, so I needed to wait in case the script was started while the server was still standing itself up. 
 
 ```bash 
@@ -161,7 +161,7 @@ scp -rq ${bin_dir}/* ${dl_user}@${dl_host}:${run_name}
 ```
 
 The next step is to create a folder within results to store all the run information. I simply chose to number it based on the previous runs within the folder, creating a simple structure of numbered runs. 
-It is within this folder that the current project bin is zipped up and stored, prior to being exported to the deeplearning server. By backing up the bin contents prior to starting the run it ensures that all
+It is within this folder that the current project bin is zipped up and stored, prior to being exported to the deep learning server. By backing up the bin contents prior to starting the run it ensures that all
 the requirements for the run can easily be replicated. 
 
 ```bash 
@@ -244,7 +244,7 @@ done
 ```
 
 While `backup.sh` is running in the background, `runner.sh` passes a long command to the server over ssh, which:
-1. Allow the execution of the project defined run script
+1. Allows the execution of the project defined run script.
 2. Sets the working PATH to include the correct Tensorflow and Conda environments.
 3. Activates the conda environment.
 4. Starts the run script. 
@@ -252,11 +252,11 @@ While `backup.sh` is running in the background, `runner.sh` passes a long comman
 Since the run script continues to run until the training is over, the output can be piped back across into the runs log.log file on the NAS machine. The call to `timeout ${timeout} ssh ...` ensures that the training
 session doesn't exceed the user-defined timeout period, killing the ssh session which also kills the run on the server. 
 
-When the training finishes, or timesout, the backup script is killed and the final output file is copied over to storage and the end time is stored in the info file. 
+When the training finishes, or times out, the backup script is killed and the final output file is copied over to storage and the end time is stored in the info file. 
 
-## Results
+## The Results
 
-After execution of `auto_runner.sh` is completed the deeplearning directory tree is now: 
+After execution of `auto_runner.sh` is completed the deep learning directory tree is now: 
 
 ```
 deeplearning/
@@ -283,4 +283,4 @@ deeplearning/
 This meets all the requirements going into this project. The training can be started from anywhere, all of the output is stored, and settings can be dynamically changed per run. 
 Best of all the NAS handles all the scripting logic, which means that any thin client that connects to kick things off can safely disconnect in the middle of a run without stopping the run. 
 
-Now when I start a new project I can easily reference past runs and results from anywhere in the world, allowing for rapid model iteration and quicker turnaround times.  
+Now with any new project I can easily reference previous runs from anywhere in the world, allowing for rapid model iteration and quicker turnaround times.  
