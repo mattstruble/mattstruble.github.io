@@ -1,10 +1,10 @@
 ---
+title: Analyzing Climate Change Stance Through Twitter Data
 name: Analyzing Climate Change Stance Through Twitter Data
 tools: [ML, D3, BERT]
 image: ../assets/img/analyzing-climate-change/word_cloud.PNG
 description: Seeking to understand - and visualize - Americans' views of climate change as seen through the lens of twitter.
 ---
-# Analyzing Climate Change Stance Through Twitter Data
 
 With 22% of US adults indicating they use Twitter, the platform has become a key stage where the climate change conversation unfolds. As such, this project hoped to understand—and visualize—Americans’ views of climate change as seen through the lens of Twitter.
 
