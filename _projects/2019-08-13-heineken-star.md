@@ -72,8 +72,8 @@ This can be attributed to the training set, both Untappd and ours, being heavily
 detract from the final product, seeing how it was what the final product was going for. The customer wanted the app to be focused on the Heineken brand, so the expectation was that their products would the be front and center for 
 each raffle submission. 
 
-The gifs below highlight some more example environments we ran the model through. You can notice the false positive issue within in the liquor store example when the model makes a few false detections as it flashes
-past some corona bottles. This is mostly due to the motion blur, and was compensated for by the app requiring the users to hold the phone steady prior to making a prediction. 
+The gifs below highlight some more example environments we ran the model through. You can notice the false positive issue within in the liquor store example as the model makes a few false detections when it flashes
+past some corona bottles. This is due to the motion blur, and was mostly fixed above, but as an added precaution the app required the users to hold the phone steady prior to making a prediction. 
 
 ![](../assets/img/heineken-star/kitchen-positive.gif) 
 
