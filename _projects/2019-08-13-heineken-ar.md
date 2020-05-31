@@ -17,7 +17,7 @@ The campaign was the first time a brand has used web-based AR technology to powe
 
 In June I was contracted to develop the image recognition component of the [Heineken® AR Cheers Campaign](https://www.justaftermidnight247.com/case-study/heineken-ar-cheers-campaign/). 
 I was given six weeks to create the Heineken® logo detection logic, which needed to fit the following criteria: 
-1. Be lightweight, and quick, enough to operate over a mobile browser without exceeding user bandwidth limits 
+1. Be lightweight, and quick enough to operate over a mobile browser without exceeding user bandwidth limits 
 2. Able to accurately detect multiple variant Heineken® logos in the same picture
 3. Recognize the following logos: 
 {% include elements/figure.html image="../assets/img/heineken-star/collage.jpg" caption="Heineken® Standard, Heineken® Stein Glass, Heineken® F1 Singapore, Heineken® Zero, Heineken® Cup" %}
@@ -65,10 +65,10 @@ and almost immediately receive back where each logo was in the image, labeled by
 
 ![](../assets/img/heineken-star/multi-detect.gif)
 
-After all was said in done, the final model was able to accurately detect any variation of the logos listed above. One small caveat being that it performed much better when the bottles or glasses were closer to the camera, and in hand.
-This can be attributed to the training set, both Untappd and ours, being heavily focused on the objects being held in hand and close to the camera. Ultimately the requirement for the logos to be closer to the camera didn't 
-detract from the final product, seeing how it was what the final product was going for. The customer wanted the app to be focused on the Heineken® brand, so the expectation was that their products would be front and center for 
-each raffle submission. 
+After all was said and done, the final model was able to accurately detect any variation of the logos listed above. One small caveat of this was that it performed much better when the bottles or glasses were closer to the camera, and in hand. 
+This can be attributed to the training set, both Untappd and ours, being heavily focused on the objects being held in hand and close to the camera. 
+Ultimately the requirement for the logos to be closer to the camera didn’t detract from the final product, seeing as it was what the final product was going for. 
+The customer wanted the app to be focused on the Heineken® brand, so the expectation was that their products would be front and center for each raffle submission.
 
 The gifs below highlight some more example environments we ran the model through. You can notice the false positive issue within in the liquor store example as the model makes a few false detections when it flashes
 past some corona bottles. This is due to the motion blur, and was mostly fixed above, but as an added precaution the app required the users to hold the phone steady prior to making a prediction. 
