@@ -81,7 +81,7 @@ where running the scripts locally has the benefit of starting from the deep lear
 #!/bin/bash
 # server_runner.sh
 
-working_dir="/volumeX/deeplearning"
+working_dir="/xxx/xxx/deeplearning"
 bash ${working_dir}/auto_runner.sh ${working_dir}
 ```
 

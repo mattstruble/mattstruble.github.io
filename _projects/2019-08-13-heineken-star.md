@@ -1,10 +1,10 @@
 ---
+title: Heineken Star Experience
 name: Heineken Star Experience
 tools: [Tensorflow, OpenCV, MobileNet, Flask]
 image: ../assets/img/heineken-star/heineken-cheers.jpg
 description: An interactive web app for the Heineken Formula 1 sweepstakes.  
 ---
-# Heineken Star Experience
 
 ![](../assets/img/heineken-star/heineken-f1.gif)
 
