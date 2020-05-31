@@ -1,10 +1,16 @@
-<!-- Share Mouse Events JS -->
-<script type='text/javascript'>
-    function share_color_change(share_id, color) {
-        document.getElementById(share_id).style.color=color;
-        document.getElementById(share_id).style.border-color=color;
-    }
-</script>
+
+{% assign hashtags = "" %}
+{%- if page.tags -%}
+    {% for tag in page.tags %}
+        {% assign hashtags = hashtags | append: ',' | append: tag  %}
+    {% endfor %}
+{%- endif -%}
+{%- if page.tools -%}
+    {% for tag in page.tools %}
+        {% assign hashtags = hashtags | append: ',' | append: tag  %}
+    {% endfor %}
+{%- endif -%}
+
 <div class="share-page justify-content-center" style="border-top: 1px solid #c7cdd1; border-bottom: 1px solid #c7cdd1; padding-top: 20px; padding-bottom: 20px;">
 
     <div class="justify-content-center">
@@ -13,7 +19,7 @@
         <span class="justify-content-right">
             {%- assign unfocused_color = "c7cdd1" -%}
 
-            <a class="social mx-3  rounded-circle no-underline justify-content-center" href="https://twitter.com/share?text={{ page.title }}&url={{ site.url }}{{ page.url }}&via={{ site.author.twitter }}&related={{ site.author.twitter }}"
+            <a class="social mx-3  rounded-circle no-underline justify-content-center" href="https://twitter.com/share?text={{ page.title }}&hashtags={{ hashtags }}&url={{ site.url }}{{ page.url }}&via={{ site.author.twitter }}&related={{ site.author.twitter }}"
                rel="nofollow"
                target="_blank"
                style="color: #{{ unfocused_color }}; border-color:#{{ unfocused_color }}; padding: 5px; "
