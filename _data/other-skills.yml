@@ -1,9 +1,9 @@
 - name: OpenCV
-  percentage: 75
-  color: dark
+  percentage: 85
+  color:
 
 - name: Tensorflow
-  percentage: 70
+  percentage: 75
   color: dark
 
 - name: MATLAB
