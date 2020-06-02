@@ -3,7 +3,7 @@ title: Matt Struble
 description: >- # this means to ignore newlines until "baseurl:"
   I never save anything for the swim back.
 baseurl: ""  # the subpath of your site, e.g. /blog
-url: "https://mattstruble.com/" # the base hostname & protocol for your site, e.g. http://example.com
+url: "https://mattstruble.com" # the base hostname & protocol for your site, e.g. http://example.com
 # repository: YoussefRaafatNasry/portfolYOU
 remote_theme: YoussefRaafatNasry/portfolYOU
 
