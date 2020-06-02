@@ -2,14 +2,18 @@
 {% assign hashtags = "" %}
 {%- if page.tags -%}
     {% for tag in page.tags %}
-        {% assign hashtags = hashtags | append: ',' | append: tag  %}
+        {% assign trimmed = tag | strip | remove: " " %}
+        {% assign hashtags = hashtags | append: ',' | append: trimmed  %}
     {% endfor %}
 {%- endif -%}
 {%- if page.tools -%}
     {% for tag in page.tools %}
+        {% assign trimmed = tag | strip | remove: " " %}
         {% assign hashtags = hashtags | append: ',' | append: tag  %}
     {% endfor %}
 {%- endif -%}
+
+{% assign hashtags = hashtags | remove_first: ',' %}
 
 <div class="share-page justify-content-center" style="border-top: 1px solid #c7cdd1; border-bottom: 1px solid #c7cdd1; padding-top: 20px; padding-bottom: 20px;">
 
