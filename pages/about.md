@@ -7,7 +7,7 @@ weight: 3
 
 # **About Me** 
 
-My name is **{{ site.author.name }}**, and I am a Machine Learning and Computer Vision engineer. <br> 
+My name is **{{ site.author.name }}**, and I am a [TensorFlow certified](https://www.credential.net/f6031cbf-b9ea-4ed7-a6c2-fde5c4b65202){:target="_blank"} Machine Learning and Computer Vision engineer. <br> 
 
 Software first impacted my life at a very young age with video games. I knew from then that I wanted to create that same wonder and inspiration I experienced growing up. Being able to impact reality always seemed like a distant dream, until my first programming class in High School. There, I realized that I could make my dream into a reality, and that I wanted nothing more than to continually focus my skills towards creating a lasting impact on the world.
 
