@@ -1,19 +1,44 @@
 <head>
 	{% assign title = "" %}
 	{% assign description = "" %}
+	{% assign ogtype = "website" %}
 	
 	{%- if page.description -%}
 		{% assign title = page.title %}
 		{% assign description = page.description %}
+		{% assign ogtype = "article" %}
 	{%- else -%}
 		{% assign title = site.title %}
 		{% assign description = site.description %}
 	{%- endif -%}
 	
+	
+	{% assign image = site.author.image %}
+	{%- if page.image -%}
+		{% assign image = page.image | remove_first: ".." %}
+	{%- endif -%}
+	
+	
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<meta name="description" content="{{ description }}">
+	
+	<meta property="og:locale" content="en_US">
+	<meta property="og:type" content="{{ ogtype }}">
+	<meta property="og:title" content="{{ title }}">
+	<meta property="og:description" content="{{ description }}">
+	<meta property="og:url" content="{{ site.url | append: page.url }}">
+	<meta property="og:site_name" content="{{ site.author.name }}">
+	<meta property="og:image" content="{{ site.url | append: image }}">
+	
+	<meta name="twitter:card" content="content">
+	<meta name="twitter:title" content="{{ title }}">
+	<meta name="twitter:description" content="{{ description }}">
+	<meta name="twitter:site" content="{{'@' | append: site.author.twitter }}">
+	<meta name="twitter:image" content="{{ site.url | append: image }}">
+	<meta name="twitter:creator" content="{{'@' | append: site.author.twitter }}">
+	
 
 	<title>{{ title }}</title>
 	<link rel="shortcut icon" type="image/x-icon" href="{{ '/assets/favicon.ico' | relative_url }}">
