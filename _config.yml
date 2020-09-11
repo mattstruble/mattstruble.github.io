@@ -11,6 +11,7 @@ remote_theme: YoussefRaafatNasry/portfolYOU
 #markdown: kramdown
 plugins:
   - jemoji
+  - jekyll-feed
 
 ### Navbar Settings ###
 nav_exclude:                                            # The following paths are excluded from navbar
@@ -53,6 +54,14 @@ defaults:
 # Posts default Permalink
 permalink: blog/:title
 
+
+feed:
+    tags: true 
+    collections:
+        projects:
+            path: "/feed/projects.xml"
+        posts:
+            path: "/feed/blog.xml"
 
 # Exclude from processing.
 exclude:
