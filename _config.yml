@@ -55,6 +55,14 @@ defaults:
 permalink: blog/:title
 
 
+feed:
+    tags: true 
+    collections:
+        projects:
+            path: "/feed/projects.xml"
+        posts:
+            path: "/feed/blog.xml"
+
 # Exclude from processing.
 exclude:
 - README.md
