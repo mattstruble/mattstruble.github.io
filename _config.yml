@@ -11,6 +11,7 @@ remote_theme: YoussefRaafatNasry/portfolYOU
 #markdown: kramdown
 plugins:
   - jemoji
+  - jekyll-feed
 
 ### Navbar Settings ###
 nav_exclude:                                            # The following paths are excluded from navbar
