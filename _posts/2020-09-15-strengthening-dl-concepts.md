@@ -2,7 +2,7 @@
 title: Strengthening Deep Learning Concepts
 tags: [AI, ML, Deep Learning, Self Improvement]
 style: border
-color: success
+color: danger
 description: Steps I took to fill in the gaps leftover after my TensorFlow Certification with the goal to strengthen my deep learning knowledge.
 ---
 
