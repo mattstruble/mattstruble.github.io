@@ -28,4 +28,6 @@ The confidence and skills I gained from my TensorFlow Certification really helpe
 
 By the end of two weeks, I had implemented my own forward propagation, back propagation, regularization, loss functions, optimizers, and standard network layers. Having built it all from scratch, I now have a better understanding of how hyperparameters affect individual parts, and how it all affects the model’s learning as a whole. This knowledge will not only help when building my own models, but also with debugging errors and training data selection. 
 
-By the end of two weeks, I had implemented my own forward propagation, back propagation, regularization, loss functions, optimizers, and standard network layers. Having built it all from scratch, I now have a better understanding of how hyperparameters affect individual parts, and how it all affects the model’s learning as a whole. This knowledge will not only help when building my own models, but also with debugging errors and training data selection. 
+The benefits of what I learned aren’t limited to just developing my own models, but also will help play a large part in researching existing models. By understanding the effects of each and every aspect of deep learning I can now better comprehend research papers, and hopefully be able to build upon existing works instead of just copying them.  
+ 
+After all of this I can finally step into the world of deep learning and start developing. Next up is to put all this into real projects, break away from studying, and finally start building things on my own! 
