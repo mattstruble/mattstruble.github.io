@@ -27,11 +27,11 @@ The first step in any project, especially when dealing with deep learning, is to
 
 On the surface it appears that my goal has already been achieved, and all I need to do is simply download the AVA database[4] and mimic an existing model in order to start rating my images. 
 
-However, the papers which do propose models also had the means to modify photos by changing color balances in order to create pairs of similar images to feed into the model [1,2], or reduced the problem scope to binary classification [3]. I, working alone, do not have the means to go about creating and rating meaningful color-corrected photos, and I also want my finished product to be more robust than a binary classification of whether the photo is good or bad. 
+However, the papers which do propose models also had the means to modify photos by changing color balances in order to create pairs of similar images to feed into the model[1,2], or reduced the problem scope to binary classification[3]. I, working alone, do not have the means to go about creating and rating meaningful color-corrected photos, and I also want my finished product to be more robust than a binary classification of whether the photo is good or bad. 
 
 ## The Problem
 
-Given my limited resources, and not wanting to deal with the predicament of copyrighted data, I will be constrained to the AVA database[4]. A downside to the AVA database is that some of the photos contain text, political messages, or advertisements [4,5,6], which could heavily bias the model towards a specific brand or political affiliation. 
+Given my limited resources, and not wanting to deal with the predicament of copyrighted data, I will be constrained to the AVA database[4]. A downside to the AVA database is that some of the photos contain text, political messages, or advertisements[4,5,6], which could heavily bias the model towards a specific brand or political affiliation. 
 
 Another point of contention within the final model is the inherent bias among the people reviewing the photos. There is a large flaw in a 1-10 scale in that there is [no guarantee of relevance or consistency](https://www.recruiter.com/i/the-dangers-of-from-1-to-10-scale-rankings/) between ratings across the photos, which leads into the tendency of people to [vote for the extreme values](https://youtube.googleblog.com/2009/09/five-stars-dominate-ratings.html) given the lack of clarity between a 6, 7, or 8 star rating. Furthermore if a photo references pop culture, or tries to incite an emotion like fear or humor, then the reviews may be strongly prejudiced towards the photo’s ability to capture that feeling and not the composition of the photo itself. 
 
