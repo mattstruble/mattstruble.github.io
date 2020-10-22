@@ -120,4 +120,34 @@ The non-contiguous data can be explained by the fact that the bottom challenges 
 
 #### Voting Averages 
 
+{% include elements/figure.html image="../../assets/img/dlpa/intro/mean_ratings_challenge_top_example.png" caption="Fig 8. Example of mean/std of individual rating votes for the most popular challenges." alt="A distribution of voting averages that shows the mean and standard deviation of ratings given in the Black__White_III, Free_Study_2007-12, Branch, and Best_Of_2010 challenges."  %}
 
+On the whole, challenges are able to represent a more refined view into the data, even with the low-contribution challenges potentially having skewed ratings. So long as photos within a challenge receive a large number of votes, which it is assumed more popular challenges will have, then their calculated score will be a more accurate representation of the photo. However, it all relies on how much variance there is between the individual ratings.
+
+Figure 8 shows that on average a photo in a popular challenge receives a lot of votes for median ratings, but not so many (if any) votes for the extreme ratings. This can be interpreted as very few photos in large competitions having votes for either of the extreme ratings. Ideally, this means that upon coming across a photo with an extreme rating that the photo’s final score should be weighted more towards that extreme than is currently attributed with the naive weighted average. This is because if only one photo in an entire competition got a 10/10 rating, that photo should be ranked somewhat-significantly higher than any of its competitors so the model recognizes it as a better photo. 
+
+{% include elements/figure.html image="../../assets/img/dlpa/intro/mean_ratings_challenge_top_example.png" caption="Fig 9. Example of mean/std of individual rating votes for the least popular challenges." alt="A distribution of voting averages that shows the mean and standard deviation of ratings given in the Homemade_Landscapes_II, Painted_Face, Practical_Jokes, Thar_Be_Pirates challenges."  %}
+
+After looking at the rating distributions for the most popular challenges, I did the same for the least popular. Oddly enough, even though the challenges themselves had significantly less submissions, some of their graphs looked very similar to that of the popular challenges. Meaning that my previous assumption of more popular competitions having more votes was completely wrong.
+
+<a href="test"><img src="../../assets/img/dlpa/intro/avg_votes_challenge_top.png" alt="A list of the top 70 most popular challenges in the AVA dataset presented in descending order by number of photo submissions, showcasing the average votes per photo with standard deviation." ></a>
+{% include elements/figure.html image="../../assets/img/dlpa/intro/avg_votes_challenge_bot.png" caption="Fig 10. Mean number of votes per photo in the top challenges (top) and mean number of votes for the bottom challenges (bottom)" alt="A list of the bottom 70 least popular challenges in the AVA dataset presented in descending order by number of photo submissions, showcasing the average votes per photo with standard deviation."  %}
+
+It turns out that the competition with the most photo submissions had an average votes of ~496.16 and a std of ~16.49 across 1108 submissions, however a competition with only 53 submissions had an average of ~450.57 votes and a std of ~8.15. So not only did the lower competition have significantly less submissions than the higher one, it still averaged almost the same number of votes per photo! Not only that, it’s smaller standard deviation means that almost all the photos received that many votes, reducing the variance when compared to the challenge with more submissions. 
+
+The charts in Figure 10 not only look practically identical but they also average down to almost the exact same mean votes. If you average the mean votes in each section, the popular 70 challenges have an average of ~219 votes, and the unpopular 70 challenges have an average of ~210 votes. Both of which are essentially the same as the mean of all the votes across all the photos in the entire database, which is ~210. 
+
+So it doesn’t matter how many submissions a contest gets, but instead how many people voted on average in that contest. Meaning that even though Vanish has only 7 submissions I can be more confident in a photo’s final score than a challenge with over 500 submissions, because Vanish averages 262 votes per photo while the other challenge may barely break 100 votes per photo. 
+
+## Final Thoughts 
+
+Although unreliable in categorizing all of the data, tags can still provide insight when preprocessing the data. For instance, certain tags can be occluded from the training dataset during preprocessing to help remove biases.  
+
+Challenges are far and above better than tags. They provide a grouping for every photo in the database, where it can be assumed the same people voted across the challenge providing some relevance and consistency to the final ratings. Plus, similarly to tags, certain challenges can be occluded from the training set, which will also help filter out any unwanted untagged photos. 
+
+Lastly, as discovered near the end of the challenges investigation the number of submissions to the challenges don’t matter, but instead the average number of votes should be taken into consideration. This allows the following assumptions: 
+
+* Dpchallenge has a healthy community that consistently votes across all the challenges, even in challenges that they themselves might not participate in. 
+* The fact that the largest challenge has an average voting of less than the total number of submissions means that everyone who partakes in a challenge does not vote for every other photo in the challenge. So, the larger the challenge the more likely it is to lose some consistency in ratings
+
+Now armed with all this knowledge about the limitations of the AVA Database, the next step is to preprocess it into a workable form that meets all my goals. 
