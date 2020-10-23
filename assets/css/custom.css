@@ -8,7 +8,7 @@ img.lightbox-link {
 	border: 2px solid transparent;
 }
 
-a img:hover {
+img.lightbox-link:hover {
 	border: 2px solid #007bff;
 	border-radius: 4px;
 }
@@ -20,3 +20,44 @@ figure {
 figure img, figure a {
 	display: inline-block !important;
 }
+/**
+ * Header anchor link placement and hover behavior
+ * https://milanaryal.com.np/adding-hover-anchor-links-to-header-on-github-pages-using-jekyll/#jquery-snippet-to-add-anchor-links-to-jekyll-markdown-posts-header
+ */
+
+.anchor {
+  position: absolute;
+  padding-right: 0.575em; /* margin-left value divide by 2 */
+  padding-left: 0.38em;
+  margin-left: -1.15em;
+  color: inherit;
+  visibility: hidden;
+  opacity: 0;
+  text-decoration: none !important;
+}
+
+.anchor .icon-link {
+  font-size: 66%;
+  vertical-align: 0.125em;
+}
+
+*:hover > .anchor {
+  visibility: visible;
+  opacity: 0.75;
+  transition: all 0.16s linear;
+}
+
+*:hover > .anchor:hover,
+*:hover > .anchor:focus {
+  opacity: 1;
+}
+
+/* Offsetting an html anchor to adjust for fixed header */
+/*h1[id],
+h2[id],
+h3[id],
+h4[id],
+h5[id],
+h6[id] {
+  scroll-margin-top: 2.75em;
+}*/
