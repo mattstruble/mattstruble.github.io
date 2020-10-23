@@ -157,7 +157,7 @@ Figure 8 shows that on average a photo in a popular challenge receives a lot of 
 
 <figure class="figure w-100">
 	{% include elements/lightbox.html image="../../assets/img/dlpa/intro/mean_ratings_challenge_bot.png" preview="../../assets/img/dlpa/intro/mean_ratings_challenge_bot_example.png" alt="A distribution of voting averages that shows the mean and standard deviation of ratings given in the Homemade_Landscapes_II, Painted_Face, Practical_Jokes, Thar_Be_Pirates challenges." caption="Mean/Std of votes per rating for the bottom 70 Challenges by photo submissions." %}	
-	<figcaption class="figure-caption text-center">Fig 8. Example of mean/std of individual rating votes for the most popular challenges.</figcaption>
+	<figcaption class="figure-caption text-center">Fig 9. Example of mean/std of individual rating votes for the most popular challenges.</figcaption>
 </figure>
 
 After looking at the rating distributions for the most popular challenges, I did the same for the least popular. Oddly enough, even though the challenges themselves had significantly less submissions, some of their graphs looked very similar to that of the popular challenges. Meaning that my previous assumption of more popular competitions having more votes was completely wrong.
