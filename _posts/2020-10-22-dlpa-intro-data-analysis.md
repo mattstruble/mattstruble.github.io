@@ -48,11 +48,13 @@ I will eventually need to come up with a novel model design, but before that I n
 
 ## Data Analyis
 
-<p style="text-align:center">
-<img src="../../assets/img/dlpa/intro/global_distribution.png" alt="Normalized distribution of ratings across the entire AVA dataset." style="display:inline-block">
-<img src="../../assets/img/dlpa/intro/global_histogram.png" alt="Weighted average histogram of calculated scores across the entire AVA dataset." style="display:inline-block">
-</p>
-{% include elements/figure.html image="../../assets/img/dlpa/intro/global_rating_votes.png" caption="Fig 1. Normalized Distribution of Ratings(left), Weighted Avg Histogram(right), and mean/std of number votes cast per rating(bottom)  across the entire AVA Database." alt="Mean number of votes, and std dev, per rating across the entire AVA dataset." %}
+<figure class="figure w-100">
+	<img src="../../assets/img/dlpa/intro/global_distribution.png" alt="Normalized distribution of ratings across the entire AVA dataset.">
+	<img src="../../assets/img/dlpa/intro/global_histogram.png" alt="Weighted average histogram of calculated scores across the entire AVA dataset.">
+	<img src="../../assets/img/dlpa/intro/global_rating_votes.png" alt="Mean number of votes, and std dev, per rating across the entire AVA dataset.">
+	
+	<figcaption class="figure-caption text-center">Fig 1. Normalized Distribution of Ratings(left), Weighted Avg Histogram(right), and mean/std of number votes cast per rating(bottom)  across the entire AVA Database.</figcaption>
+</figure>
 
 The AVA Database is a collection of photos and metadata taken from dpchallenge.com, which is a website that provides weekly photography challenges on specific topics where the community can submit and vote on photos. Each row in the database corresponds to one photo and provides the total number of counts per rating the photo received, two semantic tags, and lastly the challenge the photo was a part of. For example:
 
@@ -70,7 +72,11 @@ The tags are selected by the photographer on upload and encapsulate various diff
 
 #### Rating Distributions 
 
-First, I wanted to see if the tags could be used as a means to group the images together and be used to give consistency and relevance to an image’s score calculation. To do this I plotted the [normalized distribution of ratings per tag](../../assets/img/dlpa/intro/normalized_dist_tag.png), and the [weighted average histograms per tag](../../assets/img/dlpa/intro/weighted_avg_hist_tag.png). At first look it seemed that grouping by tags produced essentially the same normalized distribution as the global dataset, just with mild changes to the steepness of the center peak. However, as shown in Figure 2, the average histogram tells another story in that each tag’s average distribution is completely unique, particularly the tags Camera, Maternity, Overlays, and Pinhole/Zone which all have an extreme number of photos weighted near the middle. 
+First, I wanted to see if the tags could be used as a means to group the images together and be used to give consistency and relevance to an image’s score calculation. To do this I plotted the 
+<a class="lightbox-link" href="../../assets/img/dlpa/intro/normalized_dist_tag.png" data-lightbox="normalized_dist_tag" data-title="Normalized Distribution of Ratings Per Tag">normalized distribution of ratings per tag</a>
+, and the 
+<a class="lightbox-link" href="../../assets/img/dlpa/intro/weighted_avg_hist_tag.png" data-lightbox="weighted_avg_hist_tag" data-title="Weighted Avg Histogram Per Tag">weighted average histograms per tag</a>. 
+At first look it seemed that grouping by tags produced essentially the same normalized distribution as the global dataset, just with mild changes to the steepness of the center peak. However, as shown in Figure 2, the average histogram tells another story in that each tag’s average distribution is completely unique, particularly the tags Camera, Maternity, Overlays, and Pinhole/Zone which all have an extreme number of photos weighted near the middle. 
 
 {% include elements/figure.html image="../../assets/img/dlpa/intro/unique_weighted_avg_hist_tags.png" caption="Fig 2. Example of disparity in the histogram among tags" alt="Weighted average histograms of the calculated scores for the Camera, Maternity, Overlays, and Pinhole/Zone tags." %}
 
@@ -103,8 +109,20 @@ As previously discovered not every photo contains a tag, but every photo is uplo
 With tags now out of the equation, I needed to redo all the previous analysis but now on the challenges. I didn’t want to have any assumptions moving forwards without being able to back it up with the data. 
 
 #### Challenge Breakdown 
-<img src="../../assets/img/dlpa/intro/photo_dist_challenge_top.png" alt="A list of the top 70 most popular challenges in the AVA dataset presented in descending order by number of photo submissions." >
-{% include elements/figure.html image="../../assets/img/dlpa/intro/photo_dist_challenge_bot.png" caption="Fig 6. Top 70 challenges by photo submissions (top) and Bottom 70 challenges by photo submissions (bottom)." alt="A list of the bottom 70 least popular challenges in the AVA dataset presented in descending order by number of photo submissions."  %}
+<figure class="figure w-100">
+	<div class="container">
+		<div class="row">
+			<div class="col">
+			{% include elements/lightbox.html image="../../assets/img/dlpa/intro/photo_dist_challenge_top.png" alt="A list of the top 70 most popular challenges in the AVA dataset presented in descending order by number of photo submissions." caption="Top 70 challenges by photo submissions." album="photo_dist_challenge" %}
+			</div>
+			<div class="col">
+			{% include elements/lightbox.html image="../../assets/img/dlpa/intro/photo_dist_challenge_bot.png" alt="A list of the bottom 70 least popular challenges in the AVA dataset presented in descending order by number of photo submissions." caption="Bottom 70 challenges by photo submissions." album="photo_dist_challenge"  %}
+			</div>
+		</div>
+	</div>
+	
+	<figcaption class="figure-caption text-center">Fig 6. Top 70 challenges by photo submissions (left) and Bottom 70 challenges by photo submissions (right).</figcaption>
+</figure>
 
 With there being nearly 1400 different challenges I first wanted to know how big of a disparity in the number of submissions there was between the most popular and least popular challenges. The top 70 most popular challenges average about 515 photo submissions, the bottom 70 least popular challenges only average about 45 photo submissions, with the average across the entire dataset being roughly 183 photo submissions per challenge. 
 
@@ -130,8 +148,20 @@ Figure 8 shows that on average a photo in a popular challenge receives a lot of 
 
 After looking at the rating distributions for the most popular challenges, I did the same for the least popular. Oddly enough, even though the challenges themselves had significantly less submissions, some of their graphs looked very similar to that of the popular challenges. Meaning that my previous assumption of more popular competitions having more votes was completely wrong.
 
-<img src="../../assets/img/dlpa/intro/avg_votes_challenge_top.png" alt="A list of the top 70 most popular challenges in the AVA dataset presented in descending order by number of photo submissions, showcasing the average votes per photo with standard deviation." >
-{% include elements/figure.html image="../../assets/img/dlpa/intro/avg_votes_challenge_bot.png" caption="Fig 10. Mean number of votes per photo in the top challenges (top) and mean number of votes for the bottom challenges (bottom)" alt="A list of the bottom 70 least popular challenges in the AVA dataset presented in descending order by number of photo submissions, showcasing the average votes per photo with standard deviation."  %}
+<figure class="figure w-100">
+	<div class="container">
+		<div class="row">
+			<div class="col">
+			{% include elements/lightbox.html image="../../assets/img/dlpa/intro/avg_votes_challenge_top.png" alt="A list of the top 70 most popular challenges in the AVA dataset presented in descending order by number of photo submissions, showcasing the average votes per photo with standard deviation." caption="Mean, and standard deviation, of votes in the top 70 challenges by photo submissions." album="avg_votes_challenge" %}
+			</div>
+			<div class="col">
+			{% include elements/lightbox.html image="../../assets/img/dlpa/intro/avg_votes_challenge_bot.png" alt="A list of the bottom 70 least popular challenges in the AVA dataset presented in descending order by number of photo submissions, showcasing the average votes per photo with standard deviation." caption="Mean, and standard deviation, of votes in the bottom 70 challenges by photo submissions." album="avg_votes_challenge"  %}
+			</div>
+		</div>
+	</div>
+	
+	<figcaption class="figure-caption text-center">Fig 10. Mean number of votes per photo in the top challenges (left), and mean number of votes for the bottom challenges (right).</figcaption>
+</figure>
 
 It turns out that the competition with the most photo submissions had an average votes of ~496.16 and a std of ~16.49 across 1108 submissions, however a competition with only 53 submissions had an average of ~450.57 votes and a std of ~8.15. So not only did the lower competition have significantly less submissions than the higher one, it still averaged almost the same number of votes per photo! Not only that, it’s smaller standard deviation means that almost all the photos received that many votes, reducing the variance when compared to the challenge with more submissions. 
 

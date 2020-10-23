@@ -1,12 +1,22 @@
-a img {
-	text-decoration: none !important;
-    cursor: -moz-zoom-in; 
+.lightbox-link {
+	cursor: -moz-zoom-in; 
     cursor: -webkit-zoom-in; 
     cursor: zoom-in;
+}
+
+img.lightbox-link {	
 	border: 2px solid transparent;
 }
 
 a img:hover {
 	border: 2px solid #007bff;
 	border-radius: 4px;
+}
+
+figure {
+	text-align: center;
+}
+
+figure img, figure a {
+	display: inline-block !important;
 }
