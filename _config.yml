@@ -35,6 +35,13 @@ collections:
   projects:
     output: true
     permalink: /projects/:title
+    
+    
+# Analytics
+analytics:
+    enabled: true 
+    google:
+        tracking_id: G-7CPPYPRQPR
 
 
 # Default values for collections
