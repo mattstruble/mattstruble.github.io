@@ -1,0 +1,2 @@
+{% assign image_name = include.image | split: "/" | last | split: "." | first %}
+<a href="{{ include.image }}" class="no-underline" data-lightbox="{{ include.album | default: image_name }}" data-title="{{ include.title | default: include.caption }}"><img src="{{ include.preview | default: include.image }}" alt="{{ include.alt | default: include.caption }}" title="{{ include.title | default: include.caption }}" width="{{ include.width | default: 100% }}"></a>
