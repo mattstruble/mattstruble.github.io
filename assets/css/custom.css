@@ -1,4 +1,4 @@
-a img {
+img.lightbox-link {
 	text-decoration: none !important;
     cursor: -moz-zoom-in; 
     cursor: -webkit-zoom-in; 
@@ -6,7 +6,7 @@ a img {
 	border: 2px solid transparent;
 }
 
-a img:hover {
+img.lightbox-link:hover {
 	border: 2px solid #007bff;
 	border-radius: 4px;
 }
