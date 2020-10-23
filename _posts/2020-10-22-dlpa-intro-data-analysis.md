@@ -132,19 +132,33 @@ This could end up being troublesome in terms of scoring reliability. If challeng
 
 {% include elements/figure.html image="../../assets/img/dlpa/intro/unique_weighted_avg_hist_challenges.png" caption="Fig 7. Example of non-contiguous histograms for challenges with low submissions." alt="Weighted average histograms of the calculated scores for the Vanish, Raod_Signs, Table_Shot, Homemade_Landscapes_II, Painted_Face, and Practical_Jokes challenges." %}
 
-This is exemplified when comparing the normalized distribution of ratings, and average histograms, of the Top 70 and Bottom 70 challenges. The Top 70 [rating distributions](../../assets/img/dlpa/intro/normalized_dist_challenge_top.png) and [histograms](../../assets/img/dlpa/intro/weighted_avg_hist_challenge_top.png) follow the same curve as described in Figure 1. While, as previously predicted, the Bottom 70’s [rating distributions](../../assets/img/dlpa/intro/normalized_dist_challenge_bot.png) are more flat and, as shown in Figure 7, the [histograms](../../assets/img/dlpa/intro/weighted_avg_hist_challenge_bot.png) contain patches instead of being contiguous data. 
+This is exemplified when comparing the normalized distribution of ratings, and average histograms, of the Top 70 and Bottom 70 challenges. The Top 70 
+<a class="lightbox-link" href="../../assets/img/dlpa/intro/normalized_dist_challenge_top.png" data-lightbox="normalized_dist_challenge_top" data-title="Normalized Distribution of Ratings for Top 70 Challenges">rating distributions</a>
+ and 
+ <a class="lightbox-link" href="../../assets/img/dlpa/intro/weighted_avg_hist_challenge_top.png" data-lightbox="weighted_avg_hist_challenge_top" data-title="Weighted Avg Histogram for Top 70 Challenges">histograms</a>
+ follow the same curve as described in Figure 1. While, as previously predicted, the Bottom 70’s 
+ <a class="lightbox-link" href="../../assets/img/dlpa/intro/normalized_dist_challenge_bot.png" data-lightbox="normalized_dist_challenge_bot" data-title="Normalized Distribution of Ratings for Bottom 70 Challenges">rating distributions</a>
+ are more flat and, as shown in Figure 7, the 
+  <a class="lightbox-link" href="../../assets/img/dlpa/intro/weighted_avg_hist_challenge_bot.png" data-lightbox="weighted_avg_hist_challenge_bot" data-title="Weighted Avg Histogram for Bottom 70 Challenges">histograms</a>
+ contain patches instead of being contiguous data. 
 
 The non-contiguous data can be explained by the fact that the bottom challenges having so few submissions. Both Vanish and Road_Signs have under 10 photos submitted to the challenge,  explaining the abrupt pillars as basically being a single photo’s score. The question then becomes if the ratings on these photos can be trusted when training our model, since there’s not much to compare them with and it seems quite a few of them are weighted towards higher scores. 
 
 #### Voting Averages 
 
-{% include elements/figure.html image="../../assets/img/dlpa/intro/mean_ratings_challenge_top_example.png" caption="Fig 8. Example of mean/std of individual rating votes for the most popular challenges." alt="A distribution of voting averages that shows the mean and standard deviation of ratings given in the Black__White_III, Free_Study_2007-12, Branch, and Best_Of_2010 challenges."  %}
+<figure class="figure w-100">
+	{% include elements/lightbox.html image="../../assets/img/dlpa/intro/mean_ratings_challenge_top.png" preview="../../assets/img/dlpa/intro/mean_ratings_challenge_top_example.png" alt="A distribution of voting averages that shows the mean and standard deviation of ratings given in the Black__White_III, Free_Study_2007-12, Branch, and Best_Of_2010 challenges." caption="Mean/Std of votes per rating for the top 70 Challenges by photo submissions." %}	
+	<figcaption class="figure-caption text-center">Fig 8. Example of mean/std of individual rating votes for the most popular challenges.</figcaption>
+</figure>
 
 On the whole, challenges are able to represent a more refined view into the data, even with the low-contribution challenges potentially having skewed ratings. So long as photos within a challenge receive a large number of votes, which it is assumed more popular challenges will have, then their calculated score will be a more accurate representation of the photo. However, it all relies on how much variance there is between the individual ratings.
 
 Figure 8 shows that on average a photo in a popular challenge receives a lot of votes for median ratings, but not so many (if any) votes for the extreme ratings. This can be interpreted as very few photos in large competitions having votes for either of the extreme ratings. Ideally, this means that upon coming across a photo with an extreme rating that the photo’s final score should be weighted more towards that extreme than is currently attributed with the naive weighted average. This is because if only one photo in an entire competition got a 10/10 rating, that photo should be ranked somewhat-significantly higher than any of its competitors so the model recognizes it as a better photo. 
 
-{% include elements/figure.html image="../../assets/img/dlpa/intro/mean_ratings_challenge_top_example.png" caption="Fig 9. Example of mean/std of individual rating votes for the least popular challenges." alt="A distribution of voting averages that shows the mean and standard deviation of ratings given in the Homemade_Landscapes_II, Painted_Face, Practical_Jokes, Thar_Be_Pirates challenges."  %}
+<figure class="figure w-100">
+	{% include elements/lightbox.html image="../../assets/img/dlpa/intro/mean_ratings_challenge_bot.png" preview="../../assets/img/dlpa/intro/mean_ratings_challenge_bot_example.png" alt="A distribution of voting averages that shows the mean and standard deviation of ratings given in the Homemade_Landscapes_II, Painted_Face, Practical_Jokes, Thar_Be_Pirates challenges." caption="Mean/Std of votes per rating for the bottom 70 Challenges by photo submissions." %}	
+	<figcaption class="figure-caption text-center">Fig 8. Example of mean/std of individual rating votes for the most popular challenges.</figcaption>
+</figure>
 
 After looking at the rating distributions for the most popular challenges, I did the same for the least popular. Oddly enough, even though the challenges themselves had significantly less submissions, some of their graphs looked very similar to that of the popular challenges. Meaning that my previous assumption of more popular competitions having more votes was completely wrong.
 
