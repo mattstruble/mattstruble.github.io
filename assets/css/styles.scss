@@ -1,10 +1,10 @@
- ---
- ---
+---
+---
+a img {
+	text-decoration: none !important;
+    cursor: -moz-zoom-in; 
+    cursor: -webkit-zoom-in; 
+    cursor: zoom-in;
+}
 
- @import "portfolYOU";
- /* Add your custom style here */
- .share-page {
-    text-decoration: none !important;
-    border-top: 1px solid red;
-    border-bottom: 1px solid red;
- }
+@import "portfolYOU";
