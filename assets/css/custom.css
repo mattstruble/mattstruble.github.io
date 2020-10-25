@@ -60,6 +60,27 @@ img.lightbox-link:hover {
 	margin-left: -100px !important;
 }
 
+/** 
+* Applause Button 
+*/
+
+
+.applause {
+	transform: translate3d(0,0,0);
+	position: fixed;
+	z-index: 10;
+	left: 400px;
+	top: 200px;
+	height: 100px;
+}
+
+.style-root > .count-container > .count {
+	color: #007bff;
+}
+
+
+
+
 /* Offsetting an html anchor to adjust for fixed header */
 /*h1[id],
 h2[id],
