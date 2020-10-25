@@ -41,6 +41,23 @@ img.lightbox-link:hover {
 *:hover > .anchor:hover,
 *:hover > .anchor:focus {
   opacity: 1;
+  cursor:pointer;
+}
+
+/* https://notifyjs.jpillora.com/ */
+.notifyjs-anchor-base { 
+	font-size: 15px;
+	font-weight: normal;
+	padding: 15px 100px 15px 100px;
+	text-shadow: 0 1px 0 rgba(255, 255, 255, 0.5);
+	background-color: #C6E0FB !important;
+	border: 1px solid #7CBAFD;
+	border-radius: 4px;
+	white-space: nowrap;
+}
+
+.notifyjs-corner {
+	margin-left: -100px !important;
 }
 
 /* Offsetting an html anchor to adjust for fixed header */
