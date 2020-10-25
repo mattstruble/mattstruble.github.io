@@ -4,6 +4,16 @@
  */
 
 $(document).ready(function () {
+	
+	// https://stackoverflow.com/a/2911045
+	$( 'a' ).not('.share-page a, .lightbox-link, .lightbox-image').each(function() {
+	  if( location.hostname === this.hostname || !this.hostname.length ) {
+		  //continue; //$(this).addClass('local');
+	  } else {
+		  $(this).addClass('external');
+		  $(this).attr('target', '_blank');
+	  }
+	});
 
   /* selector */
   var postHeader = '.post > h2, .post > h3, .post > h4';
@@ -24,5 +34,6 @@ $(document).ready(function () {
   });
   
   new ClipboardJS('.anchor');
-
+  
+  
 });
