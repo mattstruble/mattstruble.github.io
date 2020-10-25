@@ -10,12 +10,12 @@
 	
 {%- if page.tags -%}
 	{% for tag in page.tags %}
-	gtag('event', 'view_item', {  'event_label': '{{ tag }}', 'non_interaction': true });
+	gtag('event', 'view_item', { 'event_category': 'tagged_post', 'event_label': '{{ tag }}', 'non_interaction': true });
 	{% endfor %}
 {%- endif -%}
 {%- if page.tools -%}
 	{% for tag in page.tools %}
-	gtag('event', 'view_item', {  'event_label': '{{ tag }}', 'non_interaction': true });
+	gtag('event', 'view_item', { 'event_category': 'tagged_post', 'event_label': '{{ tag }}', 'non_interaction': true });
 	{% endfor %}
 {%- endif -%}
 	
