@@ -2,22 +2,48 @@
   <!-- Global site tag (gtag.js) - Google Analytics -->
   <script async src="https://www.googletagmanager.com/gtag/js?id={{ site.analytics.google.tracking_id }}"></script>
   <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
-    gtag('js', new Date());
+	window.dataLayer = window.dataLayer || [];
+	function gtag(){dataLayer.push(arguments);}
+	gtag('js', new Date());
 
-    gtag('config', '{{ site.analytics.google.tracking_id }}');
-	
-{%- if page.tags -%}
+	gtag('config', '{{ site.analytics.google.tracking_id }}');
+
+	{%- if page.tags -%}
 	{% for tag in page.tags %}
 	gtag('event', 'view_item', { 'event_category': 'tagged_post', 'event_label': '{{ tag }}', 'non_interaction': true });
 	{% endfor %}
-{%- endif -%}
-{%- if page.tools -%}
+	{%- endif -%}
+	{%- if page.tools -%}
 	{% for tag in page.tools %}
 	gtag('event', 'view_item', { 'event_category': 'tagged_post', 'event_label': '{{ tag }}', 'non_interaction': true });
 	{% endfor %}
-{%- endif -%}
+	{%- endif -%}
+	
+	var gtagOutboundLink = function(url) {
+	  gtag('event', 'click', {
+		'event_category': 'outbound',
+		'event_label': url,
+		'transport_type': 'beacon',
+		'event_callback': function(){document.location = url;}
+	  });
+	}
+	
+	var gtagShareLink = function(method) {
+		gtag('event', 'share', {
+			'event_label': method
+		});
+	}
+	
+	$(document).ready(function () {
+		$('.external').click(function(event) {
+			var href = $(this).attr('href');
+			gtagOutboundLink(href);
+		});
+	  
+		$('.anchor').click(function(event) {
+			gtagShareLink('copied'); 
+		});
+	}
 	
   </script>
 {%- endif -%}
