@@ -83,10 +83,22 @@ $(document).ready(function () {
   loadClapCount();
   
   $('#applause-button').on("clapped", function(event) {
-	  console.log(event.detail);
-	  console.log(event.detail.clapCount);
-	  console.log(url);
 	  updateClap(event.detail.clapCount);
+  });
+  
+  var applauseWrapper = $('.applause-button-wrapper');
+  var applauseTop = applauseWrapper.offset().top;
+  console.log(applauseTop);
+  
+  $(window).scroll(function() {
+	 var scrollPos = $(document).scrollTop();
+	 if ( scrollPos > applauseTop-30) {
+		 console.log('fixed');
+		applauseWrapper.addClass('applause-button-fixed');
+	 } else {
+		 console.log('unfixed: ' + this.scrollTop );
+		 applauseWrapper.removeClass('applause-button-fixed');
+	 }
   });
   
   $('.share-page .clap').click(function (event) {
