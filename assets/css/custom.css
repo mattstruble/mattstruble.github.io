@@ -1,8 +1,10 @@
-img.lightbox-link {
-	text-decoration: none !important;
-    cursor: -moz-zoom-in; 
+.lightbox-link {
+	cursor: -moz-zoom-in; 
     cursor: -webkit-zoom-in; 
     cursor: zoom-in;
+}
+
+img.lightbox-link {	
 	border: 2px solid transparent;
 }
 
@@ -11,6 +13,13 @@ img.lightbox-link:hover {
 	border-radius: 4px;
 }
 
+figure {
+	text-align: center;
+}
+
+figure img, figure a {
+	display: inline-block !important;
+}
 /**
  * Header anchor link placement and hover behavior
  * https://milanaryal.com.np/adding-hover-anchor-links-to-header-on-github-pages-using-jekyll/#jquery-snippet-to-add-anchor-links-to-jekyll-markdown-posts-header
