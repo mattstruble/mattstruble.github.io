@@ -43,6 +43,7 @@ function hideOverfill(elem) {
 
 $(document).ready(function () {
 	loadClapCount();
+	
 
 	$('#applause-button').on("clapped", function(event) {
 	  updateClap(event.detail.clapCount);
@@ -67,7 +68,7 @@ $(document).ready(function () {
 
 	$('.share-page .clap').click(function (event) {
 		$.ajax({
-			url: "https://api.applause-button.com/update-claps?url=" + url,
+			url: "https://api.applause-button.com/update-claps?url=" + window.location,
 			method: "POST",
 			headers: {"Content-Type": "text/plain"},
 			contentType: "text/plain"
