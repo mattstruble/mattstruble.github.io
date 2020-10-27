@@ -1,7 +1,6 @@
-/**
- * jQuery snippet to add anchor links to Markdown posts header
- * https://milanaryal.com.np/adding-hover-anchor-links-to-header-on-github-pages-using-jekyll/#jquery-snippet-to-add-anchor-links-to-jekyll-markdown-posts-header
- */
+
+ 
+
 
 $(document).ready(function () {
 	
@@ -19,6 +18,7 @@ $(document).ready(function () {
   var postHeader = '.post > h2, .post > h3, .post > h4';
   var url = window.location;
 
+// https://milanaryal.com.np/adding-hover-anchor-links-to-header-on-github-pages-using-jekyll/#jquery-snippet-to-add-anchor-links-to-jekyll-markdown-posts-header
   $(postHeader).filter('[id]').each(function () {
     var header      = $(this),
         headerID    = header.attr('id'),
@@ -48,4 +48,6 @@ $(document).ready(function () {
 		 'autoHideDelay': 2000,
 	  });
   });
+  
+  
 });

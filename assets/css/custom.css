@@ -69,6 +69,112 @@ figure img, figure a {
 	margin-left: -100px !important;
 }
 
+/** 
+* Applause Button 
+*/
+
+.hidden {
+	visibility: hidden;
+}
+
+.none { 
+	display: none !important;
+}
+
+
+.applause {
+	width: 100px;
+	margin: 0 auto;
+	position: absolute;
+	top: 2rem;
+	left: -100px;
+	
+}
+
+.applause-button-wrapper {
+	z-index: 10;
+	width: 60px;
+	height: 60px;
+}
+
+.applause-button-fixed {
+	position:fixed; 
+	top: 30px;
+}
+
+.applause-button {
+	z-index: 10;
+	width: 60px;
+	height: 60px;
+	position: fixed !important;
+}
+
+.style-root > .count-container > .count {
+	color: #007bff;
+}
+
+.share-page .clap {
+	-moz-transition: all .2s ease-in;
+    -o-transition: all .2s ease-in;
+    -webkit-transition: all .2s ease-in;
+    transition: all .2s ease-in;
+	margin-right: 20px;
+}
+
+.share-page .clap:hover {
+	cursor: pointer; 
+	fill: #007bff !important;
+	color: #007bff !important;	
+}
+
+.clap-primary {
+	color:  #007bff !important;
+	fill:  #007bff !important;
+}
+
+.clap-secondary {
+	color:  #6c757d !important;
+	fill:  #6c757d !important;
+}
+
+.clap-success {
+	color:  #28a745 !important;
+	fill:  #28a745 !important;
+}
+
+.clap-info {
+	color:  #17a2b8 !important;
+	fill:  #17a2b8 !important;
+}
+
+.clap-warning {
+	color:  #ffc107 !important;
+	fill:  #ffc107 !important;
+}
+
+.clap-danger {
+	color:  #dc3545 !important;
+	fill:  #dc3545 !important;
+}
+.clap-light {
+	color:  #f8f9fa !important;
+	fill:  #f8f9fa !important;
+}
+
+.clap-dark {
+	color:  #343a40 !important;
+	fill:  #343a40 !important;
+}
+    --primary: #007bff;
+    --secondary: #6c757d;
+    --success: #28a745;
+    --info: #17a2b8;
+    --warning: #ffc107;
+    --danger: #dc3545;
+    --light: #f8f9fa;
+    --dark: #343a40;
+
+
 /* Offsetting an html anchor to adjust for fixed header */
 /*h1[id],
 h2[id],

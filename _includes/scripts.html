@@ -23,6 +23,12 @@
 <!-- notify.js -->
 <script src="{{ '/assets/js/notify.min.js' | relative_url }}"></script>
 
+{%- if site.applause.enabled == true -%}
+<!-- applause-button.js -->
+<script src="{{ '/assets/js/applause-button.js' | relative_url }}"></script>
+<script src="{{ '/assets/js/applause.js' | relative_url }}"></script>
+{%- endif -%}
+
 <!-- Custom JS -->
 <script src="{{ '/assets/js/custom.js' | relative_url }}"></script>
 
