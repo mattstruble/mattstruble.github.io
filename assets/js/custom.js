@@ -33,6 +33,16 @@ function getClap() {
 	return Number($('.clap').find('.count').html());
 }
 
+function hideOverfill(elem) {
+	if ( elem.offset().left-20< 0 ){
+	  elem.addClass('hidden');
+	  elem.children().addClass('none');
+	} else {
+	  elem.removeClass('hidden');
+	  elem.children().removeClass('none');
+	}
+}
+
 $(document).ready(function () {
 	
 	// https://stackoverflow.com/a/2911045
@@ -88,21 +98,22 @@ $(document).ready(function () {
   
   var applauseWrapper = $('.applause-button-wrapper');
   var applauseTop = applauseWrapper.offset().top;
-  console.log(applauseTop);
   
   $(window).scroll(function() {
 	 var scrollPos = $(document).scrollTop();
 	 if ( scrollPos > applauseTop-30) {
-		 console.log('fixed');
 		applauseWrapper.addClass('applause-button-fixed');
 	 } else {
-		 console.log('unfixed: ' + this.scrollTop );
 		 applauseWrapper.removeClass('applause-button-fixed');
 	 }
   });
   
+  hideOverfill(applauseWrapper);
+  $(window).resize(function() {
+	  hideOverfill(applauseWrapper);
+  });
+  
   $('.share-page .clap').click(function (event) {
-	  console.log('clicked');
 	$.ajax({
 		url: "https://api.applause-button.com/update-claps?url=" + url,
 		method: "POST",

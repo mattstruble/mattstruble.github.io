@@ -73,7 +73,13 @@ figure img, figure a {
 * Applause Button 
 */
 
+.hidden {
+	visibility: hidden;
+}
 
+.none { 
+	display: none !important;
+}
 
 
 .applause {
@@ -81,7 +87,7 @@ figure img, figure a {
 	margin: 0 auto;
 	position: absolute;
 	top: 2rem;
-	left: -150px;
+	left: -100px;
 	
 }
 
