@@ -50,21 +50,24 @@ $(document).ready(function () {
 	});
 
 	var applauseWrapper = $('.applause-button-wrapper');
-	var applauseTop = applauseWrapper.offset().top;
+	
+	if ( applauseWrapper.length ) {
+		var applauseTop = applauseWrapper.offset().top;
 
-	$(window).scroll(function() {
-		 var scrollPos = $(document).scrollTop();
-		 if ( scrollPos > applauseTop-30) {
-			applauseWrapper.addClass('applause-button-fixed');
-		 } else {
-			 applauseWrapper.removeClass('applause-button-fixed');
-		 }
-	});
+		$(window).scroll(function() {
+			 var scrollPos = $(document).scrollTop();
+			 if ( scrollPos > applauseTop-30) {
+				applauseWrapper.addClass('applause-button-fixed');
+			 } else {
+				 applauseWrapper.removeClass('applause-button-fixed');
+			 }
+		});
 
-	hideOverfill(applauseWrapper);
-	$(window).resize(function() {
 		hideOverfill(applauseWrapper);
-	});
+		$(window).resize(function() {
+			hideOverfill(applauseWrapper);
+		});
+	}
 
 	$('.share-page .clap').click(function (event) {
 		$.ajax({
