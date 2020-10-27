@@ -1,3 +1,8 @@
+.share-mobile {
+	margin-left: 1rem!important;
+	margin-right: 0.5rem!important;
+}
+
 .lightbox-link {
 	cursor: -moz-zoom-in; 
     cursor: -webkit-zoom-in; 
@@ -118,7 +123,8 @@ figure img, figure a {
     -o-transition: all .2s ease-in;
     -webkit-transition: all .2s ease-in;
     transition: all .2s ease-in;
-	margin-right: 20px;
+	margin-right: 1rem;
+	padding-bottom: 5px
 }
 
 .share-page .clap:hover {
@@ -165,22 +171,3 @@ figure img, figure a {
 	color:  #343a40 !important;
 	fill:  #343a40 !important;
 }
-    --primary: #007bff;
-    --secondary: #6c757d;
-    --success: #28a745;
-    --info: #17a2b8;
-    --warning: #ffc107;
-    --danger: #dc3545;
-    --light: #f8f9fa;
-    --dark: #343a40;
-
-
-/* Offsetting an html anchor to adjust for fixed header */
-/*h1[id],
-h2[id],
-h3[id],
-h4[id],
-h5[id],
-h6[id] {
-  scroll-margin-top: 2.75em;
-}*/

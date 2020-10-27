@@ -49,5 +49,8 @@ $(document).ready(function () {
 	  });
   });
   
-  
+  if ($(window).width() < 450) {
+	  $('.share-page .social').removeClass('mx-3')
+	  $('.share-page .social').addClass('share-mobile');
+  }
 });
