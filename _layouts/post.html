@@ -7,7 +7,7 @@ layout: page
 <p class="post-metadata text-muted">
   {{ page.date | date_to_long_string }} -  
   <b>
-  {%- assign words = content | number_of_words -%}
+  {%- assign words = content | strip_html | number_of_words -%}
   {%- if words < 360 -%}
     less than 1 min read time
   {%- else -%}
