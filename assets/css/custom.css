@@ -74,20 +74,48 @@ figure img, figure a {
 */
 
 
+
+
 .applause {
-	transform: translate3d(0,0,0);
-	position: fixed;
+	width: 100px;
+	margin: 0 auto;
+	position: absolute;
+	top: 2rem;
+	left: -80px;
+	
+}
+
+.applause-button-wrapper {
 	z-index: 10;
-	left: 400px;
-	top: 200px;
-	height: 100px;
+	width: 60px;
+	height: 60px;
+	position: fixed !important;
+}
+
+.applause-button {
+	z-index: 10;
+	width: 60px;
+	height: 60px;
+	position: fixed !important;
 }
 
 .style-root > .count-container > .count {
 	color: #007bff;
 }
 
+.share-page .clap {
+	-moz-transition: all .2s ease-in;
+    -o-transition: all .2s ease-in;
+    -webkit-transition: all .2s ease-in;
+    transition: all .2s ease-in;
+	margin-right: 20px;
+}
 
+.share-page .clap:hover {
+	cursor: pointer; 
+	fill: #007bff !important;
+	color: #007bff !important;	
+}
 
 
 /* Offsetting an html anchor to adjust for fixed header */

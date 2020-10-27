@@ -1,7 +1,37 @@
-/**
- * jQuery snippet to add anchor links to Markdown posts header
- * https://milanaryal.com.np/adding-hover-anchor-links-to-header-on-github-pages-using-jekyll/#jquery-snippet-to-add-anchor-links-to-jekyll-markdown-posts-header
- */
+
+ 
+function loadClapCount() {
+	var elements = $(".clap").toArray();
+	var urls = elements.map(function (el) {
+		return el.getAttribute("data-url")
+	});
+	
+	$.ajax({
+		url: "https://api.applause-button.com/get-multiple",
+		method: "POST",
+		data: JSON.stringify(urls),
+		headers: {"Content-Type": "text/plain"},
+		contentType: "text/plain"
+	}).done(function (claps) {
+		$(".clap").each(function () {
+			var elem = $(this);
+			var	url = elem.attr("data-url").replace(/^https?:\/\//, "");
+			var clapCount = claps.find(function (c) {return c.url === url});
+			if (clapCount && clapCount.claps > 0) {
+				elem.css("display", "initial").find(".count").html(clapCount.claps)
+			}
+		})
+	})
+}
+
+function updateClap(clapCount) {
+	$('.clap').css({color: "#007bff", fill: "#007bff"}).find('.count').html(clapCount);
+	$('#applause-button').find('.count').html(clapCount);
+}
+
+function getClap() {
+	return Number($('.clap').find('.count').html());
+}
 
 $(document).ready(function () {
 	
@@ -19,6 +49,7 @@ $(document).ready(function () {
   var postHeader = '.post > h2, .post > h3, .post > h4';
   var url = window.location;
 
+// https://milanaryal.com.np/adding-hover-anchor-links-to-header-on-github-pages-using-jekyll/#jquery-snippet-to-add-anchor-links-to-jekyll-markdown-posts-header
   $(postHeader).filter('[id]').each(function () {
     var header      = $(this),
         headerID    = header.attr('id'),
@@ -47,5 +78,26 @@ $(document).ready(function () {
 		 'hideDuration': 100,
 		 'autoHideDelay': 2000,
 	  });
+  });
+  
+  loadClapCount();
+  
+  $('#applause-button').on("clapped", function(event) {
+	  console.log(event.detail);
+	  console.log(event.detail.clapCount);
+	  console.log(url);
+	  updateClap(event.detail.clapCount);
+  });
+  
+  $('.share-page .clap').click(function (event) {
+	  console.log('clicked');
+	$.ajax({
+		url: "https://api.applause-button.com/update-claps?url=" + url,
+		method: "POST",
+		headers: {"Content-Type": "text/plain"},
+		contentType: "text/plain"
+	}).done(function (claps) {
+		updateClap(getClap()+1);
+	});
   });
 });
