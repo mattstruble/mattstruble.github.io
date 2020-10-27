@@ -20,7 +20,6 @@ I set up a learning plan similar to how I approached the TensorFlow Certificatio
 | Deep Learning Frameworks   |             | 
 | Convolutional Neural Networks  | 10            | 
 | Sequence Models                | 11, 12, 13, 14             |
-{:style="margin:auto; width:60% !important"}
 
 <br/>
 
