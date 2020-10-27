@@ -15,8 +15,16 @@
 
 {% assign hashtags = hashtags | remove_first: ',' %}
 
-<div class="share-page justify-content-center" style="border-top: 1px solid #c7cdd1; border-bottom: 1px solid #c7cdd1; padding-top: 20px; padding-bottom: 20px;">
+{%- if site.applause.enabled == true -%}
+<div class='applause justify-content-center'>
+	<div class='applause-button-wrapper'>
+		<applause-button  multiclap="true" id="applause-button" color="#007bff" style="width: 58px; height: 58px;" url="{{ site.url }}{{ page.url }}"/>
+	</div>
+</div>
+{%- endif -%}
 
+<div class="share-page justify-content-center" style="border-top: 1px solid #c7cdd1; border-bottom: 1px solid #c7cdd1; padding-top: 20px; padding-bottom: 20px;">
+	
     <div class="justify-content-center">
         <b>SHARE THIS &rarr;</b>
 
@@ -60,7 +68,11 @@
             </a>
 
         </span>
+		
+		{% include elements/clap.html class="justify-content-right float-right" display='initial' %}
+		
     </div>
+	
 
 
 </div>

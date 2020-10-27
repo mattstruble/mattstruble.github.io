@@ -42,6 +42,11 @@ analytics:
     enabled: true 
     google:
         tracking_id: G-7CPPYPRQPR
+        
+
+# Applause
+applause:
+    enabled: true 
 
 
 # Default values for collections
