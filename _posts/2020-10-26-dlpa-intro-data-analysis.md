@@ -3,6 +3,7 @@ title: Deep Learning Photo Aesthetics - Introduction and Data Analysis
 tags: [ML, Deep Learning, Data Analysis, Computer Vision, Aesthetics]
 style: border
 color: primary
+series: dlpa
 description: My analysis of the AVA database as the first step in creating a deep learning model capable understanding photo aesthetics. 
 ---
 
