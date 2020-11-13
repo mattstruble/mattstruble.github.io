@@ -7,7 +7,7 @@
   <!-- Active series -->
   {% for series in site.series %}
 	{%- if series.project -%}
-		{%- assign project_type  = "local" -%}
+		{%- assign project_type  = "series" -%}
 		{%- assign project_id    = series.series | slugify -%}
 		{%- assign project_img   = false -%}
 		{%- assign project_name  = series.title -%}
