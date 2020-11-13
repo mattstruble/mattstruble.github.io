@@ -46,7 +46,7 @@ I will eventually need to come up with a novel model design, but before that I n
 * Determining if there’s a way to ensure consistency of the ratings across the photos, or a subset of the photos.  
 * Other means to introduce variance and reduce bias within the AVA database. 
 
-## Data Analyis
+## Data Analysis
 
 <figure class="figure w-100">
 	<img src="../../assets/img/dlpa/intro/global_distribution.png" alt="Normalized distribution of ratings across the entire AVA dataset.">
@@ -156,7 +156,7 @@ The non-contiguous data can be explained by the fact that the bottom challenges 
 
 On the whole, challenges are able to represent a more refined view into the data, even with the low-contribution challenges potentially having skewed ratings. So long as photos within a challenge receive a large number of votes, which it is assumed more popular challenges will have, then their calculated score will be a more accurate representation of the photo. However, it all relies on how much variance there is between the individual ratings.
 
-Figure 8 shows that an average photo in a popular challenge receives a lot of votes for median ratings, but not so many (if any) votes for the extreme ratings. This can be interpreted as very few photos in large competitions having votes for either of the extreme ratings. Ideally, this means that upon coming across a photo with an extreme rating that the photo’s final score should be weighted more towards that extreme than is currently attributed with the naive weighted average. This is because if only one photo in a challenge got a 10/10 rating, that photo should be ranked somewhat-significantly higher than any of its competitors so the model recognizes it as a better photo. 
+Figure 8 shows that an average photo in a popular challenge receives a lot of votes for median ratings, but not so many (if any) votes for the extreme ratings. This can be interpreted as very few photos in large competitions having votes for either of the extreme ratings. Ideally, this means that upon coming across a photo with an extreme rating that the photo’s final score should be weighted more towards that extreme than is currently attributed with the naïve weighted average. This is because if only one photo in a challenge got a 10/10 rating, that photo should be ranked somewhat-significantly higher than any of its competitors so the model recognizes it as a better photo. 
 
 <figure class="figure w-100">
 	{% include elements/lightbox.html image="../../assets/img/dlpa/intro/mean_ratings_challenge_bot.png" preview="../../assets/img/dlpa/intro/mean_ratings_challenge_bot_example.png" alt="A distribution of voting averages that shows the mean and standard deviation of ratings given in the Homemade_Landscapes_II, Painted_Face, Practical_Jokes, Thar_Be_Pirates challenges." caption="Mean/Std of votes per rating for the bottom 70 Challenges by photo submissions." %}	
