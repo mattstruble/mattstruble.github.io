@@ -16,6 +16,6 @@
 	{%- endfor -%}
 	
 	{%- if previous_post -%}
-<small id="series-top" class="text-muted">This post is a part of the <a href="{{ series_item.url | relative_url }}">{{ series_item.title }}</a> series. Check out the <a href="{{ previous_post.url | relative_url }}">previous article</a> prior to reading this one!</small>
+<p><small id="series-top" class="text-muted">This post is a part of the <a href="{{ series_item.url | relative_url }}">{{ series_item.title }}</a> series. Check out the <a href="{{ previous_post.url | relative_url }}">previous article</a> prior to reading this one!</small></p>
 	{%- endif -%}
 {%- endif -%}
