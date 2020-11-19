@@ -13,6 +13,7 @@
 	display: table !important;
 	width: 100%;
 	table-layout: fixed;
+	word-break: break-word;
 }
 
 .table-wrapper {

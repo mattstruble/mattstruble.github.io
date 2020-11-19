@@ -1,12 +1,15 @@
 
 function updateTable() {
+	console.log('updateTable');
 	$('table').each(function() {
 	  var tbody = $(this).children('tbody').first();
 	  
-	  if (tbody.width() < $('main').width()) {
+	  if (tbody.width() < $('main').width() && $(window).width() > 800) {
 		  $(this).addClass('full-table');
+		  $(this).parent().find('.shade-right').addClass('hidden');
 	  } else {		
 		  $(this).removeClass('full-table');
+		  $(this).parent().find('.shade-right').removeClass('hidden');
 		  //$(this).insertAfter("<div class='shade'></div>");
 	  }
   });
@@ -65,10 +68,7 @@ $(document).ready(function () {
 	  $('.share-page .social').addClass('share-mobile');
   }
   
-  updateTable();
-	$(window).resize(function() {
-		updateTable();
-	});
+  
   
   
   
@@ -96,5 +96,10 @@ $(document).ready(function () {
 	  });
 	  
   });
+  
+  updateTable();
+	$(window).resize(function() {
+		updateTable();
+	});
   
 });
