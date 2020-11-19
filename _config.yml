@@ -18,6 +18,7 @@ nav_exclude:                                            # The following paths ar
   - pages/tags.html
   - pages/404.html
   - pages/index.md
+  - pages/series.html
 
 
 # Author Info
@@ -35,6 +36,9 @@ collections:
   projects:
     output: true
     permalink: /projects/:title
+  series:
+    output: true
+    permalink: /blog/series/:title
     
     
 # Analytics
@@ -56,6 +60,11 @@ defaults:
       type: "projects"
     values:
       layout: "post"
+  - scope:
+      path: ""
+      type: "series"
+    values:
+      layout: "series"
   - scope:
       path: ""
       type: "posts"

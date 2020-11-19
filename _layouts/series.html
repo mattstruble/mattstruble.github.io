@@ -1,0 +1,30 @@
+---
+layout: page
+---
+
+<h2 id="{{ page.series | slugify }}">{{ page.title }}</h2>  
+{%- if page.tools != empty -%}
+	Tags: 
+    {% for tag in page.tools %}
+    <a class="text-decoration-none no-underline" href="{{ tag | slugify | prepend:'/blog/tags#' | relative_url }}">
+      <span class="tag badge badge-pill text-primary border border-primary">{{ tag }}</span>
+    </a>
+    {% endfor %}
+  {%- endif -%}
+<br/><br/>
+<p style="text-align:justify">{{ page.description }}</p>
+<hr class="bg-light">
+	
+<div class="py-3">
+  <ol>
+  {% for post in site.posts reversed %}
+    {%- if post.series contains page.series -%}
+		<a href="{{ post.url | relative_url }}"><li>{{ post.title | remove_first: page.title | remove_first: "-"}}</li></a>
+		<small class="text-muted"> - {{ post.date | date_to_long_string }}</small>
+		<br/>
+		<small style="margin-left:1em; text-align:justify">{{ post.description }}</small>
+		<br/><br/>
+	{%- endif -%}
+  {% endfor %}
+  </ol>
+</div>

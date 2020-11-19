@@ -15,7 +15,16 @@
 	
 	{% assign image = site.author.image %}
 	{%- if page.image -%}
-		{% assign image = page.image | remove_first: ".." %}
+		{% assign image = page.image | relative_url %}
+	{%- elsif page.series -%}
+		{%- for series in site.series -%}
+			{%- if page.series == series.series -%}
+				{%- if series.image -%}
+					{%- assign image = series.image | relative_url -%}
+				{%- endif -%}
+				{%- break -%}
+			{%- endif -%}
+		{%- endfor -%}
 	{%- endif -%}
 	
 	
