@@ -1,0 +1,21 @@
+{%- if page.series -%}
+	{%- for post in site.posts reversed -%}
+		{%- if page.series contains post.series -%}
+			{%- if page.title contains post.title -%}
+				{%- break -%}
+			{%- endif -%}
+			
+			{%- assign previous_post = post -%}
+		{%- endif %}
+	{%- endfor -%}
+	
+	{%- for series in site.series -%}
+		{%- if page.series == series.series -%}
+			{%- assign series_item = series -%}
+		{%- endif -%}
+	{%- endfor -%}
+	
+	{%- if previous_post -%}
+<small id="series-top" class="text-muted">This post is a part of the <a href="{{ series_item.url | relative_url }}">{{ series_item.title }}</a> series. Check out the <a href="{{ previous_post.url | relative_url }}">previous article</a> prior to reading this one!</small>
+	{%- endif -%}
+{%- endif -%}

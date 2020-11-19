@@ -1,0 +1,23 @@
+{%- if page.series -%}
+	{%- for post in site.posts reversed -%}
+		{%- if page.series contains post.series -%}
+			{%- if found_post -%}
+				{%- assign next_post = post -%}
+				{%- break -%}
+			{%- endif -%}
+			{%- if page.title contains post.title -%}
+				{%- assign found_post = true -%}
+			{%- endif -%}
+		{%- endif %}
+	{%- endfor -%}
+	
+	{%- for series in site.series -%}
+		{%- if page.series == series.series -%}
+			{%- assign series_item = series -%}
+		{%- endif -%}
+	{%- endfor -%}
+	
+	{%- if next_post -%}
+<small id="series-bottom" class="text-muted">Interested in reading more? Be sure to read <a href="{{ next_post.url | relative }}">{{ next_post.title }}</a> next!</small><br/><br/>
+	{%- endif -%}
+{%- endif -%}

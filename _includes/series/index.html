@@ -1,0 +1,14 @@
+
+<div class="card-columns m-3 mt-5">
+{% for series in site.series %}
+	{%- assign project_type = "local" -%}
+    {%- assign project_id   = series.series | slugify -%}
+    {%- assign project_img  = series.image -%}
+    {%- assign project_name = series.title | strip -%}
+    {%- assign project_desc = series.description -%}
+    {%- assign project_url  = series.url -%}
+	{%- assign project_tools = series.tools -%}
+
+    {% include projects/project-card.html %}
+{% endfor %}
+</div>
