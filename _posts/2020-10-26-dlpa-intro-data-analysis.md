@@ -199,3 +199,5 @@ Lastly, as discovered near the end of the challenges investigation the number of
 * The fact that the largest challenge has an average voting of less than the total number of submissions means that everyone who partakes in a challenge does not vote for every other photo in the challenge. So, the larger the challenge the more likely it is to lose some consistency in ratings.
 
 Now armed with all this knowledge about the limitations of the AVA Database, the next step is to preprocess it into a workable form that meets all my goals. 
+
+{% include elements/signature.html caption="Did you come across any insights I might've missed?" %}
