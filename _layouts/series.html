@@ -19,7 +19,7 @@ layout: page
   <ol>
   {% for post in site.posts reversed %}
     {%- if post.series contains page.series -%}
-		<a href="{{ post.url | relative_url }}"><li>{{ post.title }}</li></a>
+		<a href="{{ post.url | relative_url }}"><li>{{ post.title | remove_first: page.title | remove_first: "-"}}</li></a>
 		<small class="text-muted"> - {{ post.date | date_to_long_string }}</small>
 		<br/>
 		<small style="margin-left:1em; text-align:justify">{{ post.description }}</small>
