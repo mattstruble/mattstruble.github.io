@@ -54,7 +54,11 @@ $(document).ready(function () {
 	  $('.share-page .social').addClass('share-mobile');
   }
   
-  if ($(window).width() > 500) {
-	  $('table').addClass('large-table');
-  }
+  $('table').each(function() {
+	  var tbody = $(this).children('tbody').first();
+	  
+	  if (tbody.width() < $('main').width()) {
+		  $(this).addClass('full-table');
+	  }
+  });
 });

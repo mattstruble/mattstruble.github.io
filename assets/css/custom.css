@@ -9,7 +9,7 @@
 }
 
 
-.large-table {
+.full-table {
 	display: table !important;
 	width: 100%;
 	table-layout: fixed;
