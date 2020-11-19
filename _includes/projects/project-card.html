@@ -7,8 +7,6 @@
       <h5 id="{{ project_id }}-name" class="card-title">
           {%- if project_type == "remote" -%}
           <i class="fab fa-github" aria-hidden="true" data-toggle="tooltip" data-placement="bottom" data-delay="250" title="GitHub Repository"></i> |&nbsp;
-		  {%- elsif project_type == "series" -%}
-		  <i class="fa fa-book" aria-hidden="true" data-toggle="tooltip" data-placement="bottom" data-delay="250" title="Blog Series"></i> |&nbsp;
           {%- endif -%}
         {{ project_name }}
       </h5>
