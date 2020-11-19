@@ -53,4 +53,8 @@ $(document).ready(function () {
 	  $('.share-page .social').removeClass('mx-3')
 	  $('.share-page .social').addClass('share-mobile');
   }
+  
+  if ($(window).width() > 500) {
+	  $('table').addClass('large-table');
+  }
 });

@@ -8,9 +8,11 @@
 	font-size: .9em;
 }
 
-table {
+
+.large-table {
 	display: table !important;
 	width: 100%;
+	table-layout: fixed;
 }
 
 .lightbox-link {
