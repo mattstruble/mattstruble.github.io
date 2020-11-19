@@ -3,6 +3,11 @@
 	margin-right: 0.5rem!important;
 }
 
+.signature {
+	font-style: italic;
+	font-size: .9em;
+}
+
 .lightbox-link {
 	cursor: -moz-zoom-in; 
     cursor: -webkit-zoom-in; 
