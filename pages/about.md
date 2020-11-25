@@ -13,7 +13,7 @@ Software first impacted my life at a very young age with video games. I knew fro
 
 I started out with a degree in Game Programming, and a minor in Mathematics, which exposed me to building large high-performance software packages. Pretty regularly I’m able to apply game programming patterns to enterprise code bases to improve both scalability and performance. Now with a Masters in Machine Learning and Robotics, the opportunity to create new experiences for others is everywhere. Whether it’s analyzing data, developing intelligent models, or creating quick apps to make my friends laugh, I’m continually working towards improving my skills and creating a positive impact for others.
 
-[Download my full resume](https://github.com/mattstruble/resume/raw/master/struble_resume.pdf).
+[Download my full resume](https://github.com/mattstruble/resume/raw/machine-learning/struble_resume.pdf).
 
 <div class="row">
 {% include about/skills.html title="Programming Skills" source=site.data.programming-skills %}
