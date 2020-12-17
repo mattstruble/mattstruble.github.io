@@ -43,7 +43,7 @@ I needed a better solution which, at bare minimum, took up less memory.
 
 ## Optimizing TFRecords
 
-After extensive Google searches I found my answer in this [medium article](https://medium.com/coinmonks/storage-efficient-tfrecord-for-images-6dc322b81db4), which talked about the exact same frustrations I listed above. I followed Bruno’s advice and changed my TFRecord generation to save the JPEG bytes directly instead of transforming them into a tensor first. 
+After extensive Google searches I found my answer in this [Medium article](https://medium.com/coinmonks/storage-efficient-tfrecord-for-images-6dc322b81db4), which talked about the exact same frustrations I listed above. I followed Bruno’s advice and changed my TFRecord generation to save the JPEG bytes directly instead of transforming them into a tensor first. 
 
 ```python
 # Save the images as TFRecords
