@@ -7,7 +7,7 @@ series: dlpa
 description: Optimizing image-based TFRecords to reduce storage space and improve training times.
 ---
 
-In my [last post](https://mattstruble.com/blog/dlpa-data-preprocessing) I talked briefly about my data preparation pipeline and how I encoded the 200k images into TFRecords. As part of this step I first serialized an image into a tensor prior to storing it into a TFRecord. This method of first serializing the image as a tensor is a fairly common step in other tutorials that talk about TFRecord image preparation 
+In my [last post](https://mattstruble.com/blog/dlpa-data-preprocessing) I talked briefly about my data preparation pipeline and how I encoded the 200k images into TFRecords. As part of this step I first serialized an image into a tensor prior to storing it as a TFRecord. This method of first serializing the image as a tensor is a fairly common step in other tutorials that talk about TFRecord image preparation 
 [[1](https://towardsdatascience.com/working-with-tfrecords-and-tf-train-example-36d111b3ff4d), [2](https://medium.com/swlh/using-tfrecords-to-train-a-cnn-on-mnist-aec141d65e3d), [3](https://medium.com/ai-in-plain-english/a-quick-and-simple-guide-to-tfrecord-c421337a6562), [4](https://www.kaggle.com/ryanholbrook/tfrecords-basics)]. 
 
 ```python
@@ -37,7 +37,7 @@ Preparing the data this way created two major flaws. One flaw was that reading t
 
 The extra computational complexity and large data size caused random slowdowns during training on simple CNNs and OOM errors on larger models. 
 
-Needing to change batch sizes and buffer sizes dependent on the model, and having training randomly crash halfway through was unacceptable. I didn’t want to deal with so much variability when researching my model, especially when trying to compare the performance of different models and hyper parameters. 
+Needing to change batch sizes and buffer sizes dependent on the model, and having training randomly crash halfway through was unacceptable. I didn’t want to deal with so much variability when researching models, especially when trying to compare the performance of different hyperparameters. 
 
 I needed a better solution which, at bare minimum, took up less memory.
 
@@ -83,7 +83,7 @@ My entire dataset including training, test, and validation data, took up less th
 
 The small size of the dataset enabled it to be cached entirely in RAM during training, preventing the need to read from disk every time a new image needed to be processed. This, combined with the smaller data in general, led to a 4x speed improvement on my training times. What previously would take 6 hours to train, now only took 1.5 hours. 
 
-Taking the time to sit down and analyze my data pipeline not only removed the OOM crashes, but will drastically help later on when searching for the best hyperparameters to optimize my model.
+By taking the time to sit down and analyze my data pipeline I not only removed the OOM crashes, but drastically improved performance which will reduce the time required for hyperparameter optimization.
 
 
 {% include elements/signature.html %}
