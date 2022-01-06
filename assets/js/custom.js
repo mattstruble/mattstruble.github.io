@@ -17,11 +17,11 @@ function updateTable() {
 
 
 $(document).ready(function () {
-	
+	console.log('ready');
 	// https://stackoverflow.com/a/2911045
 	$( 'a' ).not('.share-page a, .lightbox-link, .lightbox-image').each(function() {
 	  if( location.hostname === this.hostname || !this.hostname.length ) {
-		  //continue; //$(this).addClass('local');
+		  $(this).addClass('local');
 	  } else {
 		  $(this).addClass('external');
 		  $(this).attr('target', '_blank');
