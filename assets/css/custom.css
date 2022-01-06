@@ -1,3 +1,22 @@
+html {
+	scroll-behavior: smooth;
+}
+
+.skip-nav-link {
+	background: #17a2b8;
+	color: white;
+	position: absolute;
+	padding: 0.5rem 1.5rem;
+	border-radius: 0 0 0.25rem 0.25rem;
+	left: 0.5rem;
+	transform: translateY(-120%);
+	transition: transform 325ms ease-in;
+}
+
+.skip-nav-link:focus {
+	transform: translateY(0);
+}
+
 .share-mobile {
 	margin-left: 1rem!important;
 	margin-right: 0.5rem!important;
