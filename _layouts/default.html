@@ -12,9 +12,13 @@
 
 <body class="d-flex flex-column h-100">
 
+  <a class="skip-nav-link" href="#main-content">jump to content</a>
+
   <main class="flex-shrink-0 container mt-5">
   {% include navbar.html %}
+  <div id="main-content">
   {{ content }}
+  </div>
   </main>
 
   {% include footer.html %}
