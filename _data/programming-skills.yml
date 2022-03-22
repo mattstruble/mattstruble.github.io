@@ -1,8 +1,8 @@
-- name: Java
+- name: Python
   percentage: 90
   color: success
 
-- name: Python
+- name: Java
   percentage: 80
   color:
 
