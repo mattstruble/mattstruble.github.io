@@ -10,6 +10,6 @@
   percentage: 70
   color: dark
 
-- name: Unity
+- name: AWS
   percentage: 65
   color: danger
