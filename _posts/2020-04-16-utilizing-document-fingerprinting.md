@@ -3,7 +3,8 @@ title: Utilizing Document Fingerprinting for Variable String Matching
 tags: [Python, Template Matching, Hashing]
 style: border
 color: primary
-description: Using plagiarism detection algorithms to track the phrases my friends use in group chats. 
+description: Using plagiarism detection algorithms to track the phrases my friends use in group chats.
+comments: true 
 ---
 
 A question was posted in a group chat: how many times does my one friend say the phrase “gamers in chat”? At the time I was beginning to dabble with the Discord API, so I took it upon myself to figure out the actual count. The algorithm can be seen in action within my [Discord GamerBot](https://github.com/mattstruble/gamer-bot){:target="_blank"}.

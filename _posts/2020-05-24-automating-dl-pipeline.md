@@ -3,7 +3,8 @@ title: Automating Deep Learning Pipeline With NAS
 tags: [Automation, Bash, NAS]
 style: border
 color: info
-description: How I leveraged Synology NAS to automate the execution, and backup, of my machine learning model training environments. 
+description: How I leveraged Synology NAS to automate the execution, and backup, of my machine learning model training environments.
+comments: true 
 ---
 
 The past few days I've been working on improving my machine learning pipeline in preparation of some upcoming projects. I wanted to create a system that would allow me to easily train a model 

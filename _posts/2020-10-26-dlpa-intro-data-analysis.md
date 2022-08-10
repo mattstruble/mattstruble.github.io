@@ -4,7 +4,8 @@ tags: [ML, Deep Learning, Data Analysis, Computer Vision, Aesthetics]
 style: border
 color: primary
 series: dlpa
-description: My analysis of the AVA database as the first step in creating a deep learning model capable understanding photo aesthetics. 
+description: My analysis of the AVA database as the first step in creating a deep learning model capable understanding photo aesthetics.
+comments: true 
 ---
 
 ## Introduction

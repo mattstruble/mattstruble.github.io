@@ -5,6 +5,7 @@ style: border
 color: info
 series: dlpa
 description: Optimizing image-based TFRecords to reduce storage space and improve training times.
+comments: true
 ---
 
 In my [last post](https://mattstruble.com/blog/dlpa-data-preprocessing) I talked briefly about my data preparation pipeline and how I encoded the 200k images into TFRecords. As part of this step I first serialized an image into a tensor prior to storing it as a TFRecord. This method of first serializing the image as a tensor is a fairly common step in other tutorials that talk about TFRecord image preparation 

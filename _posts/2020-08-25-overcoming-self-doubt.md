@@ -3,7 +3,8 @@ title: Overcoming Self-Doubt in Pursuit of TensorFlow Certification
 tags: [TensorFlow, AI, ML, Self Care, Imposter Syndrome]
 style: border
 color: success
-description: Learning how to over come fear of failure, imposter syndrome, and self-doubt when changing career paths. 
+description: Learning how to over come fear of failure, imposter syndrome, and self-doubt when changing career paths.
+comments: true 
 ---
 
 ## The Plan

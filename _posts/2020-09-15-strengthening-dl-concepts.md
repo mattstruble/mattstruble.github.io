@@ -4,6 +4,7 @@ tags: [AI, ML, Deep Learning, Self Improvement]
 style: border
 color: danger
 description: Steps I took to fill in the gaps leftover after my TensorFlow Certification with the goal to strengthen my deep learning knowledge.
+comments: true
 ---
 
 A couple weeks ago, I posted about how the [TensorFlow Certification](https://mattstruble.com/blog/overcoming-self-doubt) helped me overcome my imposter syndrome within the deep learning community. The studying, and as a result my certification, was primarily focused on the high-level implementation of various model architectures within the TensorFlow framework. Which meant that even though I was certified, I felt that there was still a lot to learn in regards to deep learning.  

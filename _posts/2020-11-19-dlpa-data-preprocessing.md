@@ -4,7 +4,8 @@ tags: [ML, Deep Learning, Data Preprocessing, Computer Vision, Aesthetics, Tenso
 style: border
 color: success
 series: dlpa
-description: How I shaped the AVA database to reduce training times, remove bias, and improve model inference. 
+description: How I shaped the AVA database to reduce training times, remove bias, and improve model inference.
+comments: true 
 ---
 During data analysis I found various potential pitfalls in the AVA database that could introduce unwanted biases into the final model. Here is a brief overview as a quick recap:
 
