@@ -46,6 +46,11 @@ medium:
   icon  : fab fa-medium
   color : 00ab6c
 
+reddit:
+  url   : https://www.reddit.com
+  icon  : fab fa-reddit
+  color : ff5700
+
 soundcloud:
   url   : https://www.soundcloud.com/
   icon  : fab fa-soundcloud

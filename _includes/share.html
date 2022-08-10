@@ -67,6 +67,18 @@
                <i class="{{ site.data.social-media.facebook.icon }} fa-lg"></i>
             </a>
 
+            <a class="social mx-3  rounded-circle no-underline justify-content-center" href="https://reddit.com/submit?title={{ page.title }}&url={{ site.url }}{{ page.url }}"
+               rel="nofollow"
+               target="_blank"
+			   {%- if site.analytics.enabled == true %}
+			   onclick="gtagShareLink('reddit')"
+			   {%- endif -%}
+               style="color: #{{ unfocused_color }}; border-color:#{{ unfocused_color }}; padding: 5px; "
+               onMouseOver="this.style.color='#{{ site.data.social-media.reddit.color }}'"
+               onMouseOut="this.style.color='#{{ unfocused_color }}'">
+               <i class="{{ site.data.social-media.reddit.icon }} fa-lg"></i>
+            </a>
+
 			{% include elements/clap.html class="float-right" display='initial' %}
         </span>
 		
