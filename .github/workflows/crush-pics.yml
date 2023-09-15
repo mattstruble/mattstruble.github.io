@@ -4,12 +4,12 @@ on:
   pull_request:
 
 jobs:
-  my_bot_job:
+  optimize:
     runs-on: ubuntu-latest
     steps:
       - uses: evansnguyen/image-optimization@v1.0.0
         with:
-          token: ${{ secrets.ACCESS_TOKEN }}
+          token: ${{ secrets.GITHUB_TOKEN }}
           file: "assets"
           branch: "next-release"
           commit-branch: "awesome/image-optimization"
