@@ -1,23 +1,17 @@
-name: Crush Images
-
+name: imgcmp
 on:
-  pull_request:
+  push:
     branches:
+      - main
       - master
-    # paths:
-    #   - "**.jpg"
-    #   - "**.jpeg"
-    #   - "**.png"
-    #   - "**.gif"
-
 jobs:
-  crush:
+  imgcmp:
     runs-on: ubuntu-latest
+    permissions:
+      contents: write
+      pull-requests: write
     steps:
-      - uses: actions/checkout@v3
-
-      - name: Crush Images
-        uses: crush-pics/crush-pics-github-action@master
+      - uses: 9sako6/imgcmp@v2.0.4
         with:
-          repo-token: ${{ secrets.GITHUB_TOKEN }}
-          api-key: ${{ secrets.CRUSH_API_KEY }}
+          token: ${{ secrets.GITHUB_TOKEN }}
+          paths-ignore-regexp: "(ignore/.*)|(public/.*)"
