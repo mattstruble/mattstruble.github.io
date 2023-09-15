@@ -1,0 +1,15 @@
+---
+default_stages: [commit]
+
+exclude: "CHANGELOG.md"
+
+repos:
+  - repo: https://github.com/shssoichiro/oxipng
+    rev: v8.0.0
+    hooks:
+      - id: oxipng
+
+  - repo: https://github.com/mattstruble/pre-commit-exiftool
+    rev: v1.0.0
+    hooks:
+      - id: strip-exif
