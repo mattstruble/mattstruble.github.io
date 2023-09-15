@@ -5,7 +5,9 @@ _site/
 .jekyll-metadata
 
 # To generate Gemfile.lock -> use: $ bundle install
-# If unknown encoding name CP720 Error occured -> use: $ chcp.com 1252
+# If unknown encoding name CP720 Error occurred -> use: $ chcp.com 1252
 Gemfile.lock
 
 .idea/
+
+.DS_Store
