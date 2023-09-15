@@ -10,6 +10,4 @@ jobs:
       - uses: evansnguyen/image-optimization@v1.0.0
         with:
           token: ${{ secrets.GITHUB_TOKEN }}
-          file: "assets"
-          branch: "next-release"
-          commit-branch: "awesome/image-optimization"
+          file: "assets/**"
