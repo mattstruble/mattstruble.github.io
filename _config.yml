@@ -2,7 +2,7 @@
 title: Matt Struble
 description: >- # this means to ignore newlines until "baseurl:"
   Hi I'm Matt! I'm a deep learning engineer that never saves anything for the swim back. Let's make something beautiful together!
-baseurl: ""  # the subpath of your site, e.g. /blog
+baseurl: "" # the subpath of your site, e.g. /blog
 url: "https://mattstruble.com" # the base hostname & protocol for your site, e.g. http://example.com
 # repository: YoussefRaafatNasry/portfolYOU
 remote_theme: YoussefRaafatNasry/portfolYOU
@@ -12,24 +12,23 @@ remote_theme: YoussefRaafatNasry/portfolYOU
 plugins:
   - jemoji
   - jekyll-feed
+  - jekyll-image-optim
 
 ### Navbar Settings ###
-nav_exclude:                                            # The following paths are excluded from navbar
+nav_exclude: # The following paths are excluded from navbar
   - pages/tags.html
   - pages/404.html
   - pages/index.md
   - pages/series.html
 
-
 # Author Info
 author:
-  name     : Matt Struble
-  image    : /assets/img/profile-image.jpg
+  name: Matt Struble
+  image: /assets/img/profile-image.jpg
   #email    : username@xyz.com
-  github   : mattstruble
-  twitter  : mestruble
-  linkedin : mattstruble
-
+  github: mattstruble
+  twitter: mestruble
+  linkedin: mattstruble
 
 # Collections
 collections:
@@ -39,19 +38,16 @@ collections:
   series:
     output: true
     permalink: /blog/series/:title
-    
-    
+
 # Analytics
 analytics:
-    enabled: true 
-    google:
-        tracking_id: G-7CPPYPRQPR
-        
+  enabled: true
+  google:
+    tracking_id: G-7CPPYPRQPR
 
 # Applause
 applause:
-    enabled: true 
-
+  enabled: true
 
 # Default values for collections
 defaults:
@@ -71,22 +67,22 @@ defaults:
     values:
       comments: false
 
-
 # Posts default Permalink
 permalink: blog/:title
 
-
 feed:
-    tags: true 
-    collections:
-        projects:
-            path: "/feed/projects.xml"
-        posts:
-            path: "/feed/blog.xml"
+  tags: true
+  collections:
+    projects:
+      path: "/feed/projects.xml"
+    posts:
+      path: "/feed/blog.xml"
 
+image_optim:
+  image_glob: "assets/img/**/*.{gif,png,jpg,jpeg}"
 # Exclude from processing.
 exclude:
-- README.md
-- CONTRIBUTING.md
-- LICENSE
-- Gemfile.lock
+  - README.md
+  - CONTRIBUTING.md
+  - LICENSE
+  - Gemfile.lock
