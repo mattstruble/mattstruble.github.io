@@ -1,0 +1,14 @@
+name: Image optimization
+on:
+  workflow_dispatch:
+  pull_request:
+
+jobs:
+  optimize:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: evansnguyen/image-optimization@v1.0.0
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
+          commit-branch: ${{ github.head_ref || github.ref_name }}
+          branch: ${{ github.head_ref || github.ref_name }}
