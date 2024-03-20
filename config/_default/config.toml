@@ -1,0 +1,143 @@
+baseURL = "http://localhost"
+copyright = "© 2020 - 2024 Matt Struble"
+title = "Matt Struble"
+#paginate = 10
+enableRobotsTXT = true
+enableGitInfo = true
+
+theme = "FixIt"
+
+[build]
+noJSConfigInAssets = true
+[build.buildStats]
+# With each build, Hugo writes a hugo_stats.json file that contains arrays
+# of the class attributes, id attributes, and tags of each HTML element
+# within the published site. For production builds, this file is required
+# by PurgeCSS to prune unused CSS.
+enable = true
+
+[markup]
+[markup.highlight]
+# false is a necessary configuration (https://github.com/hugo-fixit/FixIt/issues/43)
+noClasses = false
+[markup.goldmark]
+[markup.goldmark.renderer]
+# This setting allows inlining <script> and <style> tags in markdown,
+# which is useful and required to use Prism plugins, but may be dangerous
+# if the content isn't trustworthy.
+unsafe = true
+
+[imaging]
+# JPEG and WebP quality
+quality = 90
+
+[params]
+# dark or light, defaults to light
+defaultTheme = "light"
+# gray red green yellow blue purple aqua orange, defaults to blue
+themeColor = "aqua"
+# soft medium hard, defaults to medium
+themeContrast = "hard"
+subtitle = "AI Software Engineer"
+description = "Matt Struble is a coder and computer enthusiast."
+
+
+# Plausible auth secret to enable public dashboard
+# plausibleAuth = "hDl_ZT_txy4BS608-H3Y0"
+
+[params.author]
+name = "Matt Struble"
+email = ""
+link = ""
+avatar = ""
+[params.logo]
+text = "struble.dev"
+url = "/"
+
+[params.prism]
+languages = [
+    "markup",
+    "css",
+    "clike",
+    "javascript",
+    "bash",
+    "csharp",
+    "hcl",
+    "ignore",
+    "json",
+    "markdown",
+    "powershell",
+    "toml",
+    "yaml",
+]
+plugins = [
+    "normalize-whitespace",
+    "toolbar",
+    "copy-to-clipboard",
+    "command-line",
+]
+
+# Social share links for posts:
+#   - iconSuite: "simple-icon" or "tabler-icon"
+#   - iconName: name of the icon from the "iconSuite"
+#   - {url} placeholder for post .Permalink
+#   - {title} placeholder for post .Title
+# See  https://github.com/bradvin/social-share-urls for more format strings
+[[params.socialShare]]
+iconSuite = "simple-icon"
+iconName = "twitter"
+formatString = "https://twitter.com/intent/tweet?url={url}&text={title}"
+[[params.socialShare]]
+iconSuite = "simple-icon"
+iconName = "linkedin"
+formatString = "https://www.linkedin.com/sharing/share-offsite/?url={url}"
+[[params.socialShare]]
+iconSuite = "simple-icon"
+iconName = "facebook"
+formatString = "https://www.facebook.com/sharer.php?u={url}"
+[[params.socialShare]]
+iconSuite = "simple-icon"
+iconName = "reddit"
+formatString = "https://reddit.com/submit?url={url}&title={title}"
+[[params.socialShare]]
+iconSuite = "simple-icon"
+iconName = "ycombinator"
+formatString = "https://news.ycombinator.com/submitlink?u={url}&t={title}"
+[[params.socialShare]]
+iconSuite = "tabler-icon"
+iconName = "mail"
+formatString = "mailto:?subject={title}&body={url}"
+
+[menu]
+[[menu.main]]
+identifier = "blog"
+name = "Blog"
+url = "/blog"
+weight = 10
+[[menu.main]]
+identifier = "projects"
+name = "Projects"
+url = "/projects"
+weight = 20
+#[[menu.main]]
+#  identifier = "cv"
+#  name = "CV"
+#  url = "/cv"
+#  weight = 30
+[[menu.main]]
+identifier = "about"
+name = "About"
+url = "/about"
+weight = 40
+[[menu.main]]
+identifier = "stats"
+name = "Stats"
+url = "/stats"
+weight = 50
+
+[languages]
+[languages.en]
+languageName = "English"
+weight = 10
+[languages.en.params.jsonResume]
+present = "present"
