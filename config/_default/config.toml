@@ -1,11 +1,16 @@
 baseURL = "http://localhost"
+languageCode = 'en'
+languageName = "English"
 copyright = "© 2020 - 2024 Matt Struble"
 title = "Matt Struble"
 #paginate = 10
 enableRobotsTXT = true
 enableGitInfo = true
+enableEmoji = true
+math = true
+toc = true
 
-theme = "FixIt"
+# theme = "FixIt"
 
 [build]
 noJSConfigInAssets = true
@@ -31,15 +36,19 @@ unsafe = true
 # JPEG and WebP quality
 quality = 90
 
+[outputs]
+home = ["HTML", "RSS", "JSON"]
+
 [params]
 # dark or light, defaults to light
-defaultTheme = "light"
-# gray red green yellow blue purple aqua orange, defaults to blue
-themeColor = "aqua"
-# soft medium hard, defaults to medium
+defaultTheme = "dark"
+themeColor = "blue"
 themeContrast = "hard"
 subtitle = "AI Software Engineer"
-description = "Matt Struble is a coder and computer enthusiast."
+description = "Matt Struble is a AI engineer and computer enthusiast."
+toc = true
+math = true
+enableEmoji = true
 
 
 # Plausible auth secret to enable public dashboard
@@ -50,6 +59,27 @@ name = "Matt Struble"
 email = ""
 link = ""
 avatar = ""
+[params.footer]
+enable = true
+since = "2019"
+[params.footer.powered]
+enable = false
+themeLogo = false
+[params.footer.siteTime]
+enable = true
+[params.gitInfo]
+repo = "https://github.com/mattstruble/mattstruble.github.io"
+branch = "main"
+dir = "content"
+issueTpl = "title=[BUG]%20{title}&body=|Field|Value|%0A|-|-|%0A|Title|{title}|%0A|URL|{URL}|%0A|Filename|{sourceURL}|"
+[params.home]
+[params.home.profile]
+enable = true
+avatarURL = "matt-struble.jpg"
+title = "Matt Struble"
+subtitle = "I never save anything for the swim back."
+[params.search]
+enable = true
 [params.logo]
 text = "struble.dev"
 url = "/"
@@ -69,6 +99,8 @@ languages = [
     "powershell",
     "toml",
     "yaml",
+    "python",
+    "docker",
 ]
 plugins = [
     "normalize-whitespace",
@@ -130,10 +162,15 @@ name = "About"
 url = "/about"
 weight = 40
 [[menu.main]]
+identifier = "cv"
+name = "CV"
+url = "/cv"
+weight = 50
+[[menu.main]]
 identifier = "stats"
 name = "Stats"
 url = "/stats"
-weight = 50
+weight = 60
 
 [languages]
 [languages.en]

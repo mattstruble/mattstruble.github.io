@@ -1,4 +1,10 @@
+github.com/dillonzq/LoveIt v0.2.11 h1:rIj8YX5oJHHyKazLLWBwvURCoVizsNBQJc6vVKX6AG8=
+github.com/dillonzq/LoveIt v0.2.11/go.mod h1:6IBQv4PKou3cERt0xcxud81O793taOmJqYKXn1eNPB4=
 github.com/hugo-fixit/FixIt v0.3.2 h1:8YzmI690SreNXdbmEGpLAv/KGx7e7RZoogIPBVvw3Cs=
 github.com/hugo-fixit/FixIt v0.3.2/go.mod h1:3XIRedrqakO7/a4ZnhE46haMRF8HgsT0N0B5j5D2iRU=
 github.com/schnerring/hugo-mod-json-resume v0.0.0-20240317040430-885b96a21f48 h1:zeTH03bxfJKUi5tI5N3NgsC407yannOS7182W9Hjcy4=
 github.com/schnerring/hugo-mod-json-resume v0.0.0-20240317040430-885b96a21f48/go.mod h1:sLoTJiZFusTxDM0/Xf3BQGw2cVV8e5gDMD0nGMK+cF8=
+github.com/schnerring/hugo-mod-json-resume v0.0.0-20240324043614-ffff65ab2f20 h1:6EiIwTqe0jfNdXw/8BwwOVnU/ZVbbu+Jz0iV99qAPsE=
+github.com/schnerring/hugo-mod-json-resume v0.0.0-20240324043614-ffff65ab2f20/go.mod h1:sLoTJiZFusTxDM0/Xf3BQGw2cVV8e5gDMD0nGMK+cF8=
+github.com/schnerring/hugo-theme-gruvbox v0.0.0-20240315014043-dc3c0a888556 h1:cdlwFiNFhqvFAv5+k+BwUm8dnjzbC5ntocX1vgl25mw=
+github.com/schnerring/hugo-theme-gruvbox v0.0.0-20240315014043-dc3c0a888556/go.mod h1:CFeum+kO6pVsocd5neDLMbh+89xU7+VCmka6+kPClYs=
