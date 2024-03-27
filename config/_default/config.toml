@@ -6,9 +6,6 @@ title = "Matt Struble"
 #paginate = 10
 enableRobotsTXT = true
 enableGitInfo = true
-enableEmoji = true
-math = true
-toc = true
 
 # theme = "FixIt"
 
@@ -50,7 +47,6 @@ toc = true
 math = true
 enableEmoji = true
 
-
 # Plausible auth secret to enable public dashboard
 # plausibleAuth = "hDl_ZT_txy4BS608-H3Y0"
 
@@ -91,12 +87,10 @@ languages = [
     "clike",
     "javascript",
     "bash",
-    "csharp",
     "hcl",
     "ignore",
     "json",
     "markdown",
-    "powershell",
     "toml",
     "yaml",
     "python",
@@ -151,11 +145,6 @@ identifier = "projects"
 name = "Projects"
 url = "/projects"
 weight = 20
-#[[menu.main]]
-#  identifier = "cv"
-#  name = "CV"
-#  url = "/cv"
-#  weight = 30
 [[menu.main]]
 identifier = "about"
 name = "About"

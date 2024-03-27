@@ -1,0 +1,64 @@
+/* Admonition container */
+.admonition {
+  padding: 1em;
+  margin: 1em 0;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  position: relative;
+}
+
+/* Admonition types */
+.admonition.info {
+  background-color: var(--blue1);
+  border: 1px solid var(--blue2);
+}
+
+.admonition.warning {
+  background-color: var(--yellow1);
+  border: 1px solid var(--yellow2);
+}
+
+.admonition.error {
+  background-color: var(--orange1);
+  border: 1px solid var(--orange2);
+}
+
+.admonition.success {
+  background-color: var(--green1);
+  border: 1px solid var(--green2);
+}
+
+/* Admonition title */
+.admonition .admonition-title {
+  font-weight: bold;
+  margin: 0;
+  padding: 0.5em;
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.admonition.info .admonition-title {
+  background-color: var(--blue2);
+}
+
+.admonition.warning .admonition-title {
+  background-color: var(--yellow2);
+}
+
+.admonition.error .admonition-title {
+  background-color: var(--orange2);
+}
+
+.admonition.success .admonition-title {
+  background-color: var(--green2);
+}
+
+/* Admonition content */
+.admonition p {
+  margin: 0.5em 0;
+  padding-top: 2em;
+}

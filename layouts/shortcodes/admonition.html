@@ -1,0 +1,15 @@
+{{ $admonitionType := .Get "type" | default "info" }} {{ $admonitionTitle :=
+.Get "title" | default $admonitionType | humanize}}
+
+<div class="admonition {{ $admonitionType }}">
+  {{ with $admonitionTitle }}
+  <p class="admonition-title">
+    {{ if eq $admonitionType "info" }}
+    <i class="fas fa-info-circle"></i> {{ . }} {{ else if eq $admonitionType
+    "warning" }} <i class="fas fa-exclamation-triangle"></i> {{ . }} {{ else if
+    eq $admonitionType "error" }} <i class="fas fa-times-circle"></i> {{ . }} {{
+    else if eq $admonitionType "success" }}
+    <i class="fas fa-check-circle"></i> {{ . }} {{ end }}
+  </p>
+  {{ end }} {{ .Inner }}
+</div>
