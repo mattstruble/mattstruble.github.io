@@ -10,5 +10,9 @@ serve: install
 
 .PHONY: clean
 clean:
-	hugo mod clean --all
+	rm -f hugo-*.tgz
+	rm -f hugo_stats.json
+	rm -f .hugo_build.lock
+	rm -rf node_modules
 	rm -rf public
+	hugo mod clean --all

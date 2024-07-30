@@ -1,10 +1,9 @@
 # Module debugging
-#replacements = "github.com/schnerring/hugo-theme-gruvbox -> ../../hugo-theme-gruvbox"
 [hugoVersion]
 extended = true
 min = "0.101.0"
 [[imports]]
-path = "github.com/schnerring/hugo-theme-gruvbox"
+path = "github.com/mattstruble/hugo-theme-catpuccin"
 [[imports]]
 path = "github.com/schnerring/hugo-mod-json-resume"
 [[imports.mounts]]
@@ -40,6 +39,9 @@ source = "node_modules/typeface-fira-code/files"
 target = "static/fonts"
 [[mounts]]
 source = "node_modules/typeface-roboto-slab/files"
+target = "static/fonts"
+[[mount]]
+source = "node_modules/@tabler/icons-webfont/dist/fonts"
 target = "static/fonts"
 [[mounts]]
 source = "node_modules/@tabler/icons/icons"

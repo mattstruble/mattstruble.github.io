@@ -1,10 +1,8 @@
 module struble.dev
 
-go 1.22.1
+go 1.22.5
 
 require (
-	github.com/dillonzq/LoveIt v0.2.11 // indirect
-	github.com/hugo-fixit/FixIt v0.3.2 // indirect
-	github.com/schnerring/hugo-mod-json-resume v0.0.0-20240324043614-ffff65ab2f20 // indirect
-	github.com/schnerring/hugo-theme-gruvbox v0.0.0-20240315014043-dc3c0a888556 // indirect
+	github.com/mattstruble/hugo-theme-catpuccin v0.0.0-20240730021402-8e636dc8116a // indirect
+	github.com/schnerring/hugo-mod-json-resume v0.0.0-20240729170823-24ba47089427 // indirect
 )
