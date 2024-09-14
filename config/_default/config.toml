@@ -109,10 +109,10 @@ plugins = [
 #   - {url} placeholder for post .Permalink
 #   - {title} placeholder for post .Title
 # See  https://github.com/bradvin/social-share-urls for more format strings
-[[params.socialShare]]
-iconSuite = "simple-icon"
-iconName = "twitter"
-formatString = "https://twitter.com/intent/tweet?url={url}&text={title}"
+# [[params.socialShare]]
+# iconSuite = "simple-icon"
+# iconName = "twitter"
+# formatString = "https://twitter.com/intent/tweet?url={url}&text={title}"
 [[params.socialShare]]
 iconSuite = "simple-icon"
 iconName = "linkedin"
@@ -155,11 +155,11 @@ identifier = "cv"
 name = "CV"
 url = "/cv"
 weight = 50
-[[menu.main]]
-identifier = "stats"
-name = "Stats"
-url = "/stats"
-weight = 60
+# [[menu.main]]
+# identifier = "stats"
+# name = "Stats"
+# url = "/stats"
+# weight = 60
 
 [languages]
 [languages.en]
