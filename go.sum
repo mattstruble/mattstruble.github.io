@@ -1,12 +1,4 @@
-github.com/mattstruble/hugo-theme-catpuccin v0.0.0-20240730013543-1a2f4a9532af h1:a20dN8j41+bFb+8EPvMdrnqD7KIw3KOdOHnThyBIRGo=
-github.com/mattstruble/hugo-theme-catpuccin v0.0.0-20240730013543-1a2f4a9532af/go.mod h1:cA6IA+82D55c/SzgWmTU/3TrEuL40QKGDy0rjneHE0M=
-github.com/mattstruble/hugo-theme-catpuccin v0.0.0-20240730021402-8e636dc8116a h1:N13svvM46EHDy53bG0SF/Bh01zCRdUhYRNGs/dGjW8c=
-github.com/mattstruble/hugo-theme-catpuccin v0.0.0-20240730021402-8e636dc8116a/go.mod h1:cA6IA+82D55c/SzgWmTU/3TrEuL40QKGDy0rjneHE0M=
-github.com/schnerring/hugo-mod-json-resume v0.0.0-20240317040430-885b96a21f48 h1:zeTH03bxfJKUi5tI5N3NgsC407yannOS7182W9Hjcy4=
-github.com/schnerring/hugo-mod-json-resume v0.0.0-20240317040430-885b96a21f48/go.mod h1:sLoTJiZFusTxDM0/Xf3BQGw2cVV8e5gDMD0nGMK+cF8=
-github.com/schnerring/hugo-mod-json-resume v0.0.0-20240324043614-ffff65ab2f20 h1:6EiIwTqe0jfNdXw/8BwwOVnU/ZVbbu+Jz0iV99qAPsE=
-github.com/schnerring/hugo-mod-json-resume v0.0.0-20240324043614-ffff65ab2f20/go.mod h1:sLoTJiZFusTxDM0/Xf3BQGw2cVV8e5gDMD0nGMK+cF8=
-github.com/schnerring/hugo-mod-json-resume v0.0.0-20240726182939-351bd04b3580 h1:CzekyLtCpDNoTBT3FcPSzbxwS33JeqgG07lP1oFYY18=
-github.com/schnerring/hugo-mod-json-resume v0.0.0-20240726182939-351bd04b3580/go.mod h1:MkOpUaDAlUA47rxV4jXcz/sQJJES3UaA2jWBIEe+0UM=
-github.com/schnerring/hugo-mod-json-resume v0.0.0-20240729170823-24ba47089427 h1:KZoFJ9Gjyj5kQkFNStMMKPlz2pWag1phv5ejSWmRdgI=
-github.com/schnerring/hugo-mod-json-resume v0.0.0-20240729170823-24ba47089427/go.mod h1:MkOpUaDAlUA47rxV4jXcz/sQJJES3UaA2jWBIEe+0UM=
+github.com/mattstruble/hugo-theme-catpuccin v0.0.0-20240914163845-c9c76f33762b h1:Hcfqk+raK6598tUMqidpoaC6fntNaBDvKLBK1RK3TM8=
+github.com/mattstruble/hugo-theme-catpuccin v0.0.0-20240914163845-c9c76f33762b/go.mod h1:r9wZ+bhxo8I4mCrAKRU5k7HRzRRGfXYT10Vstpf3hSA=
+github.com/schnerring/hugo-mod-json-resume v0.0.0-20240912013022-d0a6933840c5 h1:AV/aZDOq1Y9yS9DlK137/xPhfLgzwg0w+IlxBWw5OS4=
+github.com/schnerring/hugo-mod-json-resume v0.0.0-20240912013022-d0a6933840c5/go.mod h1:Pc0QvpaSvbHMym3crVDxSe9O2VpL89TSWEHK3JqPRjQ=
