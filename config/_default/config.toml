@@ -109,10 +109,10 @@ plugins = [
 #   - {url} placeholder for post .Permalink
 #   - {title} placeholder for post .Title
 # See  https://github.com/bradvin/social-share-urls for more format strings
-# [[params.socialShare]]
-# iconSuite = "simple-icon"
-# iconName = "twitter"
-# formatString = "https://twitter.com/intent/tweet?url={url}&text={title}"
+[[params.socialShare]]
+iconSuite = "simple-icon"
+iconName = "x"
+formatString = "https://x.com/intent/tweet?url={url}&text={title}"
 [[params.socialShare]]
 iconSuite = "simple-icon"
 iconName = "linkedin"
