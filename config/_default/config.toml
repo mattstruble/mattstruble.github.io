@@ -151,11 +151,11 @@ identifier = "about"
 name = "About"
 url = "/about"
 weight = 40
-[[menu.main]]
-identifier = "cv"
-name = "CV"
-url = "/cv"
-weight = 50
+# [[menu.main]]
+# identifier = "cv"
+# name = "CV"
+# url = "/cv"
+# weight = 50
 # [[menu.main]]
 # identifier = "stats"
 # name = "Stats"

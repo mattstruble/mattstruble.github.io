@@ -34,12 +34,81 @@
             "startDate": "2021",
             "summary": "",
             "highlights": [
+                "Architected, and lead development of, model pipelines for training, deploying, and monitoring, in GenAI initiative.",
                 "Planned, designed, and performed, multiple cross-team software migrations into AWS SageMaker.",
                 "Optimized PySpark pipelines, drastically reducing model training and inference time, and improving overall model accuracy.",
                 "Developed a standardized Python package for AWS, logging, and test reliability, to reduce Data Scientist overhead within AWS environments.",
                 "Led the initiative to update repositories and defined engineering best practices, reducing development time and increasing CI/CD reliability within Jenkins.",
                 "Onboarded and supported offshore team by running agile ceremonies and creating documentation on engineering standardization, expectations, and software redesign.",
                 "Designed, and implemented, transition from batch file processing to a new API endpoint for forecasting models."
+            ]
+        },
+        {
+            "name": "Draper",
+            "location": "Cambridge, MA",
+            "description": "Guidance, Navigation, and Control research non-profit.",
+            "position": "Mission Critical Software Engineer",
+            "url": "https://draper.com",
+            "startDate": "2019",
+            "endDate": "2020",
+            "summary": "",
+            "highlights": [
+                "Developed data analytics tools with machine learning algorithms to assist engineers with hardware analysis.",
+                "Processed system data, sensor data, and real time flight data in order to improve GNC algorithms.",
+                "Took on responsibilities of Scrum Master and led CI/CD initiative."
+            ]
+        },
+        {
+            "name": "Raytheon",
+            "location": "Tewksbury, MA",
+            "description": "Aerospace and Defense",
+            "position": "Senior Software Engineer",
+            "url": "https://rtx.com",
+            "startDate": "2018",
+            "endDate": "2019",
+            "summary": "",
+            "highlights": [
+                "Implemented signal processing algorithms, and time cirtical control functions, involved in direct control of sensor system."
+            ]
+        },
+        {
+            "name": "Netnumber",
+            "location": "Lowell, MA",
+            "description": "Telecom ecosystems",
+            "position": "Software Engineer",
+            "url": "https://netnumber.com",
+            "startDate": "2017",
+            "endDate": "2018",
+            "summary": "",
+            "highlights": [
+                "Improved speed, performance, and scalability of signaling routing to fit the needs of customers in emerging markets."
+            ]
+        },
+        {
+            "name": "General Dynamics MS",
+            "location": "Pittsfield, MA",
+            "description": "Advanced Defense Systems",
+            "position": "Aerospace Software Engineer",
+            "url": "https://gdmissionsystems.com/",
+            "startDate": "2017",
+            "endDate": "2018",
+            "summary": "",
+            "highlights": [
+                "Processed data in real time for GNC Algorithms and post-test analysis."
+            ]
+        },
+        {
+            "name": "Pfizer",
+            "location": "Groton, CT",
+            "description": "Biopharmaceuticals",
+            "position": "Continuous Improvement Student Worker",
+            "url": "https://pfizer.com",
+            "startDate": "2017",
+            "endDate": "2018",
+            "summary": "",
+            "highlights": [
+                "Created an internal, professional, social media platform to improve company-wide communication",
+                "Developed applications for both the Raspberry Pi and Google Glass to improve workflow and efficiency within Pfizer."
             ]
         }
     ],
