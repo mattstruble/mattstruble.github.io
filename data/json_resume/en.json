@@ -1,77 +1,79 @@
 {
-  "$schema": "https://raw.githubusercontent.com/jsonresume/resume-schema/v1.0.0/schema.json",
-  "basics": {
-    "name": "Matt Struble",
-    "label": "AI/ML Engineer",
-    "image": "matt-struble.jpg",
-    "summary": "I'm passionate about open-source and digital privacy. \n\nI never save anything for the swim back.",
-    "location": {
-      "city": "Boston",
-      "region": "United States"
-    },
-    "profiles": [
-      {
-        "network": "GitHub",
-        "url": "https://github.com/mattstruble"
-      },
-      {
-        "network": "LinkedIn",
-        "url": "https://www.linkedin.com/in/mattstruble"
-      },
-      {
-        "network": "BlueSky",
-        "url": "https://www.bsky.app/profile/struble.dev"
-      },
-      {
-        "network": "RSS",
-        "url": "https://struble.dev/index.xml"
-      }
-    ]
-  },
-  "work": [
-    {
-      "name": "Nike Inc",
-      "location": "Boston, United States",
-      "description": "Supplier of athletic apparel",
-      "position": "Lead AIML Engineer",
-      "url": "https://nike.com",
-      "startDate": "2021",
-      "summary": "",
-      "highlights": [
-            "Planned, designed, and performed, multiple cross-team software migrations into AWS SageMaker.",
-            "Optimized PySpark pipelines, drastically reducing model training and inference time, and improving overall model accuracy.",
-            "Developed a standardized Python package for AWS, logging, and test reliability, to reduce Data Scientist overhead within AWS environments.",
-            "Led the initiative to update repositories and defined engineering best practices, reducing development time and increasing CI/CD reliability within Jenkins.",
-            "Onboarded and supported offshore team by running agile ceremonies and creating documentation on engineering standardization, expectations, and software redesign.",
-            "Designed, and implemented, transition from batch file processing to a new API endpoint for forecasting models."
+    "$schema": "https://raw.githubusercontent.com/jsonresume/resume-schema/v1.0.0/schema.json",
+    "basics": {
+        "name": "Matt Struble",
+        "label": "AI/ML Engineer",
+        "image": "matt-struble.jpg",
+        "summary": "I'm passionate about open-source and digital privacy. \n\nI never save anything for the swim back.",
+        "location": {
+            "city": "Boston",
+            "region": "United States"
+        },
+        "profiles": [
+            {
+                "network": "GitHub",
+                "url": "https://github.com/mattstruble"
+            },
+            {
+                "network": "LinkedIn",
+                "url": "https://www.linkedin.com/in/mattstruble"
+            },
+            {
+                "network": "BlueSky",
+                "url": "https://www.bsky.app/profile/struble.dev"
+            },
+            {
+                "network": "RSS",
+                "url": "https://struble.dev/index.xml"
+            }
         ]
-    }
-  ],
-  "education": [
-    {
-      "institution": "Georgia Institute of Technology",
-      "url": "https://gatech.edu/",
-      "area": "Computer Science",
-      "studyType": "Masters",
-      "endDate": "2019"
     },
-    {
-      "institution": "Champlain College",
-      "url": "https://champlain.edu",
-      "area": "Game Programming",
-      "studyType": "Bachelors",
-      "endDate": "2015"
+    "work": [
+        {
+            "name": "Nike Inc",
+            "location": "Boston, United States",
+            "description": "Supplier of athletic apparel",
+            "position": "Lead AIML Engineer",
+            "url": "https://nike.com",
+            "startDate": "2021",
+            "summary": "",
+            "highlights": [
+                "Planned, designed, and performed, multiple cross-team software migrations into AWS SageMaker.",
+                "Optimized PySpark pipelines, drastically reducing model training and inference time, and improving overall model accuracy.",
+                "Developed a standardized Python package for AWS, logging, and test reliability, to reduce Data Scientist overhead within AWS environments.",
+                "Led the initiative to update repositories and defined engineering best practices, reducing development time and increasing CI/CD reliability within Jenkins.",
+                "Onboarded and supported offshore team by running agile ceremonies and creating documentation on engineering standardization, expectations, and software redesign.",
+                "Designed, and implemented, transition from batch file processing to a new API endpoint for forecasting models."
+            ]
+        }
+    ],
+    "education": [
+        {
+            "institution": "Georgia Institute of Technology",
+            "url": "https://gatech.edu/",
+            "area": "Computer Science",
+            "studyType": "Masters",
+            "startDate": "2017",
+            "endDate": "2019"
+        },
+        {
+            "institution": "Champlain College",
+            "url": "https://champlain.edu",
+            "area": "Game Programming",
+            "studyType": "Bachelors",
+            "startDate": "2011",
+            "endDate": "2015"
+        }
+    ],
+    "languages": [
+        {
+            "language": "English",
+            "fluency": "Fluent"
+        }
+    ],
+    "meta": {
+        "canonical": "https://raw.githubusercontent.com/jsonresume/resume-schema/master/resume.json",
+        "version": "v1.0.0",
+        "lastModified": "2017-12-24T15:53:00"
     }
-  ],
-  "languages": [
-    {
-      "language": "English",
-      "fluency": "Fluent"
-    }
-  ],
-  "meta": {
-    "canonical": "https://raw.githubusercontent.com/jsonresume/resume-schema/master/resume.json",
-    "version": "v1.0.0",
-    "lastModified": "2017-12-24T15:53:00"
-  }
 }
