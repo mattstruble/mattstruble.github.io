@@ -19,10 +19,6 @@
                 "url": "https://www.linkedin.com/in/mattstruble"
             },
             {
-                "network": "BlueSky",
-                "url": "https://www.bsky.app/profile/struble.dev"
-            },
-            {
                 "network": "RSS",
                 "url": "https://struble.dev/index.xml"
             }
