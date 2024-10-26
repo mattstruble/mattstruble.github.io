@@ -3,6 +3,7 @@ layout: page
 title: About
 permalink: /about/
 weight: 3
+exclude_meta: true
 ---
 
 My name is Matt Struble, and I am a  Machine Learning and Computer Vision engineer.
