@@ -2,6 +2,8 @@
 title: Analyzing Climate Change Stance Through Twitter Data
 date: "2019-12-01T00:00:00Z"
 description: With 22% of US adults indicating they use Twitter, the platform has become a key stage where the climate change conversation unfolds. As such, this project hoped to understand—and visualize—Americans’ views of climate change as seen through the lens of Twitter.
+cover:
+    src: word_cloud.png
 ---
 
 With 22% of US adults indicating they use Twitter, the platform has become a key stage where the climate change conversation unfolds. As such, this project hoped to understand—and visualize—Americans’ views of climate change as seen through the lens of Twitter.

@@ -3,7 +3,7 @@ title: Heineken® AR Cheers Campaign
 date: "2019-08-13T00:00:00Z"
 description: A web app that blended augmented reality and artificial intelligence to create an interactive user experience for the Heineken® Formula 1 campaign. The campaign was the first time a brand has used web-based AR technology to power a live competition globally.
 cover:
-    src: preview.png
+    src: heineken-cheers.jpg
     alt: An image separated into three columns. The first column shows two Heineken F1 bottles with a white bottle icon overlayed on top. The second column shows a f1 car rising out of a table with the racing lights above. The third column shows an image of winning two tickets to a concert.
 ---
 
