@@ -3,7 +3,7 @@
     "basics": {
         "name": "Matt Struble",
         "label": "AI/ML Engineer",
-        "image": "matt-struble.jpg",
+        "image": "https://struble.dev/matt-struble.jpg",
         "summary": "I'm passionate about open-source and digital privacy. I never save anything for the swim back.",
         "location": {
             "city": "Boston",
