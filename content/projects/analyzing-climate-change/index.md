@@ -70,7 +70,7 @@ The BERT model leveraged a pretrained model and trained over it, tweaking hyperp
 The ensemble model performed best when using the bag of words approach. However, the large gap between in-sample performance and out-of-sample performance indicates that overfitting may have occurred.
 This had to be contended with when working with a limited training sample size, particularly when it came to obtaining enough "negative" tweets. Even still, the confusion matrix shows a strong performance while maintaining an evenly divided error rate.
 
-![](bow_conf_test.png)
+![](bert_conf_test.png)
 
 ##### BERT Model
 
@@ -93,8 +93,6 @@ This had to be contended with when working with a limited training sample size, 
 | Accuracy |  | | .68 | 3749 |
 
 The model consists of two parts, the first of which is a text encoder that transforms tweets into vectors. These are then used in the second part as features. This second part is a deep recurrent neural network that comes "out-of-the-box" with pre-trained weights, which are adjusted as new data is applied in the training step. As can be seen, the validation accuracy during training remained roughly constant throughout the training process, which is a sign of severe overfitting to the training data.
-
-![](bert_conf_test.png)
 
 ### Results
 
