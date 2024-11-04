@@ -81,7 +81,7 @@ output_dir=output
 
 By structuring it this way any script can source `auto_runner.config` and automatically get all the information it needs for the current run that's being executed.
 
-I'm sure you noticed that `auto_runner.config` takes in a command line argument to set the `working_dir` of the project. This came up due to the differences of trying to run the autmated scripts from
+I'm sure you noticed that `auto_runner.config` takes in a command line argument to set the `working_dir` of the project. This came up due to the differences of trying to run the automated scripts from
 a network mounted drive on my computer, versus trying to run them from within the NAS itself. Synology provides a way for a user to define custom scripts, but they require the full working path in order to target each script,
 where running the scripts locally has the benefit of starting from the deep learning directory. By passing in the working dir it allows supporting scripts to be written for each use case:
 
