@@ -1,11 +1,9 @@
 ---
-color: primary
 comments: true
 date: "2020-10-26T00:00:00Z"
 description: My analysis of the AVA database as the first step in creating a deep
   learning model capable understanding photo aesthetics.
 series: dlpa
-style: border
 tags:
 - ML
 - Deep Learning
@@ -88,7 +86,7 @@ First, I wanted to see if the tags could be used as a means to group the images 
 <a class="lightbox-link" href="weighted_avg_hist_tag.png" data-lightbox="weighted_avg_hist_tag" data-title="Weighted Avg Histogram Per Tag">weighted average histograms per tag</a>.
 At first look it seemed that grouping by tags produced essentially the same normalized distribution as the global dataset, just with mild changes to the steepness of the center peak. However, as shown in Figure 2, the average histogram tells another story in that each tag’s average distribution is completely unique, particularly the tags Camera, Maternity, Overlays, and Pinhole/Zone which all have an extreme number of photos weighted near the middle.
 
-![Weighted average historgrams of the calculated scores for the Camera, Maternity, Overlays, and Pinhole/Zone tags](unique_weighted_avg_hist_tags.png "Fig 2. Example of disparity in the historgram among tags.")
+![Weighted average histograms of the calculated scores for the Camera, Maternity, Overlays, and Pinhole/Zone tags](unique_weighted_avg_hist_tags.png "Fig 2. Example of disparity in the histogram among tags.")
 
 Seeing the fact that each tag had a unique histogram of scores gave me confidence in using them to continue my investigation of the dataset.
 

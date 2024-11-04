@@ -3,6 +3,8 @@ install:
 	hugo mod get
 	hugo mod npm pack
 	npm install
+	pre-commit install
+
 
 .PHONY: serve
 serve: install
@@ -12,6 +14,10 @@ serve: install
 update:
 	hugo mod get -u
 	hugo mod tidy
+
+.PHONY: lint
+lint:
+	pre-commit run --all-files
 
 .PHONY: clean
 clean:

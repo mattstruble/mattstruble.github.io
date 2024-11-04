@@ -1,11 +1,9 @@
 ---
-color: success
 comments: true
 date: "2020-11-19T00:00:00Z"
 description: How I shaped the AVA database to reduce training times, remove bias,
   and improve model inference.
 series: dlpa
-style: border
 tags:
 - ML
 - Deep Learning

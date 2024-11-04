@@ -4,7 +4,7 @@ date: "2019-08-13T00:00:00Z"
 description: A web app that blended augmented reality and artificial intelligence to create an interactive user experience for the Heineken® Formula 1 campaign. The campaign was the first time a brand has used web-based AR technology to power a live competition globally.
 cover:
     src: heineken-cheers.jpg
-    alt: An image separated into three columns. The first column shows two Heineken F1 bottles with a white bottle icon overlayed on top. The second column shows a f1 car rising out of a table with the racing lights above. The third column shows an image of winning two tickets to a concert.
+    alt: An image separated into three columns. The first column shows two Heineken F1 bottles with a white bottle icon overlaid on top. The second column shows a f1 car rising out of a table with the racing lights above. The third column shows an image of winning two tickets to a concert.
 ---
 
 A web app that blended augmented reality and artificial intelligence to create an interactive user experience for the [Heineken® Formula 1](https://www.heineken.com/formula-1) campaign.
@@ -44,7 +44,7 @@ color, and noise. The end result was a dataset closely matching what was scraped
 
 ![Animation showing two heineken bottles being placed next to each other on a table. With the object detection bounding box shifting between the two.](multi-detect-fail.gif)
 
-After training the intial dataset for a hundred thousand iterations I ran it through some test videos and immediately noticed some issues.
+After training the initial dataset for a hundred thousand iterations I ran it through some test videos and immediately noticed some issues.
 With all of our training data primarily being single objects, the model had no exposure detecting multiple logos at the same time. Good news was that there was already a pipeline set up
 for generating fake-real data, making the solution as simple as capturing, and labeling, more photos with a focus of presenting as many permutations of the bottles and glasses we could.
 
