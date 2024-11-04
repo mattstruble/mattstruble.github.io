@@ -1,10 +1,8 @@
 ---
-color: primary
 comments: true
 date: "2020-04-16T00:00:00Z"
 description: Using plagiarism detection algorithms to track the phrases my friends
   use in group chats.
-style: border
 tags:
 - Python
 - Template Matching

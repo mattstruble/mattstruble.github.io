@@ -1,10 +1,8 @@
 ---
-color: success
 comments: true
 date: "2020-08-25T00:00:00Z"
 description: Learning how to over come fear of failure, imposter syndrome, and self-doubt
   when changing career paths.
-style: border
 tags:
 - TensorFlow
 - AI

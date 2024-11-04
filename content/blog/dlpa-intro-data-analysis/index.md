@@ -1,11 +1,9 @@
 ---
-color: primary
 comments: true
 date: "2020-10-26T00:00:00Z"
 description: My analysis of the AVA database as the first step in creating a deep
   learning model capable understanding photo aesthetics.
 series: dlpa
-style: border
 tags:
 - ML
 - Deep Learning
