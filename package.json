@@ -1,0 +1,72 @@
+{
+  "comments": {
+    "dependencies": {
+      "@tabler/icons": "github.com/mattstruble/hugo-theme-catpuccin",
+      "@tabler/icons-webfont": "project",
+      "flexsearch": "github.com/mattstruble/hugo-theme-catpuccin",
+      "katex": "project",
+      "normalize.css": "github.com/mattstruble/hugo-theme-catpuccin",
+      "prism-themes": "github.com/mattstruble/hugo-theme-catpuccin",
+      "prismjs": "github.com/mattstruble/hugo-theme-catpuccin",
+      "simple-icons": "github.com/schnerring/hugo-mod-json-resume",
+      "typeface-fira-code": "github.com/mattstruble/hugo-theme-catpuccin",
+      "typeface-roboto-slab": "github.com/mattstruble/hugo-theme-catpuccin"
+    },
+    "devDependencies": {
+      "@fullhuman/postcss-purgecss": "github.com/mattstruble/hugo-theme-catpuccin",
+      "cssnano": "github.com/mattstruble/hugo-theme-catpuccin",
+      "eslint": "github.com/mattstruble/hugo-theme-catpuccin",
+      "eslint-config-prettier": "github.com/mattstruble/hugo-theme-catpuccin",
+      "eslint-plugin-prettier": "github.com/mattstruble/hugo-theme-catpuccin",
+      "husky": "github.com/mattstruble/hugo-theme-catpuccin",
+      "lint-staged": "github.com/mattstruble/hugo-theme-catpuccin",
+      "markdownlint-cli": "github.com/mattstruble/hugo-theme-catpuccin",
+      "postcss": "github.com/mattstruble/hugo-theme-catpuccin",
+      "postcss-cli": "github.com/mattstruble/hugo-theme-catpuccin",
+      "postcss-custom-media": "github.com/mattstruble/hugo-theme-catpuccin",
+      "postcss-import": "github.com/mattstruble/hugo-theme-catpuccin",
+      "postcss-nesting": "github.com/mattstruble/hugo-theme-catpuccin",
+      "postcss-preset-env": "github.com/mattstruble/hugo-theme-catpuccin",
+      "postcss-url": "github.com/mattstruble/hugo-theme-catpuccin",
+      "prettier": "github.com/mattstruble/hugo-theme-catpuccin",
+      "prettier-plugin-go-template": "github.com/mattstruble/hugo-theme-catpuccin",
+      "stylelint": "github.com/mattstruble/hugo-theme-catpuccin",
+      "stylelint-prettier": "github.com/mattstruble/hugo-theme-catpuccin"
+    }
+  },
+  "dependencies": {
+    "@tabler/icons": "^2.47.0",
+    "@tabler/icons-webfont": "^3.1.0",
+    "flexsearch": "0.7.31",
+    "katex": "^0.16.8",
+    "normalize.css": "^8.0.1",
+    "prism-themes": "^1.9.0",
+    "prismjs": "^1.29.0",
+    "simple-icons": "^13.16.0",
+    "typeface-fira-code": "^1.1.13",
+    "typeface-roboto-slab": "^1.1.13"
+  },
+  "devDependencies": {
+    "@fullhuman/postcss-purgecss": "^6.0.0",
+    "cssnano": "^7.0.6",
+    "eslint": "^8.57.0",
+    "eslint-config-prettier": "^9.1.0",
+    "eslint-plugin-prettier": "^5.1.3",
+    "husky": "^9.0.11",
+    "lint-staged": "^15.2.6",
+    "markdownlint-cli": "^0.41.0",
+    "postcss": "^8.4.38",
+    "postcss-cli": "^11.0.0",
+    "postcss-custom-media": "^10.0.6",
+    "postcss-import": "^16.1.0",
+    "postcss-nesting": "^12.1.5",
+    "postcss-preset-env": "^9.5.14",
+    "postcss-url": "^10.1.3",
+    "prettier": "^3.3.2",
+    "prettier-plugin-go-template": "^0.0.15",
+    "stylelint": "^16.6.1",
+    "stylelint-prettier": "^5.0.0"
+  },
+  "name": "hugo",
+  "version": "0.1.0"
+}

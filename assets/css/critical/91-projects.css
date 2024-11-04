@@ -1,0 +1,9 @@
+.grid {
+    margin: 0;
+}
+.grid-sizer,
+.grid-item {
+    float: left;
+    width: 60%;
+    max-width: 60%;
+}
