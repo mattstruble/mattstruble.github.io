@@ -26,7 +26,7 @@
     },
     "work": [
         {
-            "name": "Nike Inc",
+            "name": "Nike",
             "location": "Boston, United States",
             "description": "Supplier of athletic apparel",
             "position": "Lead AIML Engineer",
@@ -128,6 +128,22 @@
             "studyType": "Bachelors",
             "startDate": "2011",
             "endDate": "2015"
+        }
+    ],
+    "skills": [
+        {
+            "name": "Languages",
+            "keywords": [
+                "Python",
+                "C++",
+                "C",
+                "SQL",
+                "Rust",
+                "Java",
+                "Bash",
+                "LaTex",
+                "Lua"
+            ]
         }
     ],
     "languages": [
