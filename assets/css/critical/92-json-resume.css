@@ -3,5 +3,5 @@
 }
 
 .jr-education__item .jr__date-range {
-    visibility: hidden;
+    display: none;
 }
