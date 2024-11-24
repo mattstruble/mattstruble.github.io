@@ -130,6 +130,22 @@
             "endDate": "2015"
         }
     ],
+    "skills": [
+        {
+            "name": "Languages",
+            "keywords": [
+                "Python",
+                "C++",
+                "C",
+                "SQL",
+                "Rust",
+                "Java",
+                "Bash",
+                "LaTex",
+                "Lua"
+            ]
+        }
+    ],
     "languages": [
         {
             "language": "English",

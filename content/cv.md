@@ -4,6 +4,8 @@ draft: false
 type: "cv"
 ---
 
+[Download full resume in pdf format](../resume/struble_resume.pdf)
+
 ## Experience
 
 {{< json-resume "work" >}}

@@ -49,3 +49,6 @@ target = "assets/tabler-icons"
 [[mounts]]
 source = "node_modules/@tabler/icons-webfont/dist/fonts/"
 target = "static/fonts"
+[[mounts]]
+source = "resume/"
+target = "static/resume"

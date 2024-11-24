@@ -1,4 +1,10 @@
 github.com/mattstruble/hugo-theme-catpuccin v0.0.0-20241104181545-8a1dcdd55ba0 h1:eCy8DpEVnZ5BtFEGKETytkOaRph618pVltlH9JaDauc=
 github.com/mattstruble/hugo-theme-catpuccin v0.0.0-20241104181545-8a1dcdd55ba0/go.mod h1:kB/CxIqlpVbISScICPlK/a3U5JcapVWlwfxmby8D/bY=
+github.com/mattstruble/hugo-theme-catpuccin v0.0.0-20241104195114-84fd20146ed2 h1:VeARECpmifNeK1eOyE5RbO+LC75K1jhXHw+/ZhYNmKk=
+github.com/mattstruble/hugo-theme-catpuccin v0.0.0-20241104195114-84fd20146ed2/go.mod h1:kB/CxIqlpVbISScICPlK/a3U5JcapVWlwfxmby8D/bY=
+github.com/mattstruble/resume v0.0.0-20241028203028-11f3d4a1ce4f h1:71S0rkp+hTGi4Fbx3PKJyUDLmdz6QRaX6P/AJKCR9LM=
+github.com/mattstruble/resume v0.0.0-20241028203028-11f3d4a1ce4f/go.mod h1:AiDQzPOr+nxLksYqZBLiWfv1IUrFDKEtq4kWplihI4Y=
 github.com/schnerring/hugo-mod-json-resume v0.0.0-20241103032848-c53b1f47deca h1:K3ssLkcgBpb/j189koHkGMWRrVBuHMb6FbxvRIh4UeQ=
 github.com/schnerring/hugo-mod-json-resume v0.0.0-20241103032848-c53b1f47deca/go.mod h1:sOjpBNFN9mITtxiRXl5oh+oeruYImPOgOH1j0Nf3GSY=
+github.com/schnerring/hugo-mod-json-resume v0.0.0-20241118162302-d03369dc6ec0 h1:Hk5QzcpS0H23YUZV5oVWoQYOJCXsMEtD3eP+DjhrLLE=
+github.com/schnerring/hugo-mod-json-resume v0.0.0-20241118162302-d03369dc6ec0/go.mod h1:5RDPnoQb/ZJDfO/OE19teQeHqG9g7OpJldsF0VW1va8=
