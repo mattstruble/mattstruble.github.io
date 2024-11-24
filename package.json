@@ -36,7 +36,7 @@
   },
   "dependencies": {
     "@tabler/icons": "^2.47.0",
-    "@tabler/icons-webfont": "^3.21.0",
+    "@tabler/icons-webfont": "^3.22.0",
     "flexsearch": "0.7.31",
     "katex": "^0.16.11",
     "normalize.css": "^8.0.1",
