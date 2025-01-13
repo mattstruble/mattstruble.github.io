@@ -2,7 +2,7 @@
   "name": "hugo",
   "version": "0.1.0",
   "dependencies": {
-    "katex": "^0.16.11",
+    "katex": "^0.16.20",
     "@tabler/icons-webfont": "^3.22.0"
   }
 }
