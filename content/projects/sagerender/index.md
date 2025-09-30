@@ -5,6 +5,13 @@ description: A web app that blended augmented reality and artificial intelligenc
 cover:
     src: sagerender.png
     alt: A white controller with the sagemaker logo in the middle.
+tags:
+- "Machine Learning"
+- "AWS SageMaker"
+- "Pipeline Automation"
+- "YAML Configuration"
+- "Open Source Tools"
+
 ---
 
 
