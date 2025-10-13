@@ -1,6 +1,6 @@
 module struble.dev
 
-go 1.23.3
+go 1.25.3
 
 require (
 	github.com/mattstruble/hugo-theme-catpuccin v0.0.0-20241104195114-84fd20146ed2 // indirect
