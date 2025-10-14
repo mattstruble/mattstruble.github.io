@@ -36,13 +36,13 @@
   },
   "dependencies": {
     "@tabler/icons": "^2.47.0",
-    "@tabler/icons-webfont": "^3.21.0",
+    "@tabler/icons-webfont": "^3.35.0",
     "flexsearch": "0.7.31",
-    "katex": "^0.16.21",
+    "katex": "^0.16.11",
     "normalize.css": "^8.0.1",
     "prism-themes": "^1.9.0",
-    "prismjs": "^1.30.0",
-    "simple-icons": "^13.17.0",
+    "prismjs": "^1.29.0",
+    "simple-icons": "^15.16.1",
     "typeface-fira-code": "^1.1.13",
     "typeface-roboto-slab": "^1.1.13"
   },
