@@ -95,7 +95,7 @@ Git AI started as an experiment in how to use AI to complement human craftsmansh
 If you’d like to see what that feels like, you can try it today. I’d love to hear what you think, and how it could better fit your workflow.
 
 {{< admonition type=note >}}
-As of writing this Git AI is still in alpha. Feedback and ideas are welcome on the [GitHub repository](https://github.com/mattstruble/git-ai).
+As of writing this Git AI is still in early stages of development. Feedback and ideas are welcome on the [GitHub repository](https://github.com/mattstruble/git-ai).
 {{< /admonition >}}
 
 
