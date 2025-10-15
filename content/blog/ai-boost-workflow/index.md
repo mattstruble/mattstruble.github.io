@@ -1,7 +1,6 @@
 ---
 title: "Boost Your Workflow, Not Replace It: How AI Can Enhance Developer Productivity"
 description: "A Principal Engineer’s reflection on how AI can enhance developer workflows without replacing them. How subtle, well-placed automation enhances focus, consistency, and creativity without disrupting flow."
-author: "Matt Struble"
 date: 2025-10-14
 tags: ["AI for developers", "developer productivity", "GenAI", "engineering", "workflow", "git", "tools", "software development"]
 ---
@@ -13,7 +12,9 @@ As a Principal Engineer, I’ve spent years refining how I work. My editor is tu
 
 So when AI-powered IDEs started making their way into everyday workflows, I wanted to believe in them. They promised to make developers faster, but the moment I stepped inside one, that flow disappeared. The shortcuts I relied on were gone, the layout felt foreign, and the LSPs I needed weren’t there.
 
-> **AI shouldn’t replace your workflow; it should enhance your flow.**
+{{< center-quote >}}
+**AI shouldn’t replace your workflow; it should enhance your flow.**
+{{< /center-quote >}}
 
 At first, I tried to adapt. I jumped between my terminal and the AI IDE, switching contexts just to give it a fair chance. But every session felt slower, more frustrating. The results weren’t matching what I envisioned. It took longer to describe the solution I wanted than to simply write it myself. That’s when my skepticism about AI tools started to grow.
 
@@ -94,6 +95,9 @@ Git AI started as an experiment in how to use AI to complement human craftsmansh
 
 If you’d like to see what that feels like, you can try it today. I’d love to hear what you think, and how it could better fit your workflow.
 
-> **Note:** As of writing this Git AI is still in alpha. Feedback and ideas are welcome on the [GitHub repository](https://github.com/mattstruble/git-ai).
+{{< admonition type=note >}}
+As of writing this Git AI is still in alpha. Feedback and ideas are welcome on the [GitHub repository](https://github.com/mattstruble/git-ai).
+{{< /admonition >}}
+
 
 Boost your workflow. Keep your flow.
