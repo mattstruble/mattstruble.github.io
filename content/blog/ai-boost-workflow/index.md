@@ -26,7 +26,6 @@ That idea stayed with me. Developers shouldn’t have to change their environmen
 
 That was the moment I started building **Git AI**.
 
-
 ### Automating the boring parts
 
 Git AI doesn’t try to write your code. It enhances the parts around it.
@@ -50,8 +49,6 @@ fix(config): correct environment variable parsing
 ```
 
 The history becomes a story again. The output is consistent, readable, and aligned with best practices. What used to take minutes of manual sorting now happens instantly, leaving developers to focus on the work that actually matters.
-
----
 
 ### Where AI fits in
 
@@ -86,7 +83,6 @@ The focus shifts from syntax and style to architecture and design. Engineers can
 I’ve seen this change happen firsthand. Once AI takes care of commits, merges, or pre-commit checks, developers move with more confidence. They experiment more, refactor more, and contribute with fewer distractions. The workflow feels lighter, yet the output is stronger.
 
 That’s what it means to *boost* a workflow. Not replacing the human, but to giving them more space to create.
-
 
 ### The future of enhancement
 
