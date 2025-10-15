@@ -1,6 +1,8 @@
 ---
-title: “Boost Your Workflow, Not Replace It: How AI Can Enhance Developer Productivity”
-description: "A Principal Engineer’s reflection on integrating AI into developer workflows. How subtle, well-placed automation enhances focus, consistency, and creativity without disrupting flow."
+title: "Boost Your Workflow, Not Replace It: How AI Can Enhance Developer Productivity"
+description: "A Principal Engineer’s reflection on how AI can enhance developer workflows without replacing them. How subtle, well-placed automation enhances focus, consistency, and creativity without disrupting flow."
+author: "Matt Struble"
+date: 2025-10-14
 tags: ["AI for developers", "developer productivity", "GenAI", "engineering", "workflow", "git", "tools", "software development"]
 ---
 
