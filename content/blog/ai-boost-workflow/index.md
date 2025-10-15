@@ -59,22 +59,18 @@ That experience reshaped how I view AI in development.
 It doesn’t belong in a separate window, or as a replacement for human judgment. It belongs in the quiet spaces between effort where it can reduce friction without removing control.
 
 ```mermaid
-%%{init: {'theme': 'neutral'}}%%
 flowchart LR
-    A[Developer] -->|Context| B[AI Enhancement Layer]
-    B -->|Automation| C[Developer Output]
-    subgraph AI Enhancement Layer
-        B1[Commit Generation]
-        B2[Linter & Formatting Fixes]
-        B3[Merge Conflict Resolution]
-        B4[Boilerplate Setup]
+    D[Developer] -->|Context & Code| A
+    subgraph A[AI Enhancement Layer]
+        direction TB
+        C1[Commit Generation]
+        C2[Linter & Formatting Fixes]
+        C3[Merge Conflict Resolution]
+        C4[Boilerplate Setup]
     end
-    A --> B
-    B --> B1
-    B --> B2
-    B --> B3
-    B --> B4
-    C[Higher Productivity & Focus]
+    A -->|Automation & Assistance| O1[Higher Productivity]
+    A -->|Time Recovered| O2[Greater Creative Focus]
+    A -->|Consistency & Standards| O3[Improved Team Alignment]
 ```
 
 By placing AI inside the workflow, right next to the tools we already trust, it stops feeling like an interruption and starts becoming part of the process.
