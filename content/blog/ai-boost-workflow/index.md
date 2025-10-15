@@ -20,7 +20,7 @@ At first, I tried to adapt. I jumped between my terminal and the AI IDE, switchi
 
 ### A smaller, quieter insight
 
-Still, I noticed one small thing that kept me coming back. The IDEs were good at writing commit messages. Not perfect, but consistent. It made me realize that while I didn’t want AI building my systems, I *did* want it handling the repetitive parts of my job so that I could stay focused on problem solving.
+Still, I noticed one small thing that kept me coming back. The IDEs were good at writing commit messages. Not perfect, but consistent. It made me realize that AI didn’t need to take over the work; it needed to live closer to where the work was already happening. The problem wasn’t capability, it was placement.
 
 That idea stayed with me. Developers shouldn’t have to change their environments to benefit from AI. The better path was to bring AI into the tools we already use, right where it can make the biggest impact with the least intrusion.
 
