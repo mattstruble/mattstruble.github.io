@@ -14,7 +14,7 @@ tags:
 title: Deep Learning Photo Aesthetics - Data Pipeline Optimization
 ---
 
-In my [last post](https://mattstruble.com/blog/dlpa-data-preprocessing) I talked briefly about my data preparation pipeline and how I encoded the 200k images into TFRecords. As part of this step I first serialized an image into a tensor prior to storing it as a TFRecord. This method of first serializing the image as a tensor is a fairly common step in other tutorials that talk about TFRecord image preparation
+In my [last post](https://struble.dev/blog/dlpa-data-preprocessing) I talked briefly about my data preparation pipeline and how I encoded the 200k images into TFRecords. As part of this step I first serialized an image into a tensor prior to storing it as a TFRecord. This method of first serializing the image as a tensor is a fairly common step in other tutorials that talk about TFRecord image preparation
 [[1](https://towardsdatascience.com/working-with-tfrecords-and-tf-train-example-36d111b3ff4d), [2](https://medium.com/swlh/using-tfrecords-to-train-a-cnn-on-mnist-aec141d65e3d), [3](https://medium.com/ai-in-plain-english/a-quick-and-simple-guide-to-tfrecord-c421337a6562), [4](https://www.kaggle.com/ryanholbrook/tfrecords-basics)].
 
 ```python
