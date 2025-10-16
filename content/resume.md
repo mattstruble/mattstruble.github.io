@@ -6,10 +6,6 @@ type: "cv"
 
 [Download full resume in pdf format](../resume/struble_resume.pdf)
 
-## Skills
-
-{{< json-resume "skills" >}}
-
 ## Experience
 
 {{< json-resume "work" >}}
@@ -33,6 +29,10 @@ type: "cv"
 <!-- ## Publications -->
 <!---->
 <!-- {{< json-resume "publications" >}} -->
+<!---->
+<!-- ## Skills -->
+<!---->
+<!-- {{< json-resume "skills" >}} -->
 <!---->
 <!-- ## Languages -->
 <!---->
