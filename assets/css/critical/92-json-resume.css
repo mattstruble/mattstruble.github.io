@@ -3,7 +3,7 @@
 }
 
 .jr__date-range {
-  display: hidden;
+  visibility: hidden;
 }
 
 .jr-basics__location-region,
