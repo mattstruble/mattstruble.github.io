@@ -83,25 +83,25 @@ url = "/"
 
 [params.prism]
 languages = [
-    "markup",
-    "css",
-    "clike",
-    "javascript",
-    "bash",
-    "hcl",
-    "ignore",
-    "json",
-    "markdown",
-    "toml",
-    "yaml",
-    "python",
-    "docker",
+  "markup",
+  "css",
+  "clike",
+  "javascript",
+  "bash",
+  "hcl",
+  "ignore",
+  "json",
+  "markdown",
+  "toml",
+  "yaml",
+  "python",
+  "docker",
 ]
 plugins = [
-    "normalize-whitespace",
-    "toolbar",
-    "copy-to-clipboard",
-    "command-line",
+  "normalize-whitespace",
+  "toolbar",
+  "copy-to-clipboard",
+  "command-line",
 ]
 
 # Social share links for posts:
@@ -152,9 +152,9 @@ name = "About"
 url = "/about"
 weight = 40
 [[menu.main]]
-identifier = "cv"
-name = "CV"
-url = "/cv"
+identifier = "resume"
+name = "Resume"
+url = "/resume"
 weight = 50
 # [[menu.main]]
 # identifier = "stats"
