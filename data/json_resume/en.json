@@ -1,160 +1,243 @@
 {
-    "$schema": "https://raw.githubusercontent.com/jsonresume/resume-schema/v1.0.0/schema.json",
-    "basics": {
-        "name": "Matt Struble",
-        "label": "AI/ML Engineer",
-        "image": "https://struble.dev/matt-struble.jpg",
-        "summary": "I'm passionate about open-source and digital privacy. I never save anything for the swim back.",
-        "location": {
-            "city": "Boston",
-            "region": "United States"
-        },
-        "profiles": [
-            {
-                "network": "GitHub",
-                "url": "https://github.com/mattstruble"
-            },
-            {
-                "network": "LinkedIn",
-                "url": "https://www.linkedin.com/in/mattstruble"
-            },
-            {
-                "network": "RSS",
-                "url": "https://struble.dev/index.xml"
-            }
-        ]
+  "$schema": "https://raw.githubusercontent.com/jsonresume/resume-schema/v1.0.0/schema.json",
+  "basics": {
+    "name": "Matt Struble",
+    "label": "Principal Machine Learning Engineer",
+    "image": "https://struble.dev/matt-struble.jpg",
+    "url": "https://struble.dev",
+    "summary": "I'm passionate about open-source, generative AI, and digital privacy. I build systems that bridge research with production, enabling reliable, scalable AI. I never save anything for the swim back.",
+    "location": {
+      "city": "Boston",
+      "region": "Massachusetts",
+      "country": "United States"
     },
-    "work": [
-        {
-            "name": "Nike",
-            "location": "Boston, United States",
-            "description": "Supplier of athletic apparel",
-            "position": "Lead AIML Engineer",
-            "url": "https://nike.com",
-            "startDate": "2021",
-            "summary": "",
-            "highlights": [
-                "Architected, and lead development of, model pipelines for training, deploying, and monitoring, in GenAI initiative.",
-                "Planned, designed, and performed, multiple cross-team software migrations into AWS SageMaker.",
-                "Optimized PySpark pipelines, drastically reducing model training and inference time, and improving overall model accuracy.",
-                "Developed a standardized Python package for AWS, logging, and test reliability, to reduce Data Scientist overhead within AWS environments.",
-                "Led the initiative to update repositories and defined engineering best practices, reducing development time and increasing CI/CD reliability within Jenkins.",
-                "Onboarded and supported offshore team by running agile ceremonies and creating documentation on engineering standardization, expectations, and software redesign.",
-                "Designed, and implemented, transition from batch file processing to a new API endpoint for forecasting models."
-            ]
-        },
-        {
-            "name": "Draper",
-            "location": "Cambridge, MA",
-            "description": "Guidance, Navigation, and Control research non-profit.",
-            "position": "Mission Critical Software Engineer",
-            "url": "https://draper.com",
-            "startDate": "2019",
-            "endDate": "2020",
-            "summary": "",
-            "highlights": [
-                "Developed data analytics tools with machine learning algorithms to assist engineers with hardware analysis.",
-                "Processed system data, sensor data, and real time flight data in order to improve GNC algorithms.",
-                "Took on responsibilities of Scrum Master and led CI/CD initiative."
-            ]
-        },
-        {
-            "name": "Raytheon",
-            "location": "Tewksbury, MA",
-            "description": "Aerospace and Defense",
-            "position": "Senior Software Engineer",
-            "url": "https://rtx.com",
-            "startDate": "2018",
-            "endDate": "2019",
-            "summary": "",
-            "highlights": [
-                "Implemented signal processing algorithms, and time cirtical control functions, involved in direct control of sensor system."
-            ]
-        },
-        {
-            "name": "Netnumber",
-            "location": "Lowell, MA",
-            "description": "Telecom ecosystems",
-            "position": "Software Engineer",
-            "url": "https://netnumber.com",
-            "startDate": "2017",
-            "endDate": "2018",
-            "summary": "",
-            "highlights": [
-                "Improved speed, performance, and scalability of signaling routing to fit the needs of customers in emerging markets."
-            ]
-        },
-        {
-            "name": "General Dynamics MS",
-            "location": "Pittsfield, MA",
-            "description": "Advanced Defense Systems",
-            "position": "Aerospace Software Engineer",
-            "url": "https://gdmissionsystems.com/",
-            "startDate": "2017",
-            "endDate": "2018",
-            "summary": "",
-            "highlights": [
-                "Processed data in real time for GNC Algorithms and post-test analysis."
-            ]
-        },
-        {
-            "name": "Pfizer",
-            "location": "Groton, CT",
-            "description": "Biopharmaceuticals",
-            "position": "Continuous Improvement Student Worker",
-            "url": "https://pfizer.com",
-            "startDate": "2017",
-            "endDate": "2018",
-            "summary": "",
-            "highlights": [
-                "Created an internal, professional, social media platform to improve company-wide communication",
-                "Developed applications for both the Raspberry Pi and Google Glass to improve workflow and efficiency within Pfizer."
-            ]
-        }
-    ],
-    "education": [
-        {
-            "institution": "Georgia Institute of Technology",
-            "url": "https://gatech.edu/",
-            "area": "Computer Science",
-            "studyType": "Masters",
-            "startDate": "2017",
-            "endDate": "2019"
-        },
-        {
-            "institution": "Champlain College",
-            "url": "https://champlain.edu",
-            "area": "Game Programming",
-            "studyType": "Bachelors",
-            "startDate": "2011",
-            "endDate": "2015"
-        }
-    ],
-    "skills": [
-        {
-            "name": "Languages",
-            "keywords": [
-                "Python",
-                "C++",
-                "C",
-                "SQL",
-                "Rust",
-                "Java",
-                "Bash",
-                "LaTex",
-                "Lua"
-            ]
-        }
-    ],
-    "languages": [
-        {
-            "language": "English",
-            "fluency": "Fluent"
-        }
-    ],
-    "meta": {
-        "canonical": "https://raw.githubusercontent.com/jsonresume/resume-schema/master/resume.json",
-        "version": "v1.0.0",
-        "lastModified": "2017-12-24T15:53:00"
+    "profiles": [
+      {
+        "network": "GitHub",
+        "url": "https://github.com/mattstruble"
+      },
+      {
+        "network": "LinkedIn",
+        "url": "https://linkedin.com/in/mattstruble"
+      },
+      {
+        "network": "RSS",
+        "url": "https://struble.dev/index.xml"
+      }
+    ]
+  },
+  "work": [
+    {
+      "name": "Nike",
+      "location": "Boston, MA",
+      "position": "Principal Software Engineer – AI/ML & GenAI",
+      "url": "https://nike.com",
+      "startDate": "2025-04",
+      "summary": "Leading development of Nike’s AI/ML and GenAI platforms with a focus on scalable training, inference, and monitoring infrastructure.",
+      "highlights": [
+        "Built unified debugging and observability tools that reduced model pipeline failures by 70%.",
+        "Led fine-tuning and serving of large vision-language models including SAM2, GroundingDino, and CLIP.",
+        "Created Terraform-based templates that cut GenAI deployment time by 50%.",
+        "Authored best-practice playbooks adopted across the Nike AI Community of Practice."
+      ]
+    },
+    {
+      "name": "Nike",
+      "location": "Boston, MA",
+      "position": "Lead Machine Learning Engineer – Analytics & GenAI",
+      "url": "https://nike.com",
+      "startDate": "2021-02",
+      "endDate": "2025-04",
+      "summary": "Drove engineering excellence and production reliability for Nike’s AI ecosystem.",
+      "highlights": [
+        "Migrated legacy ML workloads to AWS SageMaker, enabling cross-team scalability.",
+        "Optimized PySpark pipelines (-70 % runtime, +30 % accuracy).",
+        "Developed standardized AWS/logging SDKs reducing production incidents by 90 %.",
+        "Established CI/CD standards, canary testing, and monitoring for GenAI services."
+      ]
+    },
+    {
+      "name": "Freelance / Independent Projects",
+      "location": "Boston, MA",
+      "position": "Machine Learning Engineer",
+      "startDate": "2020-06",
+      "endDate": "2021-02",
+      "summary": "Delivered applied ML solutions and research prototypes in vision, NLP, and AR.",
+      "highlights": [
+        "Deep Learning Photo Aesthetics – created TensorFlow-based classifier using AVA dataset.",
+        "Heineken AR Cheers Campaign – built object-detection model powering adaptive AR marketing.",
+        "Climate Change Sentiment Analysis – used BERT and ensemble methods to track public opinion over time."
+      ]
+    },
+    {
+      "name": "Draper",
+      "location": "Cambridge, MA",
+      "position": "Mission Critical Software Engineer",
+      "url": "https://draper.com",
+      "startDate": "2019-03",
+      "endDate": "2020-06",
+      "highlights": [
+        "Aggregated multi-source flight data for advanced analytics.",
+        "Built ML-driven tools improving Guidance Navigation & Control algorithm accuracy."
+      ]
+    },
+    {
+      "name": "Raytheon",
+      "location": "Tewksbury, MA",
+      "position": "Senior Software Engineer",
+      "url": "https://rtx.com",
+      "startDate": "2018-10",
+      "endDate": "2019-02",
+      "highlights": [
+        "Implemented signal-processing and control algorithms for radar sensor systems."
+      ]
+    },
+    {
+      "name": "NetNumber",
+      "location": "Lowell, MA",
+      "position": "Software Engineer",
+      "url": "https://netnumber.com",
+      "startDate": "2017-01",
+      "endDate": "2018-10",
+      "highlights": [
+        "Enhanced telecom signaling performance for high-volume markets."
+      ]
+    },
+    {
+      "name": "General Dynamics Mission Systems",
+      "location": "Pittsfield, MA",
+      "position": "Lead Software Engineer",
+      "url": "https://gdmissionsystems.com/",
+      "startDate": "2015-06",
+      "endDate": "2016-12",
+      "highlights": [
+        "Developed embedded C drivers and automated test frameworks for GNC systems."
+      ]
+    },
+    {
+      "name": "Pfizer",
+      "location": "Groton, CT",
+      "position": "Continuous Improvement Student Worker",
+      "url": "https://pfizer.com",
+      "startDate": "2014-05",
+      "endDate": "2014-12",
+      "highlights": [
+        "Built internal social platform and IoT prototypes on Raspberry Pi and Google Glass."
+      ]
     }
+  ],
+  "education": [
+    {
+      "institution": "Georgia Institute of Technology",
+      "url": "https://gatech.edu/",
+      "area": "Computer Science",
+      "studyType": "Master of Science",
+      "startDate": "2017",
+      "endDate": "2019",
+      "courses": [
+        "Machine Learning",
+        "Computational Perception"
+      ]
+    },
+    {
+      "institution": "Champlain College",
+      "url": "https://champlain.edu",
+      "area": "Game Programming",
+      "studyType": "Bachelor of Science",
+      "startDate": "2011",
+      "endDate": "2015",
+      "courses": [
+        "Minor in Mathematics"
+      ]
+    }
+  ],
+  "skills": [
+    {
+      "name": "Programming Languages",
+      "keywords": [
+        "Python",
+        "C++",
+        "C",
+        "SQL",
+        "Java",
+        "Bash",
+        "LaTeX",
+        "Lua",
+        "Nix",
+        "Rust"
+      ]
+    },
+    {
+      "name": "ML & AI Frameworks",
+      "keywords": [
+        "LLMs",
+        "PyTorch",
+        "TensorFlow",
+        "Keras",
+        "DSPy",
+        "LangChain",
+        "LangGraph",
+        "RAG",
+        "OpenCV"
+      ]
+    },
+    {
+      "name": "MLOps & Infrastructure",
+      "keywords": [
+        "AWS",
+        "Databricks",
+        "MLFlow",
+        "Kubernetes",
+        "Terraform",
+        "Docker",
+        "Jenkins",
+        "Airflow",
+        "Kubeflow",
+        "Git"
+      ]
+    },
+    {
+      "name": "Focus Areas",
+      "keywords": [
+        "Generative AI",
+        "LLM Engineering",
+        "AI Tooling",
+        "Model Deployment",
+        "Observability",
+        "Privacy Preserving AI"
+      ]
+    }
+  ],
+  "awards": [
+    {
+      "title": "Best Student Team"
+    },
+    {
+      "title": "2nd Place – Game Studio Game of the Year"
+    },
+    {
+      "title": "3rd Place – College Game Award"
+    }
+  ],
+  "languages": [
+    {
+      "language": "English",
+      "fluency": "Native or Bilingual"
+    }
+  ],
+  "meta": {
+    "canonical": "https://struble.dev/resume.json",
+    "version": "v3.0.0",
+    "lastModified": "2025-10-16T00:00:00Z",
+    "keywords": [
+      "Generative AI",
+      "Machine Learning Engineer",
+      "AI Infrastructure",
+      "MLOps",
+      "LLM Engineering",
+      "Open Source",
+      "AI Tooling",
+      "Privacy"
+    ]
+  }
 }
