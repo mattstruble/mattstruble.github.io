@@ -1,0 +1,11 @@
+<footer>
+  <div class="copyright">
+    {{- $since := site.Params.footer.since | default (now.Format "2006") -}}
+    {{- $currentYear := now.Format "2006" -}}
+    {{- if eq $since $currentYear -}}
+      © {{ $currentYear }} {{ site.Params.author.name | default site.Title }}
+    {{- else -}}
+      © {{ $since }} - {{ $currentYear }} {{ site.Params.author.name | default site.Title }}
+    {{- end -}}
+  </div>
+</footer>
