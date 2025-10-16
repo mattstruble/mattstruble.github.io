@@ -1,7 +1,6 @@
 baseURL = "http://localhost"
 languageCode = 'en'
 languageName = "English"
-copyright = "© 2020 - 2024 Matt Struble"
 title = "Matt Struble"
 #paginate = 10
 timeout = "60s"
