@@ -11,7 +11,7 @@ tags:
 title: Strengthening Deep Learning Concepts
 ---
 
-A couple weeks ago, I posted about how the [TensorFlow Certification](https://mattstruble.com/blog/overcoming-self-doubt) helped me overcome my imposter syndrome within the deep learning community. The studying, and as a result my certification, was primarily focused on the high-level implementation of various model architectures within the TensorFlow framework. Which meant that even though I was certified, I felt that there was still a lot to learn in regards to deep learning.
+A couple weeks ago, I posted about how the [TensorFlow Certification](https://struble.dev/blog/overcoming-self-doubt) helped me overcome my imposter syndrome within the deep learning community. The studying, and as a result my certification, was primarily focused on the high-level implementation of various model architectures within the TensorFlow framework. Which meant that even though I was certified, I felt that there was still a lot to learn in regards to deep learning.
 
 I wanted to know what was truly happening under the hood in deep learning, to understand the low-level algorithms that make up each individual part of a whole model. I wanted to be able to make intelligent choices when doing my own research and development, and knew that learning the mathematics of deep learning would be the only way to give me that confidence.
 
