@@ -4,6 +4,6 @@
 
 .jr-basics__location-region,
 .jr-basics__location-city,
-.jr-education__item .jr__date-range {
+.jr__date-range {
     display: none;
 }
